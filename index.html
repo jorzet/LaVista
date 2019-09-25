@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="presentational-only/presentational-only.css">
 
   <!-- responsive-full-background-image.css stylesheet contains the code you want -->
-  <link rel="stylesheet" href="responsive-full-background-image.css">
+  <link rel="stylesheet" href="la_vista_index.css">
   
   <!-- Not required: jquery.min.js and presentational-only.js is only used to demonstrate scrolling behavior of the viewport  -->
   <script src="presentational-only/presentational-only.js"></script>
@@ -29,14 +29,50 @@
 </head>
 <body>
   
+<div class="menu-container">
 
-<div class="menu" id="hamburguer-menu">
-  <img src="images/menu.png" width="30px" height="30pd" alt="menu">
+  <div class="menu" id="hamburguer-menu">
+    <img src="images/menu.png" width="30px" height="30px" alt="menu">
+  </div>
+
+  <div class="more-than-home" id="more-than-home-menu">
+    <a href="mas_que_un_hogar.html" target="more-than-home">
+    <img src="images/more-than-home.png" height="30px" alt="menu">
+  </div>
+
+
+  <div class="life-style" id="live-style-menu">
+    <a href="estilo_de_vida.html" target="life-style">
+    <img src="images/life-style.png"  height="15px" alt="menu">
+  </div>
+
+
+  <div class="map" id="map-menu">
+    <a href="donde.html" target="map">
+    <img src="images/map.png" height="30px" alt="menu">
+  </div>
+
 </div>
+
+
+  <div class="logo2" id="la-vista-logo">
+    <img src="images/la_vista_logo.png"  height="55px" alt="logo2">
+  </div>
+
   
-<div class="logo" id="main-logo">
-  <img src="images/logo_la_vista.png"  height="40px" alt="logo">
+<div class="button-logo-container">
+
+  <div class="logo" id="main-logo">
+    <img src="images/logo_la_vista.png"  height="40px" alt="logo">
+  </div>
+
+  <div class="button-metting-container">
+    <button id="button-metting" name="button">AGENDA TU CITA</button>
+  </div>
 </div>
+
+
+
 
 <canvas class="my_canvas" id="lienzo">
   Su navegador no permite utilizar canvas.
@@ -45,13 +81,13 @@
 <div class="social-networks" id="social-buttons">
   <div>
     <a href="https://www.instagram.com/lavistaresidencialqro/" target="_blank">
-      <img id="menu-image" src="images/instagram_button_image.png" height="20px">
+      <img id="menu-image" src="images/instagram_button_image.png" height="30px">
     </a> 
     
   </div>
   <div>
     <a href="https://www.facebook.com/lavistaqueretaro/" target="_blank">
-      <img src="images/facebook_button_image.png" height="20px">
+      <img src="images/facebook_button_image.png" height="30px">
     </a>
   </div>
 </div>
@@ -72,7 +108,8 @@
 
 
     fadeIn(socialButtons, 1000);
-    fadeOut(hamburguerMenu, 200);
+    fadeIn(hamburguerMenu, 1000);
+  
     canvas.style.visibility='visible'
 
     drawPlecas(0,0,canvas.width,20); //Drawing rectangle on initial load
@@ -124,21 +161,41 @@ function drawPlecas() {
         lienzo.fillRect(0, canvas.height, canvas.width, heightBottom); 
         
         if (heightTop < (canvas.height/2)) {
-            heightTop = heightTop + 0.5;
-            heightBottom = heightBottom - 0.5;
+            heightTop += 0.5;
+            heightBottom -= 0.5;
         } else {
-            plecasShown
+            plecasShown = true;
         }
 
         if (plecasShown) {
           clearInterval(plecasEffect);
+          changeBackground();
         }
     }, 1);
-
-
 }
 
+function changeBackground() {
+  $(document).ready(function() {
+      $('body').css('background-image', 'url(images/background2.jpg)');
+  });
+  
+  var canvas = document.getElementById("lienzo");
+  var mainLogo = document.getElementById("main-logo");
+  var buttonMetting = document.getElementById("button-metting");
+  var moreThanHome = document.getElementById("more-than-home-menu");
+  var lifeStyle = document.getElementById("live-style-menu");
+  var map = document.getElementById("map-menu");
 
+  fadeOut(canvas, 100);
+  fadeIn(buttonMetting, 400);
+  fadeIn(moreThanHome, 400);
+  fadeIn(lifeStyle, 400);
+  fadeIn(map, 400);
+
+  mainLogo.style.visibility='hidden';
+  canvas.style.visibility = 'hidden';
+  
+}
 
 </script>
 

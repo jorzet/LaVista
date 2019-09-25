@@ -26,16 +26,40 @@ body {
    */
 }
 
-.menu {
+.menu-container {
   float:left;
-  margin: 20px;
+  width: 100px;
 }
 
-.logo {
-  position: relative;
-  float: right;
-  margin: 20px;
-  top: 50%;
+.menu {
+  cursor:pointer;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.more-than-home {
+  cursor:pointer;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0;
+}
+
+.life-style {
+  cursor:pointer;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0;
+}
+
+.map {
+  cursor:pointer;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0;
 }
 
 .my_canvas {
@@ -54,6 +78,57 @@ body {
   margin: 20px;
   opacity: 0;
 }
+
+.logo2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.button-logo-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: 20px;
+}
+
+.logo {
+  visibility: visible;
+}
+
+.button-metting-container {
+  visibility: visible;
+}
+
+#button-metting {
+  width: 200px;
+  height: 40px;
+  border-style: solid;
+  background-color: Transparent;
+  cursor:pointer;
+  overflow: hidden;  
+  border-width: 1px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: #606060;
+  opacity: 0;
+}
+
+#button-metting:hover {
+   background-color: #606060;
+   color: #ffffff;
+}
+
+#button-metting:active {
+   background-color: #113D66;
+   border-color: #113D66;
+   color: #ffffff;
+}
+
 
 
 
