@@ -168,36 +168,121 @@
   width: 100px;
 }
 
+#hamburguer-menu-container {
+  height: 60px;
+  width: 50px;
+  transition: width 1s;
+}
+
+#hamburguer-menu-container:hover {
+ background: #ffffff;
+ width: 300px;
+}
+
 .menu {
+  position: relative;
+  top: 25%;
   cursor:pointer;
   margin-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+}
+
+#home-h12 {
+  position: relative;
+  font-size: 1em;
+  top: 10%;
+  left: 25%;
+  visibility: hidden;
+}
+
+#more-than-home-container {
+  height: 60px;
+  width: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: width 1s;
+  visibility: hidden;
+}
+
+#more-than-home-container:hover {
+  background: #ffffff;
+  width: 300px;
 }
 
 .more-than-home {
+  position: relative;
+  top: 25%;
   cursor:pointer;
   margin-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
   visibility: hidden;
   opacity: 0;
+}
+
+#more-than-home-h12 {
+  font-size: 1em;
+  position: relative;
+  top: 10%;
+  left: 25%;
+  visibility: hidden;
+}
+
+#live-style-menu-container {
+  height: 60px;
+  width: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: width 1s;
+  visibility: hidden;
+}
+
+#live-style-menu-container:hover {
+  background: #ffffff;
+  width: 300px;
+}
+
+#live-style-menu-h12 {
+  font-size: 1em;
+  position: relative;
+  top: 10%;
+  left: 25%;
+  visibility: hidden;
 }
 
 .life-style {
+  position: relative;
+  top: 25%;
   cursor:pointer;
   margin-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
   visibility: hidden;
   opacity: 0;
 }
 
+#map-menu-container{
+  height: 60px;
+  width: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: width 1s;
+  visibility: hidden;
+}
+
+#map-menu-container:hover {
+  background: #ffffff;
+  width: 300px;
+}
+
+#map-menu-h12 {
+  font-size: 1em;
+  position: relative;
+  top: 10%;
+  left: 25%;
+  visibility: hidden;
+}
+
 .map {
+  position: relative;
+  top: 25%;
   cursor:pointer;
   margin-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
   visibility: hidden;
   opacity: 0;
 }
@@ -260,6 +345,7 @@
   border-bottom-width: 2px;
   border-color: #606060;
   visibility: hidden;
+  transition: background-color 1s;
   opacity: 0;
 }
 
