@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Responsive Full Background Image</title>
+<title>La Vista Residencial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Six Revisions">
   <meta name="description" content="How to use the CSS background-size property to make an image fully span the entire viewport.">
@@ -15,192 +15,337 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <!-- Not required: presentational-only.css only contains CSS for prettifying the demo -->
-  <link rel="stylesheet" href="presentational-only/presentational-only.css">
-
   <!-- responsive-full-background-image.css stylesheet contains the code you want -->
-  <link rel="stylesheet" href="la_vista_index.css">
-  
-  <!-- Not required: jquery.min.js and presentational-only.js is only used to demonstrate scrolling behavior of the viewport  -->
-  <script src="presentational-only/presentational-only.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="/js/my.js"></script>
+  <link rel="stylesheet" href="css/la_vista_index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/js/my.js"></script>
 
 </head>
-<body>
-  
-<div class="menu-container">
-
-  <div class="menu" id="hamburguer-menu">
-    <img src="images/menu.png" width="30px" height="30px" alt="menu">
-  </div>
-
-  <div class="more-than-home" id="more-than-home-menu">
-    <a href="mas_que_un_hogar.html" target="more-than-home">
-    <img src="images/more-than-home.png" height="30px" alt="menu">
-  </div>
-
-
-  <div class="life-style" id="live-style-menu">
-    <a href="estilo_de_vida.html" target="life-style">
-    <img src="images/life-style.png"  height="15px" alt="menu">
-  </div>
-
-
-  <div class="map" id="map-menu">
-    <a href="donde.html" target="map">
-    <img src="images/map.png" height="30px" alt="menu">
-  </div>
-
-</div>
-
-
-  <div class="logo2" id="la-vista-logo">
-    <img src="images/la_vista_logo.png"  height="55px" alt="logo2">
-  </div>
-
-  
-<div class="button-logo-container">
-
-  <div class="logo" id="main-logo">
-    <img src="images/logo_la_vista.png"  height="40px" alt="logo">
-  </div>
-
-  <div class="button-metting-container">
-    <button id="button-metting" name="button">AGENDA TU CITA</button>
-  </div>
-</div>
-
-
-
-
-<canvas class="my_canvas" id="lienzo">
-  Su navegador no permite utilizar canvas.
-</canvas>
-
-<div class="social-networks" id="social-buttons">
-  <div>
-    <a href="https://www.instagram.com/lavistaresidencialqro/" target="_blank">
-      <img id="menu-image" src="images/instagram_button_image.png" height="30px">
-    </a> 
+  <body>
     
-  </div>
-  <div>
-    <a href="https://www.facebook.com/lavistaqueretaro/" target="_blank">
-      <img src="images/facebook_button_image.png" height="30px">
-    </a>
-  </div>
-</div>
+  <div class="all-menu-container">
+    
+      <div class="menu-container">
+        <div class="menu" id="hamburguer-menu">
+          <img src="images/menu.png" height="30px" alt="menu">
+        </div>
+        <div data-link="mas_que_un_hogar.html" class="more-than-home" id="more-than-home-menu">
+          <img src="images/more-than-home.png" height="30px" alt="menu">
+        </div>
+        <div href="estilo_de_vida.html" class="life-style" id="live-style-menu">
+          <img src="images/life-style.png"  height="15px" alt="menu">
+        </div>
+        <div class="map" id="map-menu">
+          <img src="images/map.png" height="30px" alt="menu">
+        </div>
+      </div>
 
+      <div class="social-networks" id="social-buttons">
+        <div>
+          <a href="https://www.instagram.com/lavistaresidencialqro/" target="_blank">
+            <img id="menu-image" src="images/instagram_button_image.png" height="30px">
+          </a> 
+        </div>
+        <div>
+          <a href="https://www.facebook.com/lavistaqueretaro/" target="_blank">
+            <img src="images/facebook_button_image.png" height="30px">
+          </a>
+        </div>
+      </div>
+    </div>
 
-  
+    <!-------------------------------------------
+      --------------CONTAINER 1------------------
+      ------------------------------------------->
+    <div class="container-1" id="container-one">
 
-<script type="text/javascript">
-  
-  document.getElementById("hamburguer-menu").addEventListener("click", showCanvas);
-  document.getElementById("main-logo").addEventListener("click", showCanvas);
+      <div class="logo2" id="la-vista-logo">
+        <img src="images/la_vista_logo.png"  height="55px" alt="logo2">
+      </div>
+   
+      <div class="button-logo-container">
+        <div class="logo" id="main-logo">
+          <img src="images/logo_la_vista.png"  height="40px" alt="logo">
+        </div>
+        <div class="button-metting-container">
+          <button id="button-metting" name="button">AGENDA TU CITA</button>
+        </div>
+      </div>
 
-  function showCanvas() {
-    var canvas = document.getElementById("lienzo");
-    var lienzo = canvas.getContext("2d");   
-    var socialButtons = document.getElementById("social-buttons");
-    var hamburguerMenu = document.getElementById("hamburguer-menu");
+    </div>
 
-
-    fadeIn(socialButtons, 1000);
-    fadeIn(hamburguerMenu, 1000);
-  
-    canvas.style.visibility='visible'
-
-    drawPlecas(0,0,canvas.width,20); //Drawing rectangle on initial load
-    //alert("canvas visible")
-  }
-
-
-function fadeIn(element, time) {
-  var fadeEffect = setInterval(function () {
-        if (!element.style.opacity) {
-            element.style.opacity = 99;
-        }
-        if (element.style.opacity < 100) {
-            element.style.opacity += 0.1;
-        } else {
-            clearInterval(fadeEffect);
-        }
-    }, time);
-}
-
-function fadeOut(element, time) {
-  var fadeEffect = setInterval(function () {
-        if (!element.style.opacity) {
-            element.style.opacity = 1;
-        }
-        if (element.style.opacity > 0) {
-            element.style.opacity -= 0.1;
-        } else {
-            clearInterval(fadeEffect);
-        }
-    }, time);
-}
-  
-
-function drawPlecas() {
-  var canvas = document.getElementById("lienzo");
-    var lienzo = canvas.getContext("2d");   
-    lienzo.fillStyle = '#ffffff'; 
-    heightTop = 0;
-    heightBottom = 0;
-    lienzo.fillRect(0, 0, canvas.width, heightTop); 
-    lienzo.fillRect(0, canvas.height, canvas.width, heightBottom); 
-
-    plecasShown = false;
-
-    var plecasEffect = setInterval(function () {
-        lienzo.fillStyle = '#ffffff'; 
-        lienzo.fillRect(0, 0, canvas.width, heightTop); 
-        lienzo.fillRect(0, canvas.height, canvas.width, heightBottom); 
+    <!-------------------------------------------
+      --------------CONTAINER 2------------------
+      ------------------------------------------->
+    <div class="container-2" id="container-two">
+      <div class="split-right-container-2" >
         
-        if (heightTop < (canvas.height/2)) {
-            heightTop += 0.5;
-            heightBottom -= 0.5;
-        } else {
-            plecasShown = true;
-        }
+      </div>
 
-        if (plecasShown) {
-          clearInterval(plecasEffect);
-          changeBackground();
-        }
-    }, 1);
-}
+      <div class="split-left-container-2" >
+        <div class="text-container-2">
+          
+            <h1 class="text-1-container-2">
+              C  O  N  O  C  E
+            </h1>
+         
+            <h1 class="text-2-container-2">
+              N  U  E  S  T  R  O  S
+            </h1>
+          
+            <h1 class="text-3-container-2">
+               E  X  C  L  U  S  I  V  O  S
+            </h1>
+          
+            <h1 class="text-4-container-2">
+              D  E  S  A  R  R  O  L  L  O  S
+            </h1>
+         
+          </div>
+            
+        </div>
 
-function changeBackground() {
-  $(document).ready(function() {
-      $('body').css('background-image', 'url(images/background2.jpg)');
-  });
+    </div>
+
+
+
+
+    <!-------------------------------------------
+      --------------CONTAINER 3------------------
+      ------------------------------------------->
+    <div class="container-3" id="container-three">
+      <div class="split-right-container-3" >
+        
+      </div>
+
+      <div class="split-left-container-3" >
+        <div class="text-container-2">
+          
+            <h1 class="text-1-container-3">
+              DESARROLLA
+            </h1>
+         
+            <h1 class="text-2-container-3">
+              DIFERENTES
+            </h1>
+          
+            <h1 class="text-3-container-3">
+               ACTIVIDADES
+            </h1>
+          
+            <h1 class="text-4-container-3">
+               EN EL ENTORNO
+            </h1>
+
+            <h1 class="text-5-container-3">
+               QUE SIEMPRE
+            </h1>
+
+            <h1 class="text-6-container-3">
+               HAS BUSCADO
+            </h1>
+         
+          </div>
+            
+        </div>
+    </div>
+
+    <!-------------------------------------------
+      --------------CONTAINER 2------------------
+      ------------------------------------------->
+    <div class="container-4" id="container-four">
+      <div class="split-right-container-4" >
+        <img src="../images/location.png">
+      </div>
+
+      <div class="split-left-container-4" >
+        <div class="text-container-2">
+          
+            <h1 class="text-1-container-4">
+              TU NUEVO
+            </h1>
+         
+            <h1 class="text-2-container-4">
+              HOGAR
+            </h1>
+          
+            <h1 class="text-3-container-4">
+               ESTA
+            </h1>
+          
+            <h1 class="text-4-container-4">
+               AQUI
+            </h1>
+
+          </div>
+            
+        </div>
+    </div>
+
+    <!-------------------------------------------
+      --------------CONTAINER 2------------------
+      ------------------------------------------->
+    <div class="container-5">
+      
+    </div>
+
+    <!-------------------------------------------
+      --------------CONTAINER 2------------------
+      ------------------------------------------->
+    <div class="container-6">
+      
+    </div>
+
+
+    <!-------------------------------------------
+      --------------CANVAS------------------
+      ------------------------------------------->
+    <canvas class="my_canvas" id="lienzo">
+          Su navegador no permite utilizar canvas.
+    </canvas>
+
   
-  var canvas = document.getElementById("lienzo");
-  var mainLogo = document.getElementById("main-logo");
-  var buttonMetting = document.getElementById("button-metting");
-  var moreThanHome = document.getElementById("more-than-home-menu");
-  var lifeStyle = document.getElementById("live-style-menu");
-  var map = document.getElementById("map-menu");
 
-  fadeOut(canvas, 100);
-  fadeIn(buttonMetting, 400);
-  fadeIn(moreThanHome, 400);
-  fadeIn(lifeStyle, 400);
-  fadeIn(map, 400);
+    
 
-  mainLogo.style.visibility='hidden';
-  canvas.style.visibility = 'hidden';
+    <script type="text/javascript">
+      
+      document.getElementById("hamburguer-menu").addEventListener("click", showCanvas);
+      document.getElementById("main-logo").addEventListener("click", showCanvas);
+      document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
+      document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
+      document.getElementById("map-menu").addEventListener("click", openMap);
+
+ 
+     /*$("body").fadeOut(1000,function(){
+           window.location.replace(destination);
+        });*/
   
-}
 
-</script>
+      function showCanvas() {
+        var canvas = document.getElementById("lienzo");
+        var lienzo = canvas.getContext("2d");   
+        var socialButtons = document.getElementById("social-buttons");
+        var hamburguerMenu = document.getElementById("hamburguer-menu");
 
 
+        fadeIn(socialButtons, 1000);
+        fadeIn(hamburguerMenu, 1000);
+      
+        canvas.style.visibility='visible'
 
+        drawPlecas(0,0,canvas.width,20); //Drawing rectangle on initial load
+        //alert("canvas visible")
+      }
 
-</body>
+      function fadeIn(element, time) {
+        element.style.visibility = 'visible';
+        var fadeEffect = setInterval(function () {
+              if (!element.style.opacity) {
+                  element.style.opacity = 99;
+              }
+              if (element.style.opacity < 100) {
+                  element.style.opacity += 0.1;
+              } else {
+                  clearInterval(fadeEffect);
+              }
+          }, time);
+      }
+
+      function fadeOut(element, time) {
+        var fadeEffect = setInterval(function () {
+              if (!element.style.opacity) {
+                  element.style.opacity = 1;
+              }
+              if (element.style.opacity > 0) {
+                  element.style.opacity -= 0.1;
+              } else {
+                  clearInterval(fadeEffect);
+                  element.style.visibility = 'hidden';
+              }
+          }, time);
+      }
+        
+
+      function drawPlecas() {
+          var canvas = document.getElementById("lienzo");
+          var lienzo = canvas.getContext("2d");   
+          lienzo.fillStyle = '#ffffff'; 
+          heightTop = 0;
+          heightBottom = 0;
+          lienzo.fillRect(0, 0, canvas.width, heightTop); 
+          lienzo.fillRect(0, canvas.height, canvas.width, heightBottom); 
+
+          plecasShown = false;
+
+          var mainLogo = document.getElementById("main-logo");
+          fadeOut(mainLogo, 100);
+
+          var plecasEffect = setInterval(function () {
+              lienzo.fillStyle = '#ffffff'; 
+              lienzo.fillRect(0, 0, canvas.width, heightTop); 
+              lienzo.fillRect(0, canvas.height, canvas.width, heightBottom); 
+              
+              if (heightTop < (canvas.height/2)) {
+                  heightTop += 0.5;
+                  heightBottom -= 0.5;
+              } else {
+                  plecasShown = true;
+              }
+
+              if (plecasShown) {
+                clearInterval(plecasEffect);
+                changeBackground();
+              }
+          }, 1);
+      }
+
+      function changeBackground() {
+        $(document).ready(function() {
+            $('.container-1').css('background-image', 'url(images/background2.jpg)');
+        });
+        
+        var canvas = document.getElementById("lienzo");
+        var buttonMetting = document.getElementById("button-metting");
+        var moreThanHome = document.getElementById("more-than-home-menu");
+        var lifeStyle = document.getElementById("live-style-menu");
+        var map = document.getElementById("map-menu");
+        var laVistaLogo = document.getElementById("la-vista-logo");
+
+        fadeOut(canvas, 100);
+        fadeIn(buttonMetting, 100);
+        fadeIn(moreThanHome, 100);
+        fadeIn(lifeStyle, 100);
+        fadeIn(map, 100);
+        fadeIn(laVistaLogo, 100);
+
+        canvas.style.visibility = 'hidden';
+        
+      }
+
+      function openMoreThanHome() {
+        document.getElementById("container-one").style.visibility = 'hidden';
+        document.getElementById("container-two").style.visibility = 'visible';
+        document.getElementById("container-three").style.visibility = 'hidden';
+        document.getElementById("container-four").style.visibility = 'hidden';
+      }
+
+      function openLifiStyle() {
+        document.getElementById("container-one").style.visibility = 'hidden';
+        document.getElementById("container-two").style.visibility = 'hidden';
+        document.getElementById("container-three").style.visibility = 'visible';
+        document.getElementById("container-four").style.visibility = 'hidden';
+        
+      }
+
+      function openMap() {
+        document.getElementById("container-one").style.visibility = 'hidden';
+        document.getElementById("container-two").style.visibility = 'hidden';
+        document.getElementById("container-three").style.visibility = 'hidden';
+        document.getElementById("container-four").style.visibility = 'visible';
+      }
+
+    </script>
+
+  </body>
 </html>
