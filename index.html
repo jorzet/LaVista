@@ -26,39 +26,39 @@
 </head>
   <body>
     
-  <div class="all-menu-container">
+  <div class="all-menu-container" id="all-menu-container-id">
     
       <div class="menu-container">
         <div id="hamburguer-menu-container">
-          <img class="menu" id="hamburguer-menu" src="images/menu.png" height="30px" alt="menu">
-          <h11 id="home-h12"> H O M E </h11>
+          <img class="menu" id="hamburguer-menu" src="images/hamburguer-menu-gray.png" height="30px" width="30px" alt="menu">
+          <h11 id="home-h12" style=" width=300px overflow:hidden;"> H O M E </h11>
         </div>
 
         <div id="more-than-home-container">
-          <img class="more-than-home" id="more-than-home-menu" src="images/more-than-home.png" height="30px" alt="menu">
-          <h12 id="more-than-home-h12" style="overflow:hidden;"> MAS QUE UN HOGAR </h12>
+          <img class="more-than-home" id="more-than-home-menu" src="images/more-than-home-gray.png" height="30px" alt="menu">
+          <h12 id="more-than-home-h12" style=" width=300px overflow:hidden;"> MAS QUE UN HOGAR </h12>
         </div>
 
         <div id="live-style-menu-container">
           <img class="life-style" id="live-style-menu" src="images/life-style.png"  height="15px" alt="menu">
-          <h12 id="live-style-menu-h12" style="overflow:hidden;"> ESTILO DE VIDA </h12>
+          <h12 id="live-style-menu-h12" style="width=300px overflow:hidden;"> ESTILO DE VIDA </h12>
         </div>
 
         <div id="map-menu-container">
-          <img class="map" id="map-menu" src="images/map.png" height="30px" alt="menu">
-          <h12 id="map-menu-h12" style="overflow:hidden;"> DONDE </h12>
+          <img class="map" id="map-menu" src="images/map-gray.png" height="30px" alt="menu" >
+          <h12 id="map-menu-h12" style=" width=300px overflow:hidden;"> DONDE </h12>
         </div>
       </div>
 
       <div class="social-networks" id="social-buttons">
-        <div>
+        <div class="instagram-img">
           <a href="https://www.instagram.com/lavistaresidencialqro/" target="_blank">
-            <img id="menu-image" src="images/instagram_button_image.png" height="30px">
+            <img id="menu-image" src="images/instagram-icon.png" height="30px">
           </a> 
         </div>
-        <div>
+        <div class="facebook-img">
           <a href="https://www.facebook.com/lavistaqueretaro/" target="_blank">
-            <img src="images/facebook_button_image.png" height="30px">
+            <img src="images/facebook-icon.png" height="30px">
           </a>
         </div>
       </div>
@@ -73,6 +73,39 @@
         <img src="images/la_vista_logo.png"  height="55px" alt="logo2">
       </div>
    
+
+      <div class="text-container-1" id="text-container-one">
+          
+            <h1 class="text-1-container-1">
+              DE
+            </h1>
+         
+            <h1 class="text-2-container-1">
+              LA VISTA
+            </h1>
+          
+            <h1 class="text-3-container-1">
+               NACE...
+            </h1>
+          
+            <h1 class="text-4-container-1">
+               EL MEJOR
+            </h1>
+
+            <h1 class="text-5-container-1">
+               LUGAR
+            </h1>
+
+            <h1 class="text-6-container-1">
+               PARA
+            </h1>
+
+            <h1 class="text-7-container-1">
+               VIVIR
+            </h1>
+         
+          </div>
+
       <div class="button-logo-container">
         <div class="logo" id="main-logo">
           <img src="images/logo_la_vista.png"  height="40px" alt="logo">
@@ -82,6 +115,8 @@
         </div>
       </div>
 
+      
+
     </div>
 
     <!-------------------------------------------
@@ -90,25 +125,34 @@
     <div class="container-2" id="container-two">
       <div class="split-right-container-2" >
         
+        <div class="livenza-rivalta-container">
+          <div id="livenza-container">
+            <img class="livenza-img" id="livenza-icon" src="images/livenza-icon.png" width="60px"  alt="livenza">
+          </div>
+
+          <div id="rivalta-container">
+            <img class="rivalta-img" id="rivalta-icon" src="images/rivalta-icon.png" width=60px" alt="rivalta">
+          </div>
+        </div>
       </div>
 
       <div class="split-left-container-2" >
         <div class="text-container-2">
           
             <h1 class="text-1-container-2">
-              C  O  N  O  C  E
+              CONOCE
             </h1>
          
             <h1 class="text-2-container-2">
-              N  U  E  S  T  R  O  S
+              NUESTROS
             </h1>
           
             <h1 class="text-3-container-2">
-               E  X  C  L  U  S  I  V  O  S
+               EXCLUSIVOS
             </h1>
           
             <h1 class="text-4-container-2">
-              D  E  S  A  R  R  O  L  L  O  S
+              DESARROLLOS
             </h1>
          
           </div>
@@ -161,11 +205,11 @@
     </div>
 
     <!-------------------------------------------
-      --------------CONTAINER 2------------------
+      --------------CONTAINER 4------------------
       ------------------------------------------->
     <div class="container-4" id="container-four">
       <div class="split-right-container-4" >
-        <img src="../images/location.png">
+          <div id="map-google"></div>
       </div>
 
       <div class="split-left-container-4" >
@@ -193,26 +237,70 @@
     </div>
 
     <!-------------------------------------------
-      --------------CONTAINER 2------------------
+      --------------CONTAINER 5------------------
       ------------------------------------------->
-    <div class="container-5">
-      
+    <div class="container-5" id="container-five">
+      <div class="split-right-container-5" >
+        <div class="back-container">
+          <div id="back">
+            <img class="back-img" id="livenza-back-icon" src="images/back-icon.png" width="60px"  alt="livenza">
+          </div>
+        </div>
+      </div>
+
+      <div class="split-left-container-5" >
+        
+      </div>
     </div>
 
     <!-------------------------------------------
-      --------------CONTAINER 2------------------
+      --------------CONTAINER 6------------------
       ------------------------------------------->
-    <div class="container-6">
-      
+    <div class="container-6" id="container-six">
+      <div class="split-right-container-6" >
+        <div class="back-container">
+          <div id="back">
+            <img class="back-img" id="rivalta-back-icon" src="images/back-icon.png" width="60px"  alt="rivalta">
+          </div>
+        </div>
+      </div>
+
+      <div class="split-left-container-6" >
+        
+        <div class="button-metting-rivalta-container">
+          <button id="button-rivalta-metting" name="button" onclick ="div_show()">AGENDA TU CITA</button>
+        </div>
+
+        <div class="text-container-6">
+          
+            <h1 class="text-1-container-6">
+              RIVALTA
+            </h1>
+         
+            <h1 class="text-2-container-6">
+              RESIDENCIAL
+            </h1>
+          
+            <h1 class="text-3-container-6">
+               DESDE
+            </h1>
+          
+            <h1 class="text-4-container-6">
+               $3,549,000
+            </h1>
+
+          </div>
+
+      </div>
     </div>
 
 
     <!-------------------------------------------
-      --------------CANVAS------------------
-      ------------------------------------------->
-    <canvas class="my_canvas" id="lienzo">
-          Su navegador no permite utilizar canvas.
-    </canvas>
+        --------------CANVAS------------------
+        ------------------------------------------->
+      <canvas class="canvas-1" id="lienzo-1">
+            Su navegador no permite utilizar canvas.
+      </canvas>
 
   <div id="abc" style="overflow:hidden;">
       <!-- Popup Div Starts Here -->
@@ -220,11 +308,11 @@
       <!-- Contact Us Form -->
       <form action="#" id="form" method="post" name="form">
         <img id="close" src="images/close-icon.png" onclick ="div_hide()">
-        <h2>Contact Us</h2>
+        <h2>Agenda tu cita</h2>
         <hr>
         <input id="name" name="name" placeholder="Name" type="text">
         <input id="email" name="email" placeholder="Email" type="text">
-        <textarea id="msg" name="message" placeholder="Message"></textarea>
+        <textarea id="msg" name="subject" placeholder="Message"></textarea>
         <a href="javascript:%20check_empty()" id="submit">Send</a>
       </form>
       </div>
@@ -240,48 +328,15 @@
       document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
       document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
       document.getElementById("map-menu").addEventListener("click", openMap);
+      document.getElementById("livenza-icon").addEventListener("click", openLivienza);
+      document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
+      document.getElementById("livenza-back-icon").addEventListener("click", openMoreThanHome);
+      document.getElementById("rivalta-back-icon").addEventListener("click", openMoreThanHome);
 
-      document.getElementById("hamburguer-menu-container").addEventListener("mouseover", function() {
-        setTimeout( function ( ) { 
-            document.getElementById("home-h12").style.visibility = 'visible';
-          }, 1000 );
-      });
-      document.getElementById("hamburguer-menu-container").addEventListener("mouseout", function() {
-        document.getElementById("home-h12").style.visibility = 'hidden';
-        fadeOut(document.getElementById("home-h12"), 100);
-      });
 
-      document.getElementById("more-than-home-container").addEventListener("mouseover", function() {
-          setTimeout( function ( ) { 
-            document.getElementById("more-than-home-h12").style.visibility = 'visible';
-          }, 1000 );
-        
-      });
-      document.getElementById("more-than-home-container").addEventListener("mouseout", function() {
-        document.getElementById("more-than-home-h12").style.visibility = 'hidden';
-        fadeOut(document.getElementById("more-than-home-h12"), 100);
-      });
+    
 
-      document.getElementById("live-style-menu-container").addEventListener("mouseover", function() {
-        setTimeout( function ( ) { 
-            document.getElementById("live-style-menu-h12").style.visibility = 'visible';
-          }, 1000 );
-      });
-      document.getElementById("live-style-menu-container").addEventListener("mouseout", function() {
-        document.getElementById("live-style-menu-h12").style.visibility = 'hidden';
-        fadeOut(document.getElementById("live-style-menu-h12"), 100);
-      });
-
-      document.getElementById("map-menu-container").addEventListener("mouseover", function() {
-        setTimeout( function ( ) { 
-            document.getElementById("map-menu-h12").style.visibility = 'visible';
-          }, 1000 );
-        
-      });
-      document.getElementById("map-menu-container").addEventListener("mouseout", function() {
-        document.getElementById("map-menu-h12").style.visibility = 'hidden';
-        fadeOut(document.getElementById("map-menu-h12"), 100);
-      });
+ 
 
 
 
@@ -298,80 +353,60 @@
 
       function check_empty() {
         if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
-        alert("Fill All Fields !");
+        alert("Necesitas llenar todos los campos");
         } else {
-        document.getElementById('form').submit();
-        const nodemailer = require('nodemailer');
- 
-        nodemailer.createTestAccount((err, account) => {
-            let transporter = nodemailer.createTransport({
-                host: 'smtp.googlemail.com', // Gmail Host
-                port: 465, // Port
-                secure: true, // this is true as port is 465
-                auth: {
-                    user: 'jorzet.94@gmail.com', //Gmail username
-                    pass: 'Audilemans8-' // Gmail password
-                }
-            });
-         
-            let mailOptions = {
-                from: 'jorzet.94@gmail.com',
-                to: 'jorzet.94@gmail.com', // Recepient email address. Multiple emails can send separated by commas
-                subject: 'Welcome Email',
-                text: 'This is the email sent through Gmail SMTP Server.'
-            };
-         
-            transporter.sendMail(mailOptions, (error, info) => {
-                if (error) {
-                    return console.log(error);
-                }
-                console.log('Message sent: %s', info.messageId);
-            });
-        });
+            $( document ).ready(function() {
+             Email.send({
+            Host : "in-v3.mailjet.com",
+            Username : "e258b2c6b66d0b1a8f4e370a0f3f5286",
+            Password : "76089ee4eb98986f5bbf193dfd74bb81",
+            To : document.getElementById('email').value,
+            From : "coffeebeans.software@gmail.com",
+            Subject : document.getElementById('name').value + " Contacto",
+            Body : document.getElementById('name').value + ": " + document.getElementById('msg').value}).then( message => alert("Nos pondremos en contacto contigo"));});
        }
       }
       //Function To Display Popup
       function div_show() {
         document.getElementById('abc').style.display = "block";
+        document.getElementById('all-menu-container').style.visibility = "hidden";
       }
       //Function to Hide Popup
       function div_hide(){
         document.getElementById('abc').style.display = "none";
+        document.getElementById('all-menu-container').style.visibility = "visible";
       }
  
      /*$("body").fadeOut(1000,function(){
            window.location.replace(destination);
         });*/
   
+      showSplash = true;
 
       function showCanvas() {
-        var canvas = document.getElementById("lienzo");
-        var lienzo = canvas.getContext("2d");   
-        var socialButtons = document.getElementById("social-buttons");
-        var hamburguerMenu = document.getElementById("hamburguer-menu");
+        if (showSplash) {
+          var canvas = document.getElementById("lienzo-1");
+          var lienzo = canvas.getContext("2d");   
+          var socialButtons = document.getElementById("social-buttons");
+          var hamburguerMenu = document.getElementById("hamburguer-menu");
 
 
-        fadeIn(socialButtons, 1000);
-        fadeIn(hamburguerMenu, 1000);
-      
-        canvas.style.visibility='visible'
+          fadeIn(socialButtons, 1000);
+          fadeIn(hamburguerMenu, 1000);
+        
+          canvas.style.visibility='visible'
 
-        drawPlecas(0,0,canvas.width,20); //Drawing rectangle on initial load
-        //alert("canvas visible")
+          drawPlecas(0,0,canvas.width,20); //Drawing rectangle on initial load
+          //alert("canvas visible")
+          showSplash = false;
+        } else {
+          openHome();
+        }
       }
 
       function fadeIn(element, time) {
         element.style.visibility = 'visible';
-        var fadeEffect = setInterval(function () {
-              if (!element.style.opacity) {
-                  element.style.opacity = 99;
-              }
-              if (element.style.opacity < 100) {
-                  element.style.opacity += 0.1;
-              } else {
-                  clearInterval(fadeEffect);
-              }
-          }, time);
+        element.style.opacity = '1';
       }
 
       function fadeOut(element, time) {
@@ -390,7 +425,7 @@
         
 
       function drawPlecas() {
-          var canvas = document.getElementById("lienzo");
+          var canvas = document.getElementById("lienzo-1");
           var lienzo = canvas.getContext("2d");   
           lienzo.fillStyle = '#ffffff'; 
           heightTop = 0;
@@ -424,10 +459,10 @@
 
       function changeBackground() {
         $(document).ready(function() {
-            $('.container-1').css('background-image', 'url(images/background2.jpg)');
+            $('.container-1').css('background-image', 'url(images/background2.png)');
         });
         
-        var canvas = document.getElementById("lienzo");
+        var canvas = document.getElementById("lienzo-1");
         var buttonMetting = document.getElementById("button-metting");
         var moreThanHome = document.getElementById("more-than-home-menu");
         var lifeStyle = document.getElementById("live-style-menu");
@@ -446,31 +481,184 @@
         document.getElementById("map-menu-container").style.visibility = 'visible';
 
         canvas.style.visibility = 'hidden';
-        
+
+        document.getElementById("text-container-one").style.visibility = 'visible';
+        document.getElementById("text-container-one").style.opacity = '1';
+      }
+
+      function openHome() {
+        $("#hamburguer-menu").attr("src","images/hamburguer-menu-gray.png");
+
+        document.getElementById("more-than-home-container").style.backgroundImage = "none";
+        document.getElementById("more-than-home-container").style.width = "50px";
+        document.getElementById("live-style-menu-container").style.backgroundImage = "none";
+        document.getElementById("live-style-menu-container").style.width = "50px";
+        document.getElementById("map-menu-container").style.backgroundImage = "none";
+        document.getElementById("map-menu-container").style.width = "50px";
+
+        document.getElementById("all-menu-container-id").style.backgroundColor = 'transparent';
+
+        document.getElementById("container-one").style.visibility = 'visible';
+        document.getElementById("container-two").style.visibility = 'hidden';
+        document.getElementById("container-three").style.visibility = 'hidden';
+        document.getElementById("container-four").style.visibility = 'hidden';
+        document.getElementById("container-five").style.visibility = 'hidden';
+        document.getElementById("container-six").style.visibility = 'hidden';
+
+        document.getElementById("container-one").style.opacity = '1';
+        document.getElementById("container-two").style.opacity = '0';
+        document.getElementById("container-three").style.opacity = '0';
+        document.getElementById("container-four").style.opacity = '0';
+        document.getElementById("container-five").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '0';
       }
 
       function openMoreThanHome() {
+        $("#hamburguer-menu").attr("src","images/home-icon.png");
+
+        document.getElementById("more-than-home-container").style.backgroundImage = "url('images/menu-selected-bg.png')";
+        document.getElementById("more-than-home-container").style.backgroundSize = "100% 100%";
+        document.getElementById("more-than-home-container").style.width = "20vw";
+
+        document.getElementById("live-style-menu-container").style.backgroundImage = "none";
+        document.getElementById("live-style-menu-container").style.width = "50px";
+        document.getElementById("map-menu-container").style.backgroundImage = "none";
+        document.getElementById("map-menu-container").style.width = "50px";
+
+        document.getElementById("all-menu-container-id").style.backgroundColor = 'transparent';
+
         document.getElementById("container-one").style.visibility = 'hidden';
         document.getElementById("container-two").style.visibility = 'visible';
         document.getElementById("container-three").style.visibility = 'hidden';
         document.getElementById("container-four").style.visibility = 'hidden';
+        document.getElementById("container-five").style.visibility = 'hidden';
+        document.getElementById("container-six").style.visibility = 'hidden';
+
+        document.getElementById("container-one").style.opacity = '0';
+        document.getElementById("container-two").style.opacity = '1';
+        document.getElementById("container-three").style.opacity = '0';
+        document.getElementById("container-four").style.opacity = '0';
+        document.getElementById("container-five").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '0';
       }
 
       function openLifiStyle() {
+        $("#hamburguer-menu").attr("src","images/home-icon.png");
+        
+        document.getElementById("live-style-menu-container").style.backgroundImage = "url('images/menu-selected-bg.png')";
+        document.getElementById("live-style-menu-container").style.backgroundSize = "100% 100%";
+        document.getElementById("live-style-menu-container").style.width = "20vw";
+
+        document.getElementById("more-than-home-container").style.backgroundImage = "none";
+        document.getElementById("more-than-home-container").style.width = "50px";
+        document.getElementById("map-menu-container").style.backgroundImage = "none";
+        document.getElementById("map-menu-container").style.width = "50px";
+
+        document.getElementById("all-menu-container-id").style.backgroundColor = 'transparent';
+        
         document.getElementById("container-one").style.visibility = 'hidden';
         document.getElementById("container-two").style.visibility = 'hidden';
         document.getElementById("container-three").style.visibility = 'visible';
         document.getElementById("container-four").style.visibility = 'hidden';
-        
+        document.getElementById("container-five").style.visibility = 'hidden';
+        document.getElementById("container-six").style.visibility = 'hidden';
+
+        document.getElementById("container-one").style.opacity = '0';
+        document.getElementById("container-two").style.opacity = '0';
+        document.getElementById("container-three").style.opacity = '1';
+        document.getElementById("container-four").style.opacity = '0';
+        document.getElementById("container-five").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '0';
       }
 
       function openMap() {
+        $("#hamburguer-menu").attr("src","images/home-icon.png");
+
+        document.getElementById("map-menu-container").style.backgroundImage = "url('images/menu-selected-bg.png')";
+        document.getElementById("map-menu-container").style.backgroundSize = "100% 100%";
+        document.getElementById("map-menu-container").style.width = "20vw;";
+
+        document.getElementById("more-than-home-container").style.backgroundImage = "none";
+        document.getElementById("more-than-home-container").style.width = "50px";
+        document.getElementById("live-style-menu-container").style.backgroundImage = "none";
+        document.getElementById("live-style-menu-container").style.width = "50px";
+
+        document.getElementById("all-menu-container-id").style.backgroundColor = 'transparent';
+
+        document.getElementById("map-menu-h12").style.opacity = '1';
+
         document.getElementById("container-one").style.visibility = 'hidden';
         document.getElementById("container-two").style.visibility = 'hidden';
         document.getElementById("container-three").style.visibility = 'hidden';
         document.getElementById("container-four").style.visibility = 'visible';
+        document.getElementById("container-five").style.visibility = 'hidden';
+        document.getElementById("container-six").style.visibility = 'hidden';
+
+        document.getElementById("container-one").style.opacity = '0';
+        document.getElementById("container-two").style.opacity = '0';
+        document.getElementById("container-three").style.opacity = '0';
+        document.getElementById("container-four").style.opacity = '1';
+        document.getElementById("container-five").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '0';
       }
 
+      function openLivienza() {
+        $("#hamburguer-menu").attr("src","images/home-icon.png");
+        document.getElementById("all-menu-container-id").style.backgroundColor = '#0C293C';
+
+        document.getElementById("container-one").style.visibility = 'hidden';
+        document.getElementById("container-two").style.visibility = 'hidden';
+        document.getElementById("container-three").style.visibility = 'hidden';
+        document.getElementById("container-four").style.visibility = 'hidden';
+        document.getElementById("container-five").style.visibility = 'visible';
+        document.getElementById("container-six").style.visibility = 'hidden';
+
+        document.getElementById("container-one").style.opacity = '0';
+        document.getElementById("container-two").style.opacity = '0';
+        document.getElementById("container-three").style.opacity = '0';
+        document.getElementById("container-four").style.opacity = '0';
+        document.getElementById("container-five").style.opacity = '1';
+        document.getElementById("container-six").style.opacity = '0';
+      }
+
+      function openRivalta() {
+        $("#hamburguer-menu").attr("src","images/home-icon.png");
+        document.getElementById("all-menu-container-id").style.backgroundColor = '#71974A';
+
+        document.getElementById("container-one").style.visibility = 'hidden';
+        document.getElementById("container-two").style.visibility = 'hidden';
+        document.getElementById("container-three").style.visibility = 'hidden';
+        document.getElementById("container-four").style.visibility = 'hidden';
+        document.getElementById("container-five").style.visibility = 'hidden';
+        document.getElementById("container-six").style.visibility = 'visible';
+
+        document.getElementById("container-one").style.opacity = '0';
+        document.getElementById("container-two").style.opacity = '0';
+        document.getElementById("container-three").style.opacity = '0';
+        document.getElementById("container-four").style.opacity = '0';
+        document.getElementById("container-five").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '1';
+      }
+
+    </script>
+
+
+    <script>
+      
+      function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 20.6410403, lng: -100.3518529};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map-google'), {zoom: 15, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+      }
+
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVDpHRz9N2EKZuHfrUtviOHonVWQcLqig&callback=initMap">
     </script>
 
   </body>

@@ -1,4 +1,8 @@
 
+@font-face {
+    font-family: GraublauWeb;
+    src: url("fonts/HelveticaNeueLTStd-Roman.otf") format("opentype");
+}
 
 .container-1 {
   position: absolute;
@@ -6,11 +10,13 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  opacity: 100;
+  transition: opacity 1s;
 }
 
 .container-2 {
@@ -21,6 +27,8 @@
   height: 100%;
   background-color:#464646;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 /* Control the left side */
@@ -41,11 +49,10 @@
   width: 50%;
   float: right;
   top: 0;
-  background-image: url(../images/lavista_circle.jpg);
-  background-position: right; center;
+  background-image: url(../images/lavista_circle_cut.png);
+  background-position: top left;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-size:cover;
   overflow-x: hidden;
   background-color: #ffffff;
 }
@@ -58,6 +65,8 @@
   height: 100%;
   background-color:#464646;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 /* Control the left side */
@@ -78,11 +87,10 @@
   width: 50%;
   float: right;
   top: 0;
-  background-image: url(../images/life_style.jpg);
-  background-position: center center;
+  background-image: url(../images/life_style.png);
+  background-position: top left;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-size:cover;
   overflow-x: hidden;
   background-color: #ffffff;
 }
@@ -95,6 +103,8 @@
   height: 100%;
   background-color:#464646;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 /* Control the left side */
@@ -110,17 +120,11 @@
 
 /* Control the right side */
 .split-right-container-4 {
- 
   height: 100%;
   width: 50%;
   float: right;
-  top: 0;
-  background-image: url(../images/location.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   background-color: #ffffff;
+  top: 0;
 }
 
 .container-5 {
@@ -131,7 +135,40 @@
   height: 100%;
   background-color:#464646;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
 }
+
+
+/* Control the left side */
+.split-left-container-5 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-image: url(../images/livenza.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+/* Control the right side */
+.split-right-container-5 {
+  height: 100%;
+  width: 50%;
+  float: right;
+  top: 0;
+  background-image: url(../images/right_background_livenza.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
 .container-6 {
   position: absolute;
   left: 0;
@@ -140,16 +177,45 @@
   height: 100%;
   background-color:#464646;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+/* Control the left side */
+.split-left-container-6 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-color: #71974A;
+  overflow-x: hidden;
+}
+
+/* Control the right side */
+.split-right-container-6 {
+ 
+  height: 100%;
+  width: 50%;
+  float: right;
+  top: 0;
+  background-image: url(../images/rivalta.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x: hidden;
+  background-color: #ffffff;
 }
 
 
 @media only screen and (max-width: 767px) {
   .container-1 {
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background.png);
   }
 
   .split-right {
-    background-image: url(../images/lavista_circle.jpg);
+    background-image: url(../images/lavista_circle.png);
     background-color: red;
   }
 }
@@ -161,6 +227,8 @@
   position: fixed;
   z-index: 1;
   top: 0;
+  background-color: transparent;
+  transition: background-color 1s;
 }
 
 .menu-container {
@@ -172,11 +240,6 @@
   height: 60px;
   width: 50px;
   transition: width 1s;
-}
-
-#hamburguer-menu-container:hover {
- background: #ffffff;
- width: 300px;
 }
 
 .menu {
@@ -204,8 +267,9 @@
 }
 
 #more-than-home-container:hover {
-  background: #ffffff;
-  width: 300px;
+  background-image: url('../images/menu-selected-bg.png');
+  background-size: 100% 100%;
+  width: 20vw;
 }
 
 .more-than-home {
@@ -215,6 +279,7 @@
   margin-left: 20px;
   visibility: hidden;
   opacity: 0;
+  transition: opacity 1s;
 }
 
 #more-than-home-h12 {
@@ -230,13 +295,15 @@
   width: 50px;
   margin-top: 25px;
   margin-bottom: 25px;
-  transition: width 1s;
+  transition-property: width, background-image;
+  transition-duration: 1s, 1s;
   visibility: hidden;
 }
 
 #live-style-menu-container:hover {
-  background: #ffffff;
-  width: 300px;
+  background-image: url('../images/menu-selected-bg.png');
+  background-size: 100% 100%;
+  width: 20vw;
 }
 
 #live-style-menu-h12 {
@@ -254,6 +321,7 @@
   margin-left: 20px;
   visibility: hidden;
   opacity: 0;
+  transition: opacity 1s;
 }
 
 #map-menu-container{
@@ -261,21 +329,26 @@
   width: 50px;
   margin-top: 25px;
   margin-bottom: 25px;
-  transition: width 1s;
   visibility: hidden;
+  transition-property: width, background-image;
+  transition-duration: 1s, 1s;
+  
 }
 
 #map-menu-container:hover {
-  background: #ffffff;
-  width: 300px;
+  background-image: url('../images/menu-selected-bg.png');
+  background-size: 100% 100%;
+  width: 20vw;
 }
 
 #map-menu-h12 {
   font-size: 1em;
-  position: relative;
+  position: absolute;
   top: 10%;
   left: 25%;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .map {
@@ -285,9 +358,11 @@
   margin-left: 20px;
   visibility: hidden;
   opacity: 0;
+  transition-property: opacity, background-image;
+  transition-duration: 1s, 1s;
 }
 
-.my_canvas {
+.canvas-1 {
   position:fixed;
   left:0;
   top:0;
@@ -305,6 +380,10 @@
   visibility: hidden;
 }
 
+.instagram-img {
+  margin-bottom: 25px;
+}
+
 .logo2 {
   cursor:pointer;
   position: absolute;
@@ -313,6 +392,8 @@
   margin-top: 50px;
   margin-right: 20px;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .button-logo-container {
@@ -345,8 +426,9 @@
   border-bottom-width: 2px;
   border-color: #606060;
   visibility: hidden;
-  transition: background-color 1s;
   opacity: 0;
+  transition-property: background-color, opacity;
+  transition-duration: 1s, 1s;
 }
 
 #button-metting:hover {
@@ -360,33 +442,198 @@
    color: #ffffff;
 }
 
+
+.button-metting-livenza-container {
+  visibility: visible;
+}
+
+#button-livenza-metting {
+  width: 200px;
+  height: 40px;
+  border-style: solid;
+  background-color: Transparent;
+  cursor:pointer;
+  overflow: hidden;  
+  border-width: 1px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: #38C1CA;
+  color: #38C1CA;
+  visibility: hidden;
+  opacity: 0;
+  transition-property: background-color, opacity;
+  transition-duration: 1s, 1s;
+}
+
+#button-livenza-metting:hover {
+   background-color: #38C1CA;
+   color: black;
+}
+
+#button-livenza-metting:active {
+   background-color: white;
+   border-color: black;
+   color: black;
+}
+
+
+
+.button-metting-rivalta-container {
+  position: absolute;
+  left: : 0;
+  top: 30%;
+  margin-left: 7%;
+  visibility: visible;
+}
+
+#button-rivalta-metting {
+  width: 200px;
+  height: 40px;
+  border-style: solid;
+  background-color: Transparent;
+  cursor:pointer;
+  overflow: hidden;  
+  border-width: 1px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: black;
+  color: black;
+  transition: background-color 1s;
+}
+
+#button-rivalta-metting:hover {
+   background-color: black;
+   color: #71974A;
+}
+
+#button-rivalta-metting:active {
+   background-color: white;
+   border-color: #71974A;
+   color: #71974A;
+}
+
+
+
+.text-container-1 {
+  position: relative;
+  float: center;
+  top: 30%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+.text-1-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-2-container-1 {
+  color: #3A5D80;
+  text-align: right;
+  margin-right: 15%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-3-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-4-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-5-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-6-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-7-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+
+
+
+
+
 .text-container-2 {
   position: relative;
-  float: right;
-  top: 30%;
-  margin-right: 10px;
-  
+  float: center;
+  top: 40%;
+  z-index: 1;
 }
 
 .text-1-container-2 {
   color: #727272;
   text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
 .text-2-container-2 {
   color: #727272;
   text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
 .text-3-container-2 {
   color: #3A5D80;
   text-align: left;
-  margin-right: 30px;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
 .text-4-container-2 {
   color: #727272;
   text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
 
@@ -395,31 +642,188 @@
 .text-1-container-3 {
   color: #727272;
   text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
 .text-2-container-3 {
   color: #727272;
   text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
 .text-3-container-3 {
   color: #3A5D80;
   text-align: left;
-  margin-right: 30px;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
 .text-4-container-3 {
   color: #727272;
   text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
 .text-5-container-3 {
   color: #727272;
   text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
 .text-6-container-3 {
   color: #727272;
   text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
 }
 
+
+
+
+
+.text-1-container-4 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-4 {
+  color: #3A5D80;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-4 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-4 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+
+.text-container-6 {
+  position: relative;
+  float: center;
+  top: 55%;
+  z-index: 1;
+}
+
+
+.text-1-container-6 {
+  color: white;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-6 {
+  color: white;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-6 {
+  color: white;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-6 {
+  color: black;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+
+
+.livenza-rivalta-container {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  margin-right: 60px;
+}
+
+#livenza-container {
+  height: 60px;
+  width: 50px;
+}
+
+.livenza-img {
+  cursor:pointer;
+  margin-right: 20px;
+}
+
+
+#rivalta-container {
+  height: 60px;
+  width: 50px;
+  margin-top: 40px;
+}
+
+.rivalta-img {
+  cursor:pointer;
+  margin-right: 20px;
+}
+
+
+
+
+.back-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-right: 60px;
+}
+
+#back {
+  height: 60px;
+  width: 50px;
+}
+
+.back-img {
+  cursor:pointer;
+  margin-right: 20px;
+}
+
+
+
+#map-google {
+  height: 100%;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+  background-color: gray;
+ }

@@ -12,7 +12,8 @@ left:0;
 display:none;
 position:fixed;
 background-color:#313131;
-overflow:auto
+overflow:auto;
+z-index: 2;
 }
 img#close {
 position:absolute;
@@ -26,7 +27,8 @@ position:absolute;
 left:50%;
 top:17%;
 margin-left:-202px;
-font-family:'Raleway',sans-serif
+font-family:'Raleway',sans-serif;
+z-index: 2;
 }
 form {
 max-width:300px;
@@ -35,7 +37,8 @@ padding:10px 50px;
 border:2px solid gray;
 border-radius:10px;
 font-family:raleway;
-background-color:#fff
+background-color:#fff;
+z-index: 2;
 }
 p {
 margin-top:30px
