@@ -233,7 +233,7 @@
 
 .menu-container {
   float:left;
-  width: 100px;
+  width: 80px;
 }
 
 #hamburguer-menu-container {
@@ -444,6 +444,10 @@
 
 
 .button-metting-livenza-container {
+  position: absolute;
+  left: : 0;
+  top: 30%;
+  margin-left: 7%;
   visibility: visible;
 }
 
@@ -461,10 +465,7 @@
   border-bottom-width: 2px;
   border-color: #38C1CA;
   color: #38C1CA;
-  visibility: hidden;
-  opacity: 0;
-  transition-property: background-color, opacity;
-  transition-duration: 1s, 1s;
+  transition: background-color 1s;
 }
 
 #button-livenza-metting:hover {
@@ -514,6 +515,31 @@
    background-color: white;
    border-color: #71974A;
    color: #71974A;
+}
+
+.la_vista_logo_rivalta {
+   position: absolute;
+  left: : 0;
+  top: 2%;
+  margin-left: 12%;
+  visibility: visible;
+}
+
+.rivalta-logo {
+  position: relative;
+  float: right;
+  top: 5%;
+  margin-right: 12%
+  visibility: visible;
+}
+
+.livenza-logo {
+  position: relative;
+  float: right;
+  right: 5%;
+  top: 5%;
+  margin-right: 12%
+  visibility: visible;
 }
 
 
@@ -600,6 +626,7 @@
   position: relative;
   float: center;
   top: 40%;
+  margin-left: 80px;
   z-index: 1;
 }
 
@@ -726,6 +753,55 @@
 }
 
 
+
+
+.text-container-5 {
+  position: relative;
+  float: center;
+  top: 55%;
+  z-index: 1;
+}
+
+
+.text-1-container-5 {
+  color: #1A4A65;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-5 {
+  color: #1A4A65;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-5 {
+  color: #1A4A65;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-5 {
+  color: #3EA0A3;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+
+
+
+
 .text-container-6 {
   position: relative;
   float: center;
@@ -779,25 +855,36 @@
 }
 
 #livenza-container {
-  height: 60px;
-  width: 50px;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  background-image: url(../images/rombo-2.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .livenza-img {
   cursor:pointer;
-  margin-right: 20px;
+  margin-left: 45px;
+  margin-top: 35%;
 }
 
-
 #rivalta-container {
-  height: 60px;
-  width: 50px;
   margin-top: 40px;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  background-image: url(../images/rombo-2.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .rivalta-img {
   cursor:pointer;
-  margin-right: 20px;
+  margin-left: 45px;
+  margin-top: 30%;
 }
 
 
@@ -805,19 +892,26 @@
 
 .back-container {
   position: absolute;
+  width: 150px;
+  height: 150px;
   right: 0;
-  top: 50%;
+  top: 40%;
   margin-right: 60px;
+  background-image: url(../images/back-bg.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 #back {
   height: 60px;
   width: 50px;
+  margin-left: 50px;
+  margin-top: 50%;
 }
 
 .back-img {
   cursor:pointer;
-  margin-right: 20px;
 }
 
 
@@ -827,3 +921,18 @@
   width: 100%;  /* The width is the width of the web page */
   background-color: gray;
  }
+
+
+
+ .rombos-container {
+  
+  float: center;
+  height: 100%;
+  padding: 30%;
+  margin: 30%;
+  background-image: url(../images/life_style_bg_2.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+
