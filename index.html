@@ -68,7 +68,13 @@
       ------------------------------------------->
     <div class="container-1" id="container-one">
 
-      <canvas class="subcontainer-1" id="canvas-subcontainer-1">
+      <canvas class="subcontainer-1" id="canvas-1-subcontainer-1">
+      </canvas>
+
+      <canvas class="subcontainer-1" id="canvas-2-subcontainer-1">
+      </canvas>
+
+      <canvas class="subcontainer-1-text" id="canvas-subcontainer-1-text">
       </canvas>
 
       <div class="logo2" id="la-vista-logo">
@@ -79,7 +85,7 @@
       <div class="text-container-1" id="text-container-one">
           
             <h1 id="text-1-container-1">
-                
+                DE
             </h1>
          
             <h1 id="text-2-container-1">
@@ -124,6 +130,12 @@
       --------------CONTAINER 2------------------
       ------------------------------------------->
     <div class="container-2" id="container-two">
+      <canvas class="subcontainer-2" id="canvas-1-subcontainer-2">
+      </canvas>
+
+      <canvas class="subcontainer-2" id="canvas-2-subcontainer-2">
+      </canvas>
+
       <div class="split-right-container-2" >
         
         <div class="livenza-rivalta-container">
@@ -169,6 +181,12 @@
       --------------CONTAINER 3------------------
       ------------------------------------------->
     <div class="container-3" id="container-three">
+      <canvas class="subcontainer-3" id="canvas-1-subcontainer-3">
+      </canvas>
+
+       <canvas class="subcontainer-3" id="canvas-2-subcontainer-3">
+      </canvas>
+
       <div class="split-right-container-3" >
         
         <div class="rombos-container">
@@ -213,6 +231,12 @@
       --------------CONTAINER 4------------------
       ------------------------------------------->
     <div class="container-4" id="container-four">
+      <canvas class="subcontainer-4" id="canvas-1-subcontainer-4">
+      </canvas>
+
+      <canvas class="subcontainer-4" id="canvas-2-subcontainer-4">
+      </canvas>
+
       <div class="split-right-container-4" >
           <div id="map-google"></div>
       </div>
@@ -245,6 +269,12 @@
       --------------CONTAINER 5------------------
       ------------------------------------------->
     <div class="container-5" id="container-five">
+      <canvas class="subcontainer-5" id="canvas-1-subcontainer-5">
+      </canvas>
+
+      <canvas class="subcontainer-5" id="canvas-2-subcontainer-5">
+      </canvas>
+
       <div class="split-right-container-5" >
          <div class="livenza-logo" id="livenza_logo_id">
           <img class="livenza-rivalta-logo" src="images/livenza_logo_blue.png" alt="logo">
@@ -291,6 +321,12 @@
       --------------CONTAINER 6------------------
       ------------------------------------------->
     <div class="container-6" id="container-six">
+      <canvas class="subcontainer-6" id="canvas-1-subcontainer-6">
+      </canvas>
+
+      <canvas class="subcontainer-6" id="canvas-2-subcontainer-6">
+      </canvas>
+
       <div class="split-right-container-6" >
         <div class="back-container">
           <div id="back">
@@ -366,8 +402,12 @@
     <script type="text/javascript">
 
       var showSplash = true;
+      var showLinesAnimation = true;
       var showAnimation = true;
       var showAnimationHome = true;
+      var showAnimationMoreThanHome = true;
+      var showAnimatioLivienza = true;
+      var showAnimatioRivalta = true;
       var homeSelected = false;
       var moreThanHomeMenuSelected = false;
       var liveStyleMenuSelected = false;
@@ -464,8 +504,7 @@
       });
 
       drawFirstAnimation();
-
-
+      drawLinesAnimation("canvas-2-subcontainer-1");
     
       setTimeout( function ( ) { 
         if (!dialogShown) {
@@ -561,7 +600,9 @@
 
       async function drawFirstAnimation() {
         // Obtener el elemento del DOM
-        var canvas = document.getElementById("canvas-subcontainer-1");
+        var canvas = document.getElementById("canvas-1-subcontainer-1");
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
         var context = canvas.getContext("2d");   
         context.clearRect(0, 0, canvas.width, canvas.height);
         // Estilo de dibujo
@@ -571,7 +612,7 @@
         var fade1 = false;
         var fade2 = false;
         var i = 1;
-        console.log(showAnimation);
+        console.log("drawFirstAnimation: "+showAnimation);
         while(showAnimation) {
           context.clearRect(0, 0, canvas.width, canvas.height);
           
@@ -601,13 +642,11 @@
           // Comenzamos la ruta de dibujo, o path
           context.beginPath();
           // Nos movemos a la "punta" superior
-          context.moveTo(90, 70);
+          context.moveTo(window.innerWidth/4, window.innerHeight/2);
           // Dibujamos la línea que va hacia la derecha
-          context.lineTo(155, 155);
+          context.lineTo(window.innerWidth/2, window.innerHeight);
           // Ahora la que va hacia abajo
-          context.lineTo(70, 225);
-          // Ahora la que va hacia la izquierda
-          context.lineTo(5, 175);
+          context.lineTo(0, window.innerHeight);
           // Y dejamos que la última línea la dibuje JS
           context.closePath();
           // Lo rellenamos
@@ -618,13 +657,11 @@
           // Comenzamos la ruta de dibujo, o path
           context.beginPath();
           // Nos movemos a la "punta" superior
-          context.moveTo(240, -30);
+          context.moveTo(window.innerWidth/2, 0);
           // Dibujamos la línea que va hacia la derecha
-          context.lineTo(305, 0);
+          context.lineTo(window.innerWidth, 0);
           // Ahora la que va hacia abajo
-          context.lineTo(220, 70);
-          // Ahora la que va hacia la izquierda
-          context.lineTo(155, 0);
+          context.lineTo(window.innerWidth - window.innerWidth/4, window.innerHeight/2);
           // Y dejamos que la última línea la dibuje JS
           context.closePath();
           // Lo rellenamos
@@ -639,7 +676,7 @@
 
       async function drawHomeAnimation() {
         // Obtener el elemento del DOM
-        var canvas = document.getElementById("canvas-subcontainer-1");
+        var canvas = document.getElementById("canvas-1-subcontainer-1");
         var context = canvas.getContext("2d");   
         context.clearRect(0, 0, canvas.width, canvas.height);
         // Estilo de dibujo
@@ -651,7 +688,7 @@
         var color = 1987365889;
         var fade = false;
         var i = 1;
-        console.log(showAnimationHome);
+        console.log("showAnimationHome"+showAnimationHome);
         while(showAnimationHome) {
           context.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -664,50 +701,118 @@
           } else {
             color++;
           }
-
+          console.log("showAnimationHome");
           // Color de relleno
           context.fillStyle = "#" + decimalToHexString(color);
           // Comenzamos la ruta de dibujo, o path
           context.beginPath();
           // Nos movemos a la "punta" superior
-          context.moveTo(240, -30);
+          context.moveTo(window.innerWidth - window.innerWidth/4, window.innerHeight/2);
           // Dibujamos la línea que va hacia la derecha
-          context.lineTo(305, 0);
+          context.lineTo(window.innerWidth, window.innerHeight);
           // Ahora la que va hacia abajo
-          context.lineTo(220, 70);
-          // Ahora la que va hacia la izquierda
-          context.lineTo(155, 0);
+          context.lineTo(window.innerWidth/2, window.innerHeight);
           // Y dejamos que la última línea la dibuje JS
           context.closePath();
           // Lo rellenamos
           context.fill();
 
           if (showWordAnim) {
-            var line1 = ["D", "E"];
-            var line2 = ["L", "A", " ", "V", "I", "S", "T", "A"];
-            var line3 = ["N", "A", "C", "E", ".", ".", "."];
-            var line4 = ["E", "L", " ", "M", "E", "J", "O", "R"];
-            var line5 = ["L", "U", "G", "A", "R"];
-            var line6 = ["P", "A", "R", "A"];
-            var line7 = ["V", "I", "V", "I", "R"];
+            var line = ["D", "E", "L", "A", " ", "V", "I", "S", "T", "A", 
+            "N", "A", "C", "E", ".", ".", ".",
+            "E", "L", " ", "M", "E", "J", "O", "R",
+            "L", "U", "G", "A", "R",
+            "P", "A", "R", "A",
+            "V", "I", "V", "I", "R"];
 
-            var randLine1 = Math.floor(Math.random()*line1.length);
-            console.log(randLine1+"--" + auxLine1);
-            console.log(auxLine1.includes(randLine1+""));
-            if (!auxLine1.includes(randLine1+"")) {
-              var item = line1[randLine1];
-              var text = text1;
-              console.log(text);
-              text.replaceAt(randLine1, item);
-              document.getElementById("text-1-container-1").innerHTML = text;
+            var index = Math.round((Math.random() * line));
+
+            switch(index) {
+              case 0:
+                
+              break;
+              case 1:
+              break;
+              case 2:
+              break;
+              case 3:
+              break;
+              case 4:
+              break;
+              case 5: 
+              break;
+              case 6:
+              break;
+              case 7:
+              break;
+              case 8:
+              break;
+              case 9:
+              break;
+              case 10:
+              break;
+              case 11:
+              break;
+              case 12:
+              break;
+              case 13:
+              break;
+              case 14:
+              break;
+              case 15:
+              break;
+              case 16:
+              break;
+              case 17:
+              break;
+              case 18:
+              break;
+              case 19:
+              break;
+              case 20:
+              break;
+              case 21:
+              break;
+              case 22:
+              break;
+              case 23:
+              break;
+              case 24:
+              break;
+              case 25:
+              break;
+              case 26:
+              break;
+              case 27:
+              break;
+              case 28:
+              break;
+              case 29:
+              break;
+              case 30:
+              break;
+              case 31:
+              break;
+              case 32:
+              break;
+              case 33:
+              break;
+              case 34:
+              break;
+              case 35:
+              break;
+              case 36:
+              break;
+              case 37:
+              break;
+              case 38:
+              break;
+
             }
 
-            auxLine1 = auxLine1 + randLine1;
-
-            if (auxLine1.length == line1.length) {
+            if (true) {
               showWordAnim = false;
             }
-            
 
           }
 
@@ -716,6 +821,332 @@
           i++;
         }
       }
+
+    async function drawMoreThanHomeAnimation() {
+      // Obtener el elemento del DOM
+        var canvas = document.getElementById("canvas-1-subcontainer-2");
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var context = canvas.getContext("2d");   
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        // Estilo de dibujo
+
+        var auxLine1 = "";
+        var text1 = "  ";
+
+        var showWordAnim = true;
+        var color = 1987365889;
+        var fade = false;
+        var i = 1;
+        console.log("showAnimationMoreThanHome: "+showAnimationMoreThanHome);
+        while(showAnimationMoreThanHome) {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+
+          if (i%50==0) {
+            fade = !fade;
+          } 
+
+          if (fade) {
+            color--;
+          } else {
+            color++;
+          }
+          console.log("showAnimationMoreThanHome");
+          // Color de relleno
+          context.fillStyle = "#" + decimalToHexString(color);
+          context.beginPath();
+          context.moveTo(window.innerWidth/2, 0);
+          context.lineTo(window.innerWidth, 0);
+          context.lineTo(window.innerWidth - window.innerWidth/4, window.innerHeight/2);
+          context.closePath();
+          context.fill();
+
+          await sleep(100);
+
+          i++;
+        }
+    }
+
+    async function drawLivienzaAnimation() {
+      // Obtener el elemento del DOM
+        var canvas = document.getElementById("canvas-1-subcontainer-5");
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var context = canvas.getContext("2d");   
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        // Estilo de dibujo
+
+        var auxLine1 = "";
+        var text1 = "  ";
+
+        var showWordAnim = true;
+        var color = 1987365889;
+        var fade = false;
+        var i = 1;
+        console.log("showAnimatioLivienza: "+showAnimatioLivienza);
+        while(showAnimatioLivienza) {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+
+          if (i%50==0) {
+            fade = !fade;
+          } 
+
+          if (fade) {
+            color--;
+          } else {
+            color++;
+          }
+          console.log("showAnimatioLivienza");
+          // Color de relleno
+          context.fillStyle = "#" + decimalToHexString(color);
+          // Comenzamos la ruta de dibujo, o path
+          context.beginPath();
+          
+
+          // Nos movemos a la "punta" superior
+          context.moveTo(window.innerWidth/2, 0);
+          // Dibujamos la línea que va hacia la derecha
+          context.lineTo(window.innerWidth - window.innerWidth/4, window.innerHeight/2);
+          // Ahora la que va hacia abajo
+          context.lineTo(window.innerWidth/2, window.innerHeight);
+          // Ahora la que va hacia la izquierda
+          context.lineTo(window.innerWidth/4, window.innerHeight/2);
+          context.closePath();
+          // Lo rellenamos
+          context.fill();
+
+          await sleep(100);
+
+          i++;
+        }
+    }
+
+    async function drawRivaltaAnimation() {
+      // Obtener el elemento del DOM
+        var canvas = document.getElementById("canvas-1-subcontainer-6");
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var context = canvas.getContext("2d");   
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        // Estilo de dibujo
+
+        var showWordAnim = true;
+        var color = 1987365889;
+        var fade = false;
+        var i = 1;
+        console.log("showAnimatioRivalta: "+showAnimatioRivalta);
+        while(showAnimatioRivalta) {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+
+          if (i%50==0) {
+            fade = !fade;
+          } 
+
+          if (fade) {
+            color--;
+          } else {
+            color++;
+          }
+          console.log("showAnimatioRivalta");
+          // Color de relleno
+          context.fillStyle = "#" + decimalToHexString(color);
+          // Comenzamos la ruta de dibujo, o path
+          context.beginPath();
+          // Nos movemos a la "punta" superior
+          context.moveTo(window.innerWidth, 0);
+          // Dibujamos la línea que va hacia la derecha
+          context.lineTo(window.innerWidth, window.innerHeight);
+          // Ahora la que va hacia abajo
+          context.lineTo(window.innerWidth - window.innerWidth/4, window.innerHeight/2);
+          context.closePath();
+          // Lo rellenamos
+          context.fill();
+
+          await sleep(100);
+
+          i++;
+        }
+    }
+
+        async function drawLinesAnimation(canvasSubcontainer) {
+      // Obtener el elemento del DOM
+        var canvas = document.getElementById(canvasSubcontainer);
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var context = canvas.getContext("2d");   
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        // Estilo de dibujo
+
+        var line1 = 0;
+        var line2 = 0;
+        var line3 = 0;
+        var line4 = 0;
+        var line5 = 0;
+        var line6 = 0;
+        var line7 = 0;
+        var line8 = 0;
+        var line9 = 0;
+        var line10 = 0;
+        var lineWidth = 2;
+
+        var point1 = [];
+        var point2 = [];
+        var offset = [];
+
+        for (var i = 10 - 1; i >= 0; i--) {
+          point1.push((-1) * Math.round((Math.random() * window.innerWidth/4) + 1));
+        }
+
+        for (var i = 9 - 1; i >= 0; i--) {
+          offset.push(Math.round((Math.random() * window.innerWidth) + 1));
+        }
+
+        console.log("window.width: "+window.innerWidth);
+        console.log("showLinesAnimation: "+point1);
+        console.log("showLinesAnimation: "+point2);
+        console.log("showLinesAnimation: "+offset);
+        console.log("showLinesAnimation: "+showLinesAnimation);
+        while(showLinesAnimation) {
+
+
+          context.clearRect(0, 0, canvas.width, canvas.height);
+           // Comenzamos la ruta de dibujo, o path
+          context.beginPath();
+          
+          var p1l1 = point1[0] + offset[0] + line1;
+          var p1l2 = point1[1] + offset[0] +  line1;
+          if (p1l1 == window.innerWidth) {
+            line1 = 0;
+            offset[0] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p1l1, point1[0] + line1);
+          context.lineTo(p1l2, point1[1] + line1);
+           context.lineWidth = lineWidth;
+          context.strokeStyle = '#ffffff';
+          context.stroke();
+
+          var p2l1 = point1[2] + offset[1] + line2;
+          var p2l2 = point1[3] + offset[1] +  line2;
+          if (p2l1 == window.innerWidth) {
+            line2 = 0;
+            offset[1] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p2l1, point1[2] + line2);
+          context.lineTo(p2l2, point1[3] + line2);
+          context.lineWidth = lineWidth;
+          context.strokeStyle = '#ffffff';
+          context.stroke();
+
+          var p3l1 = point1[4] + offset[2] + line3;
+          var p3l2 = point1[5] + offset[2] + line3;
+          if (p3l1 == window.innerWidth) {
+            line3 = 0;
+            offset[2] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p3l1, point1[4] + line3);
+          context.lineTo(p3l2, point1[5] + line3);
+           context.lineWidth = lineWidth;
+          context.strokeStyle = '#ffffff';
+          context.stroke();
+
+          var p4l1 = point1[6] + offset[3] + line4;
+          var p4l2 = point1[7] + offset[3] + line4;
+          if (p4l1 == window.innerWidth) {
+            line4 = 0;
+            offset[3] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p4l1, point1[6] + line4);
+          context.lineTo(p4l2, point1[7] + line4); 
+          context.lineWidth = lineWidth;
+          context.strokeStyle = '#ffffff';
+          context.stroke();
+
+          var p5l1 = point1[8] + offset[4] + line5;
+          var p5l2 = point1[9] + offset[4] +  line5;
+          if (p5l1 == window.innerWidth) {
+            line5 = 0;
+            offset[4] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p5l1, point1[8] + line5);
+          context.lineTo(p5l2, point1[9] + line5);
+          context.lineWidth = lineWidth;
+          context.strokeStyle = '#ffffff';
+          context.stroke();
+
+          var p6l1 = point1[0] + offset[5] + line6;
+          var p6l2 = point1[1] + offset[5] +  line6;
+          if (p6l1 == window.innerWidth) {
+            line6 = 0;
+            offset[5] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p6l2, point1[0] + window.innerHeight - line6);
+          context.lineTo(p6l1, point1[1] + window.innerHeight - line6);
+          context.lineWidth = lineWidth;
+          context.strokeStyle = '#ffffff';
+          context.stroke();
+
+          var p7l1 = point1[2] + offset[6] + line7;
+          var p7l2 = point1[3] + offset[6] +  line7;
+          if (p7l1 == window.innerWidth) {
+            line7 = 0;
+            offset[6] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p7l2, point1[2] + window.innerHeight - line7);
+          context.lineTo(p7l1, point1[3] + window.innerHeight - line7);
+          context.lineWidth = lineWidth;
+          context.strokeStyle = '#ffffff';
+          context.stroke();
+
+          var p8l1 = point1[4] + offset[7] + line8;
+          var p8l2 = point1[5] + offset[7] +  line8;
+          if (p8l1 == window.innerWidth) {
+            line8 = 0;
+            offset[7] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p8l2, point1[4] + window.innerHeight - line8);
+          context.lineTo(p8l1, point1[5] + window.innerHeight - line8);
+          context.lineWidth = lineWidth;
+          context.strokeStyle = '#ffffff';
+          context.stroke();
+
+          var p9l1 = point1[6] + offset[8] + line9;
+          var p9l2 = point1[7] + offset[8] +  line9;
+          if (p9l1 == window.innerWidth) {
+            line9 = 0;
+            offset[8] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p9l2, point1[6] + window.innerHeight - line9);
+          context.lineTo(p9l1, point1[7] + window.innerHeight - line9);
+          context.lineWidth = lineWidth;
+          context.strokeStyle
+
+          var p10l1 = point1[8] + offset[9] + line10;
+          var p10l2 = point1[9] + offset[9] +  line10;
+          if (p10l1 == window.innerWidth) {
+            line10 = 0;
+            offset[9] = Math.round((Math.random() * window.innerWidth) + 1);
+          }
+          context.moveTo(p10l2, point1[8] + window.innerHeight - line10);
+          context.lineTo(p10l1, point1[9] + window.innerHeight - line10);
+          context.lineWidth = lineWidth;
+          context.strokeStyle
+         
+
+         
+          await sleep(10);
+
+          line1++;
+          line2++;
+          line3++;
+          line4++;
+          line5++;
+          line6++;
+          line7++;
+          line8++;
+          line9++;
+
+        }
+    }
 
       String.prototype.replaceAt=function(index, replacement) {
           return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
@@ -787,13 +1218,23 @@
       }
 
       function openHome() {
-        showAnimationHome = true;
+        showLinesAnimation = false;
+        showAnimationHome = false;
+        showAnimationMoreThanHome = false;
+        showAnimatioLivienza = false;
+        showAnimatioRivalta = false;
         homeSelected = true;
         moreThanHomeMenuSelected = false;
         liveStyleMenuSelected = false;
         mapMenuSelected = false;
 
-        drawHomeAnimation();
+        setTimeout(function() {
+            showAnimationHome = true;
+            showLinesAnimation = true;
+            drawHomeAnimation();
+            drawLinesAnimation("canvas-2-subcontainer-1");
+        }, 200);
+        
 
         $("#hamburguer-menu").attr("src","images/hamburguer-menu-gray.png");
         $("#more-than-home-menu").attr("src","images/more-than-home-gray.png");
@@ -835,11 +1276,22 @@
       }
 
       function openMoreThanHome() {
+        showLinesAnimation = false;
         showAnimationHome = false;
+        showAnimationMoreThanHome = false;
+        showAnimatioLivienza = false;
+        showAnimatioRivalta = false;
         homeSelected = false;
         moreThanHomeMenuSelected = true;
         liveStyleMenuSelected = false;
         mapMenuSelected = false;
+
+        setTimeout(function() {
+            showAnimationMoreThanHome = true;
+            showLinesAnimation = true;
+            drawMoreThanHomeAnimation();
+            drawLinesAnimation("canvas-2-subcontainer-2");
+        }, 200);
 
         $("#hamburguer-menu").attr("src","images/home-icon.png");
         $("#more-than-home-menu").attr("src","images/more-than-home-gray.png");
@@ -883,11 +1335,17 @@
       }
 
       function openLifiStyle() {
+        showLinesAnimation = false;
         showAnimationHome = false;
         homeSelected = false;
         moreThanHomeMenuSelected = false;
         liveStyleMenuSelected = true;
         mapMenuSelected = false;
+
+        setTimeout(function() {
+            showLinesAnimation = true;
+            drawLinesAnimation("canvas-2-subcontainer-3");
+        }, 200);
 
         $("#hamburguer-menu").attr("src","images/home-icon.png");
         $("#more-than-home-menu").attr("src","images/more-than-home-gray.png");
@@ -980,7 +1438,20 @@
       }
 
       function openLivienza() {
+        showLinesAnimation = false;
         showAnimationHome = false;
+        showAnimationHome = false;
+        showAnimationMoreThanHome = false;
+        showAnimatioLivienza = false;
+        showAnimatioRivalta = false;
+
+        setTimeout(function() {
+            showAnimatioLivienza = true;
+            showLinesAnimation = true;
+            drawLivienzaAnimation();
+            drawLinesAnimation("canvas-2-subcontainer-5");
+        }, 200);
+
         $("#hamburguer-menu").attr("src","images/home-icon-blue.png");
         $("#more-than-home-menu").attr("src","images/more-than-home-black.png");
         $("#live-style-menu").attr("src","images/life-style-blue.png");
@@ -1005,7 +1476,20 @@
       }
 
       function openRivalta() {
+        showLinesAnimation = false;
         showAnimationHome = false;
+        showAnimationHome = false;
+        showAnimationMoreThanHome = false;
+        showAnimatioLivienza = false;
+        showAnimatioRivalta = false;
+
+        setTimeout(function() {
+            showAnimatioRivalta = true;
+            showLinesAnimation = true;
+            drawRivaltaAnimation();
+            drawLinesAnimation("canvas-2-subcontainer-6");
+        }, 200);
+
         $("#hamburguer-menu").attr("src","images/home-icon-black.png");
         $("#more-than-home-menu").attr("src","images/more-than-home-black.png");
         $("#live-style-menu").attr("src","images/life-style-black.png");

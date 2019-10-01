@@ -23,8 +23,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .container-2 {
@@ -43,8 +41,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
 }
 
 /* Control the left side */
@@ -85,6 +81,12 @@
   transition: opacity 1s;
 }
 
+.subcontainer-3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 /* Control the left side */
 .split-left-container-3 {
   z-index: 1;
@@ -123,6 +125,12 @@
   transition: opacity 1s;
 }
 
+.subcontainer-4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 /* Control the left side */
 .split-left-container-4 {
   z-index: 1;
@@ -153,6 +161,12 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 1s;
+}
+
+.subcontainer-5 {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 
@@ -195,6 +209,12 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 1s;
+}
+
+.subcontainer-6 {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 
@@ -610,7 +630,6 @@
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
   line-height:  2.8vw;
-  white-space: pre-wrap;
 }
 
 #text-2-container-1 {
@@ -620,7 +639,6 @@
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
   line-height:  2.8vw;
-  white-space: pre-wrap;
 }
 
 #text-3-container-1 {
@@ -630,7 +648,6 @@
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
   line-height:  2.8vw;
-  white-space: pre-wrap;
 }
 
 #text-4-container-1 {
@@ -640,7 +657,6 @@
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
   line-height:  2.8vw;
-  white-space: pre-wrap;
 }
 
 #text-5-container-1 {
@@ -650,7 +666,6 @@
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
   line-height:  2.8vw;
-  white-space: pre-wrap;
 }
 
 #text-6-container-1 {
@@ -660,7 +675,6 @@
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
   line-height:  2.8vw;
-  white-space: pre-wrap;
 }
 
 #text-7-container-1 {
@@ -670,11 +684,7 @@
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
   line-height:  2.8vw;
-  white-space: pre-wrap;
 }
-
-
-
 
 
 
