@@ -78,31 +78,31 @@
 
       <div class="text-container-1" id="text-container-one">
           
-            <h1 class="text-1-container-1">
-              DE
+            <h1 id="text-1-container-1">
+                
             </h1>
          
-            <h1 class="text-2-container-1">
+            <h1 id="text-2-container-1">
               LA VISTA
             </h1>
           
-            <h1 class="text-3-container-1">
+            <h1 id="text-3-container-1">
                NACE...
             </h1>
           
-            <h1 class="text-4-container-1">
+            <h1 id="text-4-container-1">
                EL MEJOR
             </h1>
 
-            <h1 class="text-5-container-1">
+            <h1 id="text-5-container-1">
                LUGAR
             </h1>
 
-            <h1 class="text-6-container-1">
+            <h1 id="text-6-container-1">
                PARA
             </h1>
 
-            <h1 class="text-7-container-1">
+            <h1 id="text-7-container-1">
                VIVIR
             </h1>
          
@@ -364,6 +364,15 @@
     
 
     <script type="text/javascript">
+
+      var showSplash = true;
+      var showAnimation = true;
+      var showAnimationHome = true;
+      var homeSelected = false;
+      var moreThanHomeMenuSelected = false;
+      var liveStyleMenuSelected = false;
+      var mapMenuSelected = false;
+      var dialogShown = false;
       
       document.getElementById("hamburguer-menu").addEventListener("click", showCanvas);
       document.getElementById("main-logo").addEventListener("click", showCanvas);
@@ -374,15 +383,6 @@
       document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
       document.getElementById("livenza-back-icon").addEventListener("click", openMoreThanHome);
       document.getElementById("rivalta-back-icon").addEventListener("click", openMoreThanHome);
-
-      drawFirstAnimation();
-
-
-      var homeSelected = false;
-      var moreThanHomeMenuSelected = false;
-      var liveStyleMenuSelected = false;
-      var mapMenuSelected = false;
-
 
       document.getElementById("more-than-home-menu").addEventListener("mouseover", function() {
         if (homeSelected) {
@@ -463,10 +463,10 @@
         }
       });
 
+      drawFirstAnimation();
 
 
-      var dialogShown = false;
-
+    
       setTimeout( function ( ) { 
         if (!dialogShown) {
           div_show();
@@ -505,7 +505,6 @@
            window.location.replace(destination);
         });*/
   
-      showSplash = true;
 
       function showCanvas() {
         if (showSplash) {
@@ -523,7 +522,9 @@
           drawPlecas(0,0,canvas.width,20); //Drawing rectangle on initial load
           //alert("canvas visible")
           showSplash = false;
+          showAnimation = false;
         } else {
+          showAnimation = false;
           openHome();
         }
       }
@@ -561,42 +562,164 @@
       async function drawFirstAnimation() {
         // Obtener el elemento del DOM
         var canvas = document.getElementById("canvas-subcontainer-1");
-        var contexto = canvas.getContext("2d");   
+        var context = canvas.getContext("2d");   
+        context.clearRect(0, 0, canvas.width, canvas.height);
         // Estilo de dibujo
 
-        var color = 1987365904;
-        var fade = false;
-        for (i = 0; i < 1000000000000; i++) {
+        var color1 = 1987365904;
+        var color2 = 1987365889;
+        var fade1 = false;
+        var fade2 = false;
+        var i = 1;
+        console.log(showAnimation);
+        while(showAnimation) {
+          context.clearRect(0, 0, canvas.width, canvas.height);
           
-          if (i >= 55 && i <110) {
-            color--;
-          } else if (i>= 0 && i<55){
-            color++;
-            
+          if (i%40==0) {
+            fade1 = !fade1;
+          } 
+
+          if (i%20==0) {
+            fade2 = !fade2;
+          } 
+
+          if (fade1) {
+            color1--;
+          } else {
+            color1++;
           }
+
+          if (fade2) {
+            color2--;
+          } else {
+            color2++;
+          }
+
+
           // Color de relleno
-          contexto.fillStyle = decimalToHexString(color);
+          context.fillStyle = "#" + decimalToHexString(color1);
           // Comenzamos la ruta de dibujo, o path
-          contexto.beginPath();
+          context.beginPath();
           // Nos movemos a la "punta" superior
-          contexto.moveTo(90, 70);
+          context.moveTo(90, 70);
           // Dibujamos la línea que va hacia la derecha
-          contexto.lineTo(155, 155);
+          context.lineTo(155, 155);
           // Ahora la que va hacia abajo
-          contexto.lineTo(70, 225);
+          context.lineTo(70, 225);
           // Ahora la que va hacia la izquierda
-          contexto.lineTo(5, 175);
+          context.lineTo(5, 175);
           // Y dejamos que la última línea la dibuje JS
-          contexto.closePath();
+          context.closePath();
           // Lo rellenamos
-          contexto.fill();
-          await sleep(200);
+          context.fill();
+
+          // Color de relleno
+          context.fillStyle = "#" + decimalToHexString(color2);
+          // Comenzamos la ruta de dibujo, o path
+          context.beginPath();
+          // Nos movemos a la "punta" superior
+          context.moveTo(240, -30);
+          // Dibujamos la línea que va hacia la derecha
+          context.lineTo(305, 0);
+          // Ahora la que va hacia abajo
+          context.lineTo(220, 70);
+          // Ahora la que va hacia la izquierda
+          context.lineTo(155, 0);
+          // Y dejamos que la última línea la dibuje JS
+          context.closePath();
+          // Lo rellenamos
+          context.fill();
+          await sleep(100);
+
+          i++;
         }
        
         
       }
-        
 
+      async function drawHomeAnimation() {
+        // Obtener el elemento del DOM
+        var canvas = document.getElementById("canvas-subcontainer-1");
+        var context = canvas.getContext("2d");   
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        // Estilo de dibujo
+
+        var auxLine1 = "";
+        var text1 = "  ";
+
+        var showWordAnim = true;
+        var color = 1987365889;
+        var fade = false;
+        var i = 1;
+        console.log(showAnimationHome);
+        while(showAnimationHome) {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+
+          if (i%20==0) {
+            fade = !fade;
+          } 
+
+          if (fade) {
+            color--;
+          } else {
+            color++;
+          }
+
+          // Color de relleno
+          context.fillStyle = "#" + decimalToHexString(color);
+          // Comenzamos la ruta de dibujo, o path
+          context.beginPath();
+          // Nos movemos a la "punta" superior
+          context.moveTo(240, -30);
+          // Dibujamos la línea que va hacia la derecha
+          context.lineTo(305, 0);
+          // Ahora la que va hacia abajo
+          context.lineTo(220, 70);
+          // Ahora la que va hacia la izquierda
+          context.lineTo(155, 0);
+          // Y dejamos que la última línea la dibuje JS
+          context.closePath();
+          // Lo rellenamos
+          context.fill();
+
+          if (showWordAnim) {
+            var line1 = ["D", "E"];
+            var line2 = ["L", "A", " ", "V", "I", "S", "T", "A"];
+            var line3 = ["N", "A", "C", "E", ".", ".", "."];
+            var line4 = ["E", "L", " ", "M", "E", "J", "O", "R"];
+            var line5 = ["L", "U", "G", "A", "R"];
+            var line6 = ["P", "A", "R", "A"];
+            var line7 = ["V", "I", "V", "I", "R"];
+
+            var randLine1 = Math.floor(Math.random()*line1.length);
+            console.log(randLine1+"--" + auxLine1);
+            console.log(auxLine1.includes(randLine1+""));
+            if (!auxLine1.includes(randLine1+"")) {
+              var item = line1[randLine1];
+              var text = text1;
+              console.log(text);
+              text.replaceAt(randLine1, item);
+              document.getElementById("text-1-container-1").innerHTML = text;
+            }
+
+            auxLine1 = auxLine1 + randLine1;
+
+            if (auxLine1.length == line1.length) {
+              showWordAnim = false;
+            }
+            
+
+          }
+
+          await sleep(100);
+
+          i++;
+        }
+      }
+
+      String.prototype.replaceAt=function(index, replacement) {
+          return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
+      }
       function drawPlecas() {
           var canvas = document.getElementById("lienzo-1");
           var lienzo = canvas.getContext("2d");   
@@ -659,13 +782,18 @@
 
         document.getElementById("text-container-one").style.visibility = 'visible';
         document.getElementById("text-container-one").style.opacity = '1';
+
+        drawHomeAnimation();
       }
 
       function openHome() {
+        showAnimationHome = true;
         homeSelected = true;
         moreThanHomeMenuSelected = false;
         liveStyleMenuSelected = false;
         mapMenuSelected = false;
+
+        drawHomeAnimation();
 
         $("#hamburguer-menu").attr("src","images/hamburguer-menu-gray.png");
         $("#more-than-home-menu").attr("src","images/more-than-home-gray.png");
@@ -707,6 +835,7 @@
       }
 
       function openMoreThanHome() {
+        showAnimationHome = false;
         homeSelected = false;
         moreThanHomeMenuSelected = true;
         liveStyleMenuSelected = false;
@@ -754,6 +883,7 @@
       }
 
       function openLifiStyle() {
+        showAnimationHome = false;
         homeSelected = false;
         moreThanHomeMenuSelected = false;
         liveStyleMenuSelected = true;
@@ -801,6 +931,7 @@
       }
 
       function openMap() {
+        showAnimationHome = false;
         homeSelected = false;
         moreThanHomeMenuSelected = false;
         liveStyleMenuSelected = false;
@@ -849,6 +980,7 @@
       }
 
       function openLivienza() {
+        showAnimationHome = false;
         $("#hamburguer-menu").attr("src","images/home-icon-blue.png");
         $("#more-than-home-menu").attr("src","images/more-than-home-black.png");
         $("#live-style-menu").attr("src","images/life-style-blue.png");
@@ -873,6 +1005,7 @@
       }
 
       function openRivalta() {
+        showAnimationHome = false;
         $("#hamburguer-menu").attr("src","images/home-icon-black.png");
         $("#more-than-home-menu").attr("src","images/more-than-home-black.png");
         $("#live-style-menu").attr("src","images/life-style-black.png");
