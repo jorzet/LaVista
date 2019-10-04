@@ -4,11 +4,11 @@ $(document).ready(function(){
         var ctx = c.getContext("2d");
         ctx.strokeStyle = "#103C67";
         ctx.lineWidth = 5;
-        ctx.moveTo(43,42);
-        ctx.lineTo(60,70);
-        ctx.lineTo(186,99);
-        ctx.lineTo(195,95);
-        ctx.lineTo(209,100);
+        ctx.moveTo(49,45);
+        ctx.lineTo(65,71);
+        ctx.lineTo(186,96);
+        ctx.lineTo(199,92);
+        ctx.lineTo(209,98);
         ctx.stroke();
     });
 
