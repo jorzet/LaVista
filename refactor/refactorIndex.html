@@ -1072,13 +1072,13 @@
       
       document.getElementById("hamburguer-menu").addEventListener("click", showCanvas);
       //document.getElementById("main-logo").addEventListener("click", showCanvas);
-      //document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
-      //document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
-      //document.getElementById("map-menu").addEventListener("click", openMap);
-      //document.getElementById("livenza-icon").addEventListener("click", openLivienza);
-      //document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
-      //document.getElementById("livenza-back-icon").addEventListener("click", openMoreThanHome);
-      //document.getElementById("rivalta-back-icon").addEventListener("click", openMoreThanHome);
+      document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
+      document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
+      document.getElementById("map-menu").addEventListener("click", openMap);
+      document.getElementById("livenza-icon").addEventListener("click", openLivienza);
+      document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
+      document.getElementById("livenza-back-icon").addEventListener("click", openMoreThanHome);
+      document.getElementById("rivalta-back-icon").addEventListener("click", openMoreThanHome);
 
       document.getElementById("more-than-home-menu").addEventListener("mouseover", function() {
         if (homeSelected) {
@@ -1837,7 +1837,7 @@
         document.getElementById("live-style-menu-h12").style.opacity = '0';
         document.getElementById("map-menu-h12").style.opacity = '0';
 
-        document.getElementById("container-one").style.visibility = 'visible';
+        /*document.getElementById("container-one").style.visibility = 'visible';
         document.getElementById("container-two").style.visibility = 'hidden';
         document.getElementById("container-three").style.visibility = 'hidden';
         document.getElementById("container-four").style.visibility = 'hidden';
@@ -1849,7 +1849,7 @@
         document.getElementById("container-three").style.opacity = '0';
         document.getElementById("container-four").style.opacity = '0';
         document.getElementById("container-five").style.opacity = '0';
-        document.getElementById("container-six").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '0';*/
       }
 
       function openMoreThanHome() {
@@ -1896,7 +1896,7 @@
         document.getElementById("live-style-menu-h12").style.opacity = '0';
         document.getElementById("map-menu-h12").style.opacity = '0';
 
-        document.getElementById("container-one").style.visibility = 'hidden';
+        /*document.getElementById("container-one").style.visibility = 'hidden';
         document.getElementById("container-two").style.visibility = 'visible';
         document.getElementById("container-three").style.visibility = 'hidden';
         document.getElementById("container-four").style.visibility = 'hidden';
@@ -1908,7 +1908,7 @@
         document.getElementById("container-three").style.opacity = '0';
         document.getElementById("container-four").style.opacity = '0';
         document.getElementById("container-five").style.opacity = '0';
-        document.getElementById("container-six").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '0';*/
       }
 
       function openLifiStyle() {
@@ -1950,7 +1950,7 @@
         document.getElementById("live-style-menu-h12").style.opacity = '1';
         document.getElementById("map-menu-h12").style.opacity = '0';
         
-        document.getElementById("container-one").style.visibility = 'hidden';
+        /*document.getElementById("container-one").style.visibility = 'hidden';
         document.getElementById("container-two").style.visibility = 'hidden';
         document.getElementById("container-three").style.visibility = 'visible';
         document.getElementById("container-four").style.visibility = 'hidden';
@@ -1962,7 +1962,7 @@
         document.getElementById("container-three").style.opacity = '1';
         document.getElementById("container-four").style.opacity = '0';
         document.getElementById("container-five").style.opacity = '0';
-        document.getElementById("container-six").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '0';*/
       }
 
       function openMap() {
@@ -1999,7 +1999,7 @@
         document.getElementById("map-menu-h12").style.opacity = '1';
 
 
-        document.getElementById("container-one").style.visibility = 'hidden';
+        /*document.getElementById("container-one").style.visibility = 'hidden';
         document.getElementById("container-two").style.visibility = 'hidden';
         document.getElementById("container-three").style.visibility = 'hidden';
         document.getElementById("container-four").style.visibility = 'visible';
@@ -2011,7 +2011,7 @@
         document.getElementById("container-three").style.opacity = '0';
         document.getElementById("container-four").style.opacity = '1';
         document.getElementById("container-five").style.opacity = '0';
-        document.getElementById("container-six").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '0';*/
       }
 
       function openLivienza() {
@@ -2036,8 +2036,9 @@
         $("#facebook-image").attr("src","images/facebook-icon-blue.png");
         $("#instagram-image").attr("src","images/instagram-icon-blue.png");
         document.getElementById("all-menu-container-id").style.backgroundColor = '#0C293C';
+        document.getElementById("all-menu-container-id").style.width = '6vw';
 
-        document.getElementById("container-one").style.visibility = 'hidden';
+        /*document.getElementById("container-one").style.visibility = 'hidden';
         document.getElementById("container-two").style.visibility = 'hidden';
         document.getElementById("container-three").style.visibility = 'hidden';
         document.getElementById("container-four").style.visibility = 'hidden';
@@ -2049,7 +2050,7 @@
         document.getElementById("container-three").style.opacity = '0';
         document.getElementById("container-four").style.opacity = '0';
         document.getElementById("container-five").style.opacity = '1';
-        document.getElementById("container-six").style.opacity = '0';
+        document.getElementById("container-six").style.opacity = '0';*/
       }
 
       function openRivalta() {
@@ -2074,8 +2075,9 @@
         $("#facebook-image").attr("src","images/facebook-icon-black.png");
         $("#instagram-image").attr("src","images/instagram-icon-black.png");
         document.getElementById("all-menu-container-id").style.backgroundColor = '#71974A';
+        document.getElementById("all-menu-container-id").style.width = '6vw';
 
-        document.getElementById("container-one").style.visibility = 'hidden';
+        /*document.getElementById("container-one").style.visibility = 'hidden';
         document.getElementById("container-two").style.visibility = 'hidden';
         document.getElementById("container-three").style.visibility = 'hidden';
         document.getElementById("container-four").style.visibility = 'hidden';
@@ -2087,7 +2089,7 @@
         document.getElementById("container-three").style.opacity = '0';
         document.getElementById("container-four").style.opacity = '0';
         document.getElementById("container-five").style.opacity = '0';
-        document.getElementById("container-six").style.opacity = '1';
+        document.getElementById("container-six").style.opacity = '1';*/
       }
 
     </script>
