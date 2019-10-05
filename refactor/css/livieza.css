@@ -1,0 +1,87 @@
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-image: url(../images/livieza.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-image: url(../images/right_background_livieza.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  .right {
+    background-image: url(../images/right_background_livieza.png);
+  }
+  .left {
+    background-image: url(../images/livieza.jpg);
+  }
+}
+
+.all-menu-container {
+  float:left;
+  width: 80px;
+  height: 100%;
+  background-color:#0A293D;
+}
+
+
+.menu-container {
+  float:left;
+  width: 100px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.menu {
+  cursor:pointer;
+
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.more-than-home {
+  cursor:pointer;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.life-style {
+  cursor:pointer;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.map {
+  cursor:pointer;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.social-networks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+}
