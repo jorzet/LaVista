@@ -1,7 +1,7 @@
 {
-    "name": "sistema_habanero",
+    "name": "la_vista",
     "version": "1.0.0",
-    "description": "Sistema para cadena de habanero",
+    "description": "Sistema proyecto de La Vista",
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
