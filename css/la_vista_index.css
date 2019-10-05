@@ -1,0 +1,1320 @@
+
+@font-face {
+    font-family: HelveticaNeueLTStd;
+    src: url("fonts/HelveticaNeueLTStd-Roman.otf") format("opentype");
+}
+
+.container-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 100;
+  transition: opacity 1s;
+}
+
+.subcontainer-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.container-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#464646;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.subcontainer-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Control the left side */
+.split-left-container-2 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Control the right side */
+.split-right-container-2 {
+  
+  height: 100%;
+  width: 50%;
+  float: right;
+  top: 0;
+  background-image: url(../images/lavista_circle_cut.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+.container-3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#464646;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.subcontainer-3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Control the left side */
+.split-left-container-3 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Control the right side */
+.split-right-container-3 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  float: right;
+  top: 0;
+  background-image: url(../images/life_style.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+.container-4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#464646;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.subcontainer-4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Control the left side */
+.split-left-container-4 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Control the right side */
+.split-right-container-4 {
+  height: 100%;
+  width: 50%;
+  float: right;
+  background-color: #ffffff;
+  top: 0;
+}
+
+.container-5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#464646;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.subcontainer-5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+/* Control the left side */
+.split-left-container-5 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-image: url(../images/livenza.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+/* Control the right side */
+.split-right-container-5 {
+  height: 100%;
+  width: 50%;
+  float: right;
+  top: 0;
+  background-image: url(../images/right_background_livenza.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+.container-6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#464646;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.subcontainer-6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+/* Control the left side */
+.split-left-container-6 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-color: #71974A;
+  overflow-x: hidden;
+}
+
+/* Control the right side */
+.split-right-container-6 {
+ 
+  height: 100%;
+  width: 50%;
+  float: right;
+  top: 0;
+  background-image: url(../images/rivalta.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .container-1 {
+    background-image: url(../images/background.png);
+  }
+
+  .split-right {
+    background-image: url(../images/lavista_circle.png);
+    background-color: red;
+  }
+}
+
+.all-menu-container {
+  left: 0;
+  width: 6vw;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: transparent;
+  transition: background-color 1s;
+}
+
+.menu-container {
+  float:left;
+  width: 6vw;
+}
+
+#hamburguer-menu-container {
+  height: 5vw;
+  width: 0px;
+  transition: width 1s;
+}
+
+.menu {
+  height: 3vw;
+  width: 3vw;
+  position: relative;
+  top: 25%;
+  cursor:pointer;
+  margin-left: 2vw;
+}
+
+#home-h12 {
+  height: 3vw;
+  position: absolute;
+  font-size: 0.8vw;
+  letter-spacing: 0.2vw;
+  margin-top: 33%;
+  left: 10vw;
+  width: 15vw;
+  visibility: visible;
+}
+
+#more-than-home-container {
+  height: 5vw;
+  width: 0px;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+  transition-property: width, background-image;
+  transition-duration: 1s, 1s;
+  visibility: hidden;
+}
+
+.more-than-home {
+  height: 3vw;
+  position: relative;
+  top: 25%;
+  cursor:pointer;
+  margin-left: 2vw;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#more-than-home-h12 {
+  height: 3vw;
+  position: absolute;
+  font-size: 0.8vw;
+  letter-spacing: 0.2vw;
+  margin-top: 33%;
+  left: 6.5vw;
+  width: 20vw;
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#live-style-menu-container {
+  height: 5vw;
+  width: 0px;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+  transition-property: width, background-image;
+  transition-duration: 1s, 1s;
+  visibility: hidden;
+}
+
+.life-style {
+  height: 1.5vw;
+  position: relative;
+  top: 25%;
+  cursor:pointer;
+  margin-left: 2vw;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#live-style-menu-h12 {
+  position: absolute;
+  font-size: 0.8vw;
+  letter-spacing: 0.2vw;
+  margin-top: 25%;
+  left: 7vw;
+  width: 20vw;
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+
+#map-menu-container{
+  height: 5vw;
+  width: 0px;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+  transition-property: width, background-image;
+  transition-duration: 1s, 1s;
+  visibility: hidden;
+}
+
+#map-menu-h12 {
+  position: absolute;
+  font-size: 0.8vw;
+  letter-spacing: 0.2vw;
+  margin-top: 30%;
+  left: 9vw;
+  width: 20vw;
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.map {
+  height: 3vw;
+  position: relative;
+  top: 25%;
+  cursor:pointer;
+  margin-left: 2vw;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.canvas-1 {
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.social-networks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 2vw;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.instagram-img {
+  margin-bottom: 2.5vw;
+}
+
+.instagram-icon {
+  height: 3vw;
+}
+
+.facebook-icon {
+  height: 3vw;
+}
+
+.logo2 {
+  cursor:pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5vw;
+  margin-right: 2vw;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 2;
+}
+
+.la-vista-logo2 {
+  height: 5.5vw;
+}
+
+.la-vista-logo {
+  height: 4vw;
+}
+
+.button-logo-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: 2vw;
+  z-index: 2;
+}
+
+.logo {
+  cursor:pointer;
+  visibility: visible;
+}
+
+.button-metting-container {
+  visibility: visible;
+}
+
+#button-metting {
+  width: 15vw;
+  height: 3vw;
+  border-style: solid;
+  background-color: Transparent;
+  cursor:pointer;
+  overflow: hidden;  
+  border-width: 0.1vw;
+  border-left-width: 0.2vw;
+  border-right-width: 0.2vw;
+  border-top-width: 0.2vw;
+  border-bottom-width: 0.2vw;
+  border-color: #606060;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.2vw;
+  transition-property: background-color, opacity;
+  transition-duration: 1s, 1s;
+}
+
+#button-metting:hover {
+   background-color: #606060;
+   color: #ffffff;
+}
+
+#button-metting:active {
+   background-color: #113D66;
+   border-color: #113D66;
+   color: #ffffff;
+}
+
+
+.button-metting-livenza-container {
+  position: absolute;
+  left:  0;
+  top: 30%;
+  margin-left: 7%;
+  visibility: visible;
+}
+
+.livenza-rivalta-logo {
+  width: 8vw;
+}
+
+#button-livenza-metting {
+  width: 15vw;
+  height: 3vw;
+  border-style: solid;
+  background-color: Transparent;
+  cursor:pointer;
+  overflow: hidden;  
+  border-width: 0.1vw;
+  border-left-width: 0.2vw;
+  border-right-width: 0.2vw;
+  border-top-width: 0.2vw;
+  border-bottom-width: 0.2vw;
+  border-color: #38C1CA;
+  color: #38C1CA;
+  font-size: 1.2vw;
+  transition: background-color 1s;
+}
+
+#button-livenza-metting:hover {
+   background-color: #38C1CA;
+   color: black;
+}
+
+#button-livenza-metting:active {
+   background-color: white;
+   border-color: black;
+   color: black;
+}
+
+
+
+.button-metting-rivalta-container {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  margin-left: 7%;
+  visibility: visible;
+}
+
+#button-rivalta-metting {
+  width: 15vw;
+  height: 3vw;
+  border-style: solid;
+  background-color: Transparent;
+  cursor:pointer;
+  overflow: hidden;  
+  border-width: 0.1vw;
+  border-left-width: 0.2vw;
+  border-right-width: 0.2vw;
+  border-top-width: 0.2vw;
+  border-bottom-width: 0.2vw;
+  border-color: black;
+  color: black;
+  font-size: 1.2vw;
+  transition: background-color 1s;
+}
+
+#button-rivalta-metting:hover {
+   background-color: black;
+   color: #71974A;
+}
+
+#button-rivalta-metting:active {
+   background-color: white;
+   border-color: #71974A;
+   color: #71974A;
+}
+
+.la_vista_logo_rivalta {
+  position: absolute;
+  left: 0;
+  top: 2%;
+  margin-left: 7.5vw;
+  visibility: visible;
+}
+
+.la-vista-logo-id {
+  height: 3vw;
+}
+
+.rivalta-logo {
+  height: 1.5vw;
+  position: relative;
+  float: right;
+  top: 5%;
+  margin-right: 2vw;
+  visibility: visible;
+}
+
+.livenza-logo {
+  position: relative;
+  float: right;
+  right: 5%;
+  top: 5%;
+  margin-right: 12%;
+  visibility: visible;
+}
+
+
+
+.text-container-1 {
+  position: relative;
+  float: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+#text-1-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+/*#text-2-container-1 {
+  color: #3A5D80;
+  text-align: right;
+  margin-right: 15%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}*/
+
+#text-3-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+#text-4-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+#text-5-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+#text-6-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+#text-7-container-1 {
+  color: #727272;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+
+
+.text-container-2 {
+  position: relative;
+  float: center;
+  top: 40%;
+  margin-left: 80px;
+  z-index: 1;
+}
+
+.text-1-container-2 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-2 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+/*.text-3-container-2 {
+  color: #3A5D80;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+*/
+.text-4-container-2 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+
+
+
+.text-1-container-3 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-3 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+/*.text-3-container-3 {
+  color: #3A5D80;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+*/
+
+.text-4-container-3 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-5-container-3 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-6-container-3 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+
+
+
+
+.text-1-container-4 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+/*.text-2-container-4 {
+  color: #3A5D80;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+*/
+
+.text-3-container-4 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-4 {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+
+
+
+.text-container-5 {
+  position: relative;
+  float: center;
+  top: 60%;
+  z-index: 1;
+}
+
+
+.text-1-container-5 {
+  color: #1A4A65;
+  text-align: left;
+  margin-left: 14%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-5 {
+  color: #1A4A65;
+  text-align: left;
+  margin-left: 14%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-5 {
+  color: #1A4A65;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-5 {
+  color: #3EA0A3;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-container-6 {
+  position: relative;
+  float: center;
+  top: 55%;
+  z-index: 1;
+}
+
+
+.text-1-container-6 {
+  color: white;
+  text-align: left;
+  margin-left: 18%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-6 {
+  color: white;
+  text-align: left;
+  margin-left: 15%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-6 {
+  color: white;
+  text-align: left;
+  margin-left: 15%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-6 {
+  color: black;
+  text-align: left;
+  margin-left: 15%;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+
+.livenza-rivalta-container {
+  position: absolute;
+  right: 0;
+  top: 15vw;
+  margin-right: 6vw;
+}
+
+#livenza-container {
+  width: 15vw;
+  height: 15vw;
+  margin-right: 1vw;
+  background-image: url(../images/rombo-2.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.livenza-img {
+  width: 6vw;
+  cursor:pointer;
+  margin-left: 4.5vw;
+  margin-top: 35%;
+}
+
+#rivalta-container {
+  margin-top: 4vw;
+  width: 15vw;
+  height: 15vw;
+  margin-right: 1vw;
+  background-image: url(../images/rombo-2.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.rivalta-img {
+  width: 6vw;
+  cursor:pointer;
+  margin-left: 4.5vw;
+  margin-top: 30%;
+}
+
+
+
+
+.back-container {
+  position: absolute;
+  width: 13vw;
+  height: 13vw;
+  right: 0;
+  top: 40%;
+  margin-right: 6vw;
+  background-image: url(../images/back-bg.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+#back {
+  height: 6vw;
+  width: 5vw;
+  margin-left: 4vw;
+  margin-top: 50%;
+}
+
+.back-img {
+  width: 5vw;
+  cursor:pointer;
+}
+
+
+
+#map-google {
+  height: 100%;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+  background-color: gray;
+ }
+
+
+
+ .rombos-container {
+  
+  float: center;
+  height: 100%;
+  padding: 30%;
+  margin: 30%;
+  background-image: url(../images/life_style_bg_2.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
+
+
+ /*////////////////////////////////////////////////////////////
+[ Propio ]*/
+
+.text-container-4 {
+  position: relative;
+  float: center;
+  top: 40%;
+  margin-left: 50%;
+  z-index: 1;
+}
+
+#back_livenza {
+  height: 6vw;
+  width: 5vw;
+  margin-left: 4vw;
+  margin-top: 50%;
+}
+
+#back_rivalta {
+  height: 6vw;
+  width: 5vw;
+  margin-left: 4vw;
+  margin-top: 50%;
+}
+
+#text-2-container-1 {
+  color: #3A5D80;
+  text-align: left;
+  margin-left: 20%;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-1-container-1-add {
+  color: #727272;
+  text-align: left;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-2-container-1-add {
+  color: #3A5D80;
+  text-align: left;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-3-container-1-add {
+  color: #727272;
+  text-align: left;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-4-container-1-add {
+  color: #727272;
+  text-align: left;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-5-container-1-add {
+  color: #727272;
+  text-align: left;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-6-container-1-add {
+  color: #727272;
+  text-align: left;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-7-container-1-add {
+  color: #727272;
+  text-align: left;
+  font-size: 2.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.8vw;
+}
+
+.text-3-container-2 {
+  color: #3A5D80;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-1-container-2-add{
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-2-add{
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-2-add{
+  color: #3A5D80;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-2-add{
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-1-container-3-add {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-3-add {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-3 {
+  color: #3A5D80;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-3-add {
+  color: #3A5D80;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-3-add {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-5-container-3-add {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-6-container-3-add {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-1-container-4-add {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-4 {
+  color: #3A5D80;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-4-add {
+  color: #3A5D80;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-4-add {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-4-add {
+  color: #727272;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+#vista-word h1 {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#exclusivos-word h1 {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#actividades-word h1 {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#livenza-word h1 {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#rivalta-word h1 {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.text-1-container-5-add {
+  color: #1A4A65;
+  text-align: left;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-5-add {
+  color: #1A4A65;
+  text-align: left;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-5-add {
+  color: #1A4A65;
+  text-align: left;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-5-add {
+  color: #3EA0A3;
+  text-align: left;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-1-container-6-add {
+  color: white;
+  text-align: left;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-2-container-6-add {
+  color: white;
+  text-align: left;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-3-container-6-add {
+  color: white;
+  text-align: left;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
+
+.text-4-container-6-add {
+  color: black;
+  text-align: right;
+  font-size: 1.5vw;
+  letter-spacing: 2.3vw;
+  line-height:  2.2vw;
+}
