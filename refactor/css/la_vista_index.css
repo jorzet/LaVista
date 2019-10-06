@@ -318,7 +318,6 @@ letter-spacing: 0.2vw;
 margin-top: 33%;
 left: 6.5vw;
 width: 20vw;
-visibility: visible;
 opacity: 0;
 transition: opacity 1s;
 }
@@ -351,7 +350,6 @@ letter-spacing: 0.2vw;
 margin-top: 25%;
 left: 7vw;
 width: 20vw;
-visibility: visible;
 opacity: 0;
 transition: opacity 1s;
 }
@@ -375,7 +373,6 @@ letter-spacing: 0.2vw;
 margin-top: 30%;
 left: 9vw;
 width: 20vw;
-visibility: visible;
 opacity: 0;
 transition: opacity 1s;
 }
@@ -541,7 +538,6 @@ position: absolute;
 left: 0;
 top: 30%;
 margin-left: 7%;
-visibility: visible;
 }
 
 #button-rivalta-metting {
