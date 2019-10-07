@@ -1,7 +1,7 @@
 //$(document).ready(function(){
 
 var random_live_style_menu_container = document.getElementById('live-style-menu-container');
-        
+    
 random_live_style_menu_container.addEventListener('click', function(event) {
 
     var canvas = document.getElementById("canvas-rombos");
@@ -15,7 +15,7 @@ random_live_style_menu_container.addEventListener('click', function(event) {
     var posX_ab_1 = 0;
     var posY_ab_1_static = 100;
     var posX_ab_1_static = 0;
-    var lineLength_ab_1 = 80;
+    var lineLength_ab_1 = 68;
     var speed_ab_1 = .5;
 
     ////////////////////////////////////////////////////////////// Arriba - abajo - 2
@@ -27,8 +27,8 @@ random_live_style_menu_container.addEventListener('click', function(event) {
     var posX_ab_2 = 0;
     var posY_ab_2_static = 0;
     var posX_ab_2_static = 50;
-    var lineLength_ab_2 = 110;
-    var speed_ab_2 = .5;
+    var lineLength_ab_2 = 100;
+    var speed_ab_2 = .6;
 
     ////////////////////////////////////////////////////////////// Arriba - abajo - 3
 
@@ -39,8 +39,8 @@ random_live_style_menu_container.addEventListener('click', function(event) {
     var posX_ab_3 = 55;
     var posY_ab_3_static = 0;
     var posX_ab_3_static = 50;
-    var lineLength_ab_3 = 110;
-    var speed_ab_3 = .5;
+    var lineLength_ab_3 = 101;
+    var speed_ab_3 = .4;
 
     ////////////////////////////////////////////////////////////// Arriba - abajo - 4
 
@@ -51,20 +51,20 @@ random_live_style_menu_container.addEventListener('click', function(event) {
     var posX_ab_4 = 120;
     var posY_ab_4_static = 0;
     var posX_ab_4_static = 50;
-    var lineLength_ab_4 = 50;
-    var speed_ab_4 = .5;
+    var lineLength_ab_4 = 35;
+    var speed_ab_4 = .4;
 
     ////////////////////////////////////////////////////////////// Abajo - arriba - 1
 
     var ctx_ba_1 = canvas.getContext("2d");
     ctx_ba_1.strokeStyle = "#ffffff";
     ctx_ba_1.lineWidth = 0.5;
-    var posY_ba_1 = 185;
+    var posY_ba_1 = 190;
     var posX_ba_1 = 0;
     var posY_ba_1_static = 0;
     var posX_ba_1_static = 50;
-    var lineLength_ba_1 = 50;
-    var speed_ba_1 = .5;
+    var lineLength_ba_1 = 35;
+    var speed_ba_1 = .6;
 
     ////////////////////////////////////////////////////////////// Abajo - arriba - 2
 
@@ -75,7 +75,7 @@ random_live_style_menu_container.addEventListener('click', function(event) {
     var posX_ba_2 = 0;
     var posY_ba_2_static = 0;
     var posX_ba_2_static = 50;
-    var lineLength_ba_2 = 110;
+    var lineLength_ba_2 = 100;
     var speed_ba_2 = .5;
 
     ////////////////////////////////////////////////////////////// Abajo - arriba - 3
@@ -87,8 +87,8 @@ random_live_style_menu_container.addEventListener('click', function(event) {
     var posX_ba_3 = 55;
     var posY_ba_3_static = 0;
     var posX_ba_3_static = 50;
-    var lineLength_ba_3 = 110;
-    var speed_ba_3 = .5;
+    var lineLength_ba_3 = 100;
+    var speed_ba_3 = .4;
 
     ////////////////////////////////////////////////////////////// Abajo - arriba - 4
 
@@ -99,8 +99,8 @@ random_live_style_menu_container.addEventListener('click', function(event) {
     var posX_ba_4 = 120;
     var posY_ba_4_static = 0;
     var posX_ba_4_static = 50;
-    var lineLength_ba_4 = 80;
-    var speed_ba_4 = .5;
+    var lineLength_ba_4 = 67;
+    var speed_ba_4 = .2;
 
 
     //////////////////////////////////////////////////////////////////////////////
@@ -156,9 +156,9 @@ random_live_style_menu_container.addEventListener('click', function(event) {
         /////////////////////////////////////////////////////////////////////////////
         posY_ab_1 += speed_ab_1;
         posX_ab_1 += speed_ab_1;
-      
+        
         //if (posY_ab_1 < 0 || posY_ab_1 > canvas.height || posX_ab_1 < 0 || posX_ab_1 > canvas.width) {
-        if ( posY_ab_1+lineLength_ab_1 > canvas.height - 30 ) {
+        if ( posY_ab_1+lineLength_ab_1 > canvas.height - 35 ) {
             // Repetido
             //posY_ab_1 = posY_ab_1_static;
             //posX_ab_1 = posX_ab_1_static;
@@ -168,50 +168,50 @@ random_live_style_menu_container.addEventListener('click', function(event) {
         /////////////////////////////////////////////////////////////////////////////
         posY_ab_2 += speed_ab_2;
         posX_ab_2 += speed_ab_2;
-      
-        if ( posY_ab_2+lineLength_ab_2 > canvas.height - 60 ) {
+        
+        if ( posY_ab_2+lineLength_ab_2 > canvas.height - 68 ) {
             speed_ab_2 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ab_3 += speed_ab_3;
         posX_ab_3 += speed_ab_3;
-      
-        if ( posY_ab_3+lineLength_ab_3 > canvas.height - 100 ) {
+        
+        if ( posY_ab_3+lineLength_ab_3 > canvas.height - 102 ) {
             speed_ab_3 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ab_4 += speed_ab_4;
         posX_ab_4 += speed_ab_4;
-      
-        if ( posY_ab_4+lineLength_ab_4 > canvas.height - 160 ) {
+        
+        if ( posY_ab_4+lineLength_ab_4 > canvas.height - 168 ) {
             speed_ab_4 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ba_1 -= speed_ba_1;
         posX_ba_1 += speed_ba_1;
         
-        if ( posY_ba_1-lineLength_ba_1 < canvas.height - 210 ) {
+        if ( posY_ba_1-lineLength_ba_1 < canvas.height - 202 ) {
             speed_ba_1 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ba_2 -= speed_ba_2;
         posX_ba_2 += speed_ba_2;
         
-        if ( posY_ba_2-lineLength_ba_2 < canvas.height - 210 ) {
+        if ( posY_ba_2-lineLength_ba_2 < canvas.height - 202 ) {
             speed_ba_2 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ba_3 -= speed_ba_3;
         posX_ba_3 += speed_ba_3;
         
-        if ( posY_ba_3-lineLength_ba_3 < canvas.height - 170 ) {
+        if ( posY_ba_3-lineLength_ba_3 < canvas.height - 167 ) {
             speed_ba_3 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_ba_4 -= speed_ba_4;
         posX_ba_4 += speed_ba_4;
         
-        if ( posY_ba_4-lineLength_ba_4 < canvas.height - 110 ) {
+        if ( posY_ba_4-lineLength_ba_4 < canvas.height - 102 ) {
             speed_ba_4 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
