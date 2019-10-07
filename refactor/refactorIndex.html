@@ -79,6 +79,16 @@
   <div class="logo2" id="la-vista-logo">
     <img class="la-vista-logo2" src="images/la_vista_logo.png" alt="logo2">
   </div>
+
+  <div class="button-logo-container">
+    <div class="logo" id="main-logo">
+      <img class="la-vista-logo" src="/images/la_vista_logo_blue.png" alt="logo">
+    </div>
+    <div class="button-metting-container">
+      <button id="button-metting" name="button" onclick ="div_show()">AGENDA TU CITA</button>
+    </div>
+  </div>
+
 </div>
 
 <div class="sections" id="section-container">
@@ -238,9 +248,7 @@
             </div>
 
         <div class="button-logo-container">
-          <div class="logo" id="main-logo">
-            <img class="la-vista-logo" src="images/la_vista_logo_blue.png" alt="logo">
-          </div>
+          
           <div class="button-metting-container">
             <button id="button-metting" name="button" onclick ="div_show()">AGENDA TU CITA</button>
           </div>
@@ -1072,7 +1080,7 @@
       var dialogShown = false;
       
       document.getElementById("hamburguer-menu").addEventListener("click", showCanvas);
-      //document.getElementById("main-logo").addEventListener("click", showCanvas);
+      document.getElementById("main-logo").addEventListener("click", showCanvas);
       //document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
       //document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
       //document.getElementById("map-menu").addEventListener("click", openMap);
@@ -1162,6 +1170,7 @@
 
       drawFirstAnimation();
       drawLinesAnimation("canvas-2-subcontainer-1");
+      drawLinesAnimation("canvas-2-subcontainer-0");
     
       setTimeout( function ( ) { 
         if (!dialogShown) {
@@ -1811,6 +1820,7 @@
             showLinesAnimation = true;
             drawHomeAnimation();
             drawLinesAnimation("canvas-2-subcontainer-1");
+            drawLinesAnimation("canvas-2-subcontainer-0");
         }, 200);
         
 
