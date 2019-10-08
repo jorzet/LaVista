@@ -1,5 +1,8 @@
 
-@import "https://fonts.googleapis.com/css?family=Raleway";
+@font-face {
+  font-family: HelveticaNeueLTStd;
+  src: url("fonts/HelveticaNeueLTStd-Roman.otf") format("opentype");
+}
 /*----------------------------------------------
 CSS settings for HTML div Exact Center
 ------------------------------------------------*/

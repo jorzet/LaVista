@@ -17,6 +17,7 @@
     <link rel="shortcut icon" href="images/la_vista_logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/gifler@0.1.0/gifler.min.js"></script>
 
     <!--============================================================================-->
 
@@ -424,7 +425,7 @@
                     <div class="livenza-logo" id="livenza_logo_id">
                         <img class="livenza-rivalta-logo" src="images/livenza_logo_blue.png" alt="logo">
                     </div>
-                    <div class="back-container" style="left: 60%;">
+                    <div class="back-container">
                         <div id="back_livenza">
                             <a href="#section2">
                                 <img class="back-img" id="livenza-back-icon" src="images/back-icon.png" alt="livenza">
@@ -1048,6 +1049,8 @@
       Su navegador no permite utilizar canvas.
 </canvas>
 
+<img id="logo-animated" src="#"/>
+
     <div id="abc" style="overflow:hidden;">
         <!-- Popup Div Starts Here -->
         <div id="popupContact">
@@ -1082,13 +1085,13 @@
 
         document.getElementById("hamburguer-menu").addEventListener("click", showCanvas);
         document.getElementById("main-logo").addEventListener("click", showCanvas);
-        //document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
-        //document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
-        //document.getElementById("map-menu").addEventListener("click", openMap);
-        //document.getElementById("livenza-icon").addEventListener("click", openLivienza);
-        //document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
-        //document.getElementById("livenza-back-icon").addEventListener("click", openMoreThanHome);
-        //document.getElementById("rivalta-back-icon").addEventListener("click", openMoreThanHome);
+        document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
+        document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
+        document.getElementById("map-menu").addEventListener("click", openMap);
+        document.getElementById("livenza-icon").addEventListener("click", openLivienza);
+        document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
+        document.getElementById("livenza-back-icon").addEventListener("click", openMoreThanHome);
+        document.getElementById("rivalta-back-icon").addEventListener("click", openMoreThanHome);
 
         document.getElementById("more-than-home-menu").addEventListener("mouseover", function() {
             if (homeSelected) {
@@ -1233,7 +1236,7 @@
                 showAnimation = false;
             } else {
                 showAnimation = false;
-                //openHome();
+                openHome();
             }
         }
 
@@ -1725,7 +1728,7 @@
         }
 
         function drawPlecas() {
-            var canvas = document.getElementById("lienzo-1");
+            var canvas = document.getElementById("lienzo-1"); 
             var lienzo = canvas.getContext("2d");
             lienzo.fillStyle = '#ffffff';
             heightTop = 0;
@@ -1734,6 +1737,10 @@
             lienzo.fillRect(0, canvas.height, canvas.width, heightBottom);
 
             plecasShown = false;
+
+var docs = document.getElementById("logo-animated");
+docs.setAttribute("src", "images/logo.gif");
+
 
             var mainLogo = document.getElementById("main-logo");
             fadeOut(mainLogo, 100);
@@ -1800,6 +1807,8 @@
             document.getElementById("live-style-menu-container").style.visibility = 'visible';
             document.getElementById("map-menu-container").style.visibility = 'visible';
 
+            document.getElementById("all-menu-container-id").style.backgroundColor = 'transparent';
+
             canvas.style.visibility = 'hidden';
 
             document.getElementById("text-container-one").style.visibility = 'visible';
@@ -1827,6 +1836,8 @@
                 drawLinesAnimation("canvas-2-subcontainer-0");
             }, 200);
 
+            console.log("openHome");
+
 
             $("#hamburguer-menu").attr("src", "images/hamburguer-menu-gray.png");
             $("#more-than-home-menu").attr("src", "images/more-than-home-gray.png");
@@ -1851,20 +1862,6 @@
             document.getElementById("more-than-home-h12").style.opacity = '0';
             document.getElementById("live-style-menu-h12").style.opacity = '0';
             document.getElementById("map-menu-h12").style.opacity = '0';
-
-            document.getElementById("container-one").style.visibility = 'visible';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '1';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openMoreThanHome() {
@@ -1910,20 +1907,6 @@
             document.getElementById("more-than-home-h12").style.opacity = '1';
             document.getElementById("live-style-menu-h12").style.opacity = '0';
             document.getElementById("map-menu-h12").style.opacity = '0';
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'visible';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '1';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openLifiStyle() {
@@ -1964,20 +1947,6 @@
             document.getElementById("more-than-home-h12").style.opacity = '0';
             document.getElementById("live-style-menu-h12").style.opacity = '1';
             document.getElementById("map-menu-h12").style.opacity = '0';
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'visible';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '1';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openMap() {
@@ -2012,21 +1981,6 @@
             document.getElementById("more-than-home-h12").style.opacity = '0';
             document.getElementById("live-style-menu-h12").style.opacity = '0';
             document.getElementById("map-menu-h12").style.opacity = '1';
-
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'visible';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '1';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openLivienza() {
@@ -2051,20 +2005,6 @@
             $("#facebook-image").attr("src", "images/facebook-icon-blue.png");
             $("#instagram-image").attr("src", "images/instagram-icon-blue.png");
             document.getElementById("all-menu-container-id").style.backgroundColor = '#0C293C';
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'visible';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '1';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openRivalta() {
@@ -2089,48 +2029,9 @@
             $("#facebook-image").attr("src", "images/facebook-icon-black.png");
             $("#instagram-image").attr("src", "images/instagram-icon-black.png");
             document.getElementById("all-menu-container-id").style.backgroundColor = '#71974A';
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'visible';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '1';
         }
     </script>
-
-
-
-    <script>
-        function initMap() {
-            // The location of Uluru
-            var uluru = {
-                lat: 20.6410403,
-                lng: -100.3518529
-            };
-            // The map, centered at Uluru
-            var map = new google.maps.Map(
-                document.getElementById('map-google'), {
-                    zoom: 15,
-                    center: uluru
-                });
-            // The marker, positioned at Uluru
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVDpHRz9N2EKZuHfrUtviOHonVWQcLqig&callback=initMap">
-    </script>
+   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
