@@ -70,11 +70,11 @@
     </div>
 
     <div class="container-0" id="container-zero">
-        <canvas class="subcontainer-0" id="canvas-1-subcontainer-0">
-  </canvas>
+        <canvas class="subcontainer-0" id="canvas-0-subcontainer-0">
+  		</canvas>
 
-        <canvas class="subcontainer-0" id="canvas-2-subcontainer-0">
-  </canvas>
+        <canvas class="subcontainer-0" id="canvas-0-subcontainer-1">
+  		</canvas>
 
 
 
@@ -716,10 +716,10 @@
         <div id="section5" class="">
             <div class="container-3" id="container-three">
                 <canvas class="subcontainer-3" id="canvas-1-subcontainer-3">
-        </canvas>
+        		</canvas>
 
                 <canvas class="subcontainer-3" id="canvas-2-subcontainer-3">
-        </canvas>
+        		</canvas>
 
                 <div class="split-right-container-3">
 
@@ -1047,7 +1047,7 @@
   ------------------------------------------->
     <canvas class="canvas-1" id="lienzo-1">
       Su navegador no permite utilizar canvas.
-</canvas>
+	</canvas>
 
     <div id="abc" style="overflow:hidden;">
         <!-- Popup Div Starts Here -->
@@ -1083,13 +1083,13 @@
 
         document.getElementById("hamburguer-menu").addEventListener("click", showCanvas);
         document.getElementById("main-logo").addEventListener("click", showCanvas);
-        //document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
-        //document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
-        //document.getElementById("map-menu").addEventListener("click", openMap);
-        //document.getElementById("livenza-icon").addEventListener("click", openLivienza);
-        //document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
-        //document.getElementById("livenza-back-icon").addEventListener("click", openMoreThanHome);
-        //document.getElementById("rivalta-back-icon").addEventListener("click", openMoreThanHome);
+        document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
+        document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
+        document.getElementById("map-menu").addEventListener("click", openMap);
+        document.getElementById("livenza-icon").addEventListener("click", openLivienza);
+        document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
+        document.getElementById("livenza-back-icon").addEventListener("click", openMoreThanHome);
+        document.getElementById("rivalta-back-icon").addEventListener("click", openMoreThanHome);
 
         document.getElementById("more-than-home-menu").addEventListener("mouseover", function() {
             if (homeSelected) {
@@ -1171,8 +1171,7 @@
         });
 
         drawFirstAnimation();
-        drawLinesAnimation("canvas-2-subcontainer-1");
-        drawLinesAnimation("canvas-2-subcontainer-0");
+        drawLinesAnimation("canvas-0-subcontainer-1");
 
         setTimeout(function() {
             if (!dialogShown) {
@@ -1234,7 +1233,7 @@
                 showAnimation = false;
             } else {
                 showAnimation = false;
-                //openHome();
+                openHome();
             }
         }
 
@@ -1270,7 +1269,7 @@
 
         async function drawFirstAnimation() {
             // Obtener el elemento del DOM
-            var canvas = document.getElementById("canvas-1-subcontainer-0");
+            var canvas = document.getElementById("canvas-0-subcontainer-0");
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
             var context = canvas.getContext("2d");
@@ -1753,9 +1752,31 @@
 
                 if (plecasShown) {
                     clearInterval(plecasEffect);
-                    changeBackground();
+                    showLogoAnimation();
                 }
             }, 1);
+        }
+
+        function showLogoAnimation() {
+        	var canvas = document.getElementById("lienzo-1");
+        	canvas.style.visibility = 'hidden';
+        	document.getElementById("container-zero").style.backgroundImage = "url('images/logo-invert-color.gif')";
+        	document.getElementById("canvas-0-subcontainer-0").style.visibility = 'hidden';
+        	document.getElementById("canvas-0-subcontainer-1").style.visibility = 'hidden';
+
+        	var logoAnimationEffect = setInterval(function() {
+            	clearInterval(logoAnimationEffect);
+              	changeBackground();
+              	console.log("changeBackground");
+            }, 6000);
+        }
+
+        function showLivenzaRivaltaButtonsAnimation() {
+
+        }
+
+        function showLifeStyleAnimation() {
+
         }
 
         function changeBackground() {
@@ -1807,7 +1828,18 @@
             document.getElementById("text-container-one").style.opacity = '1';
 
             drawHomeAnimation();
+            eventFire(document.getElementById('hamburguer-menu-container'), 'click');
         }
+
+        function eventFire(el, etype){
+		  if (el.fireEvent) {
+		    el.fireEvent('on' + etype);
+		  } else {
+		    var evObj = document.createEvent('Events');
+		    evObj.initEvent(etype, true, false);
+		    el.dispatchEvent(evObj);
+		  }
+		}
 
         function openHome() {
             showLinesAnimation = false;
@@ -1824,8 +1856,8 @@
                 showAnimationHome = true;
                 showLinesAnimation = true;
                 drawHomeAnimation();
-                drawLinesAnimation("canvas-2-subcontainer-1");
-                drawLinesAnimation("canvas-2-subcontainer-0");
+                //drawLinesAnimation("canvas-2-subcontainer-1");
+                //drawLinesAnimation("canvas-2-subcontainer-0");
             }, 200);
 
 
@@ -1852,20 +1884,6 @@
             document.getElementById("more-than-home-h12").style.opacity = '0';
             document.getElementById("live-style-menu-h12").style.opacity = '0';
             document.getElementById("map-menu-h12").style.opacity = '0';
-
-            document.getElementById("container-one").style.visibility = 'visible';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '1';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openMoreThanHome() {
@@ -1883,7 +1901,7 @@
                 showAnimationMoreThanHome = true;
                 showLinesAnimation = true;
                 drawMoreThanHomeAnimation();
-                drawLinesAnimation("canvas-2-subcontainer-2");
+                //drawLinesAnimation("canvas-2-subcontainer-2");
             }, 200);
 
             $("#hamburguer-menu").attr("src", "images/home-icon.png");
@@ -1911,20 +1929,6 @@
             document.getElementById("more-than-home-h12").style.opacity = '1';
             document.getElementById("live-style-menu-h12").style.opacity = '0';
             document.getElementById("map-menu-h12").style.opacity = '0';
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'visible';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '1';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openLifiStyle() {
@@ -1937,7 +1941,7 @@
 
             setTimeout(function() {
                 showLinesAnimation = true;
-                drawLinesAnimation("canvas-2-subcontainer-3");
+                //drawLinesAnimation("canvas-2-subcontainer-3");
             }, 200);
 
             $("#hamburguer-menu").attr("src", "images/home-icon.png");
@@ -1965,20 +1969,6 @@
             document.getElementById("more-than-home-h12").style.opacity = '0';
             document.getElementById("live-style-menu-h12").style.opacity = '1';
             document.getElementById("map-menu-h12").style.opacity = '0';
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'visible';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '1';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openMap() {
@@ -2013,21 +2003,6 @@
             document.getElementById("more-than-home-h12").style.opacity = '0';
             document.getElementById("live-style-menu-h12").style.opacity = '0';
             document.getElementById("map-menu-h12").style.opacity = '1';
-
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'visible';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '1';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openLivienza() {
@@ -2052,20 +2027,6 @@
             $("#facebook-image").attr("src", "images/facebook-icon-blue.png");
             $("#instagram-image").attr("src", "images/instagram-icon-blue.png");
             document.getElementById("all-menu-container-id").style.backgroundColor = '#0C293C';
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'visible';
-            document.getElementById("container-six").style.visibility = 'hidden';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '1';
-            document.getElementById("container-six").style.opacity = '0';
         }
 
         function openRivalta() {
@@ -2090,20 +2051,6 @@
             $("#facebook-image").attr("src", "images/facebook-icon-black.png");
             $("#instagram-image").attr("src", "images/instagram-icon-black.png");
             document.getElementById("all-menu-container-id").style.backgroundColor = '#71974A';
-
-            document.getElementById("container-one").style.visibility = 'hidden';
-            document.getElementById("container-two").style.visibility = 'hidden';
-            document.getElementById("container-three").style.visibility = 'hidden';
-            document.getElementById("container-four").style.visibility = 'hidden';
-            document.getElementById("container-five").style.visibility = 'hidden';
-            document.getElementById("container-six").style.visibility = 'visible';
-
-            document.getElementById("container-one").style.opacity = '0';
-            document.getElementById("container-two").style.opacity = '0';
-            document.getElementById("container-three").style.opacity = '0';
-            document.getElementById("container-four").style.opacity = '0';
-            document.getElementById("container-five").style.opacity = '0';
-            document.getElementById("container-six").style.opacity = '1';
         }
     </script>
 
