@@ -7794,6 +7794,21 @@ function moveLine () {
                 }
                 if (parseInt(distance) > parseInt(2276) || parseInt(distance) < parseInt(2845)) {
 
+
+                    document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3.gif')";
+
+                    staticAnimation();
+
+                    async function staticAnimation() {
+
+                        
+                        await sleep(3000);
+                        document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
+
+                    }
+
+
+
                     ///////////////////////////////////////////////////////////////////////////////////// Container 3 - 1
 
                     anime.timeline({
@@ -9516,6 +9531,18 @@ function moveLine () {
 
                 }
                 if (parseInt(distance) > parseInt(2207) && parseInt(distance) < parseInt(2876)) {
+
+                    document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3.gif')";
+
+                    staticAnimation();
+
+                    async function staticAnimation() {
+
+                        
+                        await sleep(3000);
+                        document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
+
+}
 
                     ///////////////////////////////////////////////////////////////////////////////////// Container 3 - 1
                     anime.timeline({
