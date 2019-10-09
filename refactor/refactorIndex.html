@@ -276,19 +276,24 @@
 
                 <div class="split-right-container-2">
 
+                        <canvas id="canvas-rombos-2" height="270">
+
+                        </canvas>
+
                     <div class="livenza-rivalta-container" style="float: right;">
                         <div id="livenza-container">
                             <a href="#section3">
-                                <img class="livenza-img" id="livenza-icon" src="images/livenza-icon.png" alt="livenza">
+                                <!-- <img class="livenza-img" id="livenza-icon" src="images/livenza-icon.png" alt="livenza"> -->
                             </a>
                         </div>
 
                         <div id="rivalta-container">
                             <a href="#section4">
-                                <img class="rivalta-img" id="rivalta-icon" src="images/rivalta-icon.png" alt="rivalta">
+                                <!-- <img class="rivalta-img" id="rivalta-icon" src="images/rivalta-icon.png" alt="rivalta"> -->
                             </a>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="split-left-container-2">
@@ -731,7 +736,6 @@
                 <div class="split-right-container-3">
 
                     <canvas id="canvas-rombos" height="270">
-                    <canvas id="canvas-rombos" height="270">
 
              
                     </canvas>
@@ -1094,8 +1098,8 @@
         document.getElementById("more-than-home-menu").addEventListener("click", openMoreThanHome);
         document.getElementById("live-style-menu").addEventListener("click", openLifiStyle);
         document.getElementById("map-menu").addEventListener("click", openMap);
-        document.getElementById("livenza-icon").addEventListener("click", openLivienza);
-        document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
+        //document.getElementById("livenza-icon").addEventListener("click", openLivienza);
+        //document.getElementById("rivalta-icon").addEventListener("click", openRivalta);
         document.getElementById("livenza-back-icon").addEventListener("click", openMoreThanHome);
         document.getElementById("rivalta-back-icon").addEventListener("click", openMoreThanHome);
 
@@ -1354,7 +1358,7 @@
                 i++;
             }*/
 
-            var color1 = 1987365904;
+        var color1 = 1987365904;
         var color2 = 1987365889;
         var fade1 = false;
         var fade2 = false;
@@ -2627,19 +2631,20 @@ function moveLine () {
                 context.clearRect(0, 0, canvas_t.width, canvas_t.height);
                 // Estilo de dibujo
 
+
                 var color1 = 1987365904;
                 //var color1 = blue;
                 //var color2 = red;
                 var fade1 = false;
                 var i = 1;
                 //console.log("drawFirstAnimation: "+showAnimation);
-                while ( i<=25 ) {
+                while ( i<=20 ) {
                     context.clearRect(0, 0, canvas_t.width, canvas_t.height);
 
                     if (fade1) {
                         color1--;
                     } else {
-                    if ( i <= 25 ){
+                    if ( i <= 20 ){
                         color1++;
                     }
                     }
@@ -3692,6 +3697,19 @@ function moveLine () {
         var random_back_rivalta = document.getElementById('back_rivalta');
 
         random_more_than_home_container.addEventListener('click', function(event) {
+
+            document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.gif')";
+
+            staticAnimation();
+
+            async function staticAnimation() {
+
+                
+                await sleep(3000);
+                document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
+
+            }
+
             ///////////////////////////////////////////////////////////////////////////////////// Container 2 - 1
             anime.timeline({
                     loop: false

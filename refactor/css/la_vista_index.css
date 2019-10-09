@@ -113,7 +113,7 @@
 
 /* Control the right side */
 
-.split-right-container-2 {
+/*.split-right-container-2 {
   height: 100%;
   width: 50%;
   float: right;
@@ -123,6 +123,18 @@
   background-size: cover;
   overflow-x: hidden;
   background-color: #ffffff;
+}*/
+
+.split-right-container-2 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  float: right;
+  background-image: url("../images/lavista_circle_cut.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #ffffff; */
 }
 
 .container-3 {
@@ -1391,4 +1403,18 @@ line-height:  2.2vw;
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
+}
+
+#canvas-rombos-2 {
+  position: absolute;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  filter: contrast(170%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  margin-left: -50%;
 }
