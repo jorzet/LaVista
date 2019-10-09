@@ -126,16 +126,21 @@
 }
 
 .container-3 {
-  position: absolute;
-  left: 0;
+  /*position: absolute;
+  left: 0;*/
   width: 100%;
   height: 0px;
   /* background-color: #464646; */
-  background-image: url(../images/estilodevida.gif);
+  /* background-image: url("../images/life_style.png"); */
+  /* background-image: url(../images/estilodevida.gif); */
+  /* background-image: url(../images/amenidades3.gif); */
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
+
+
 
 .subcontainer-3 {
   position: absolute;
@@ -162,6 +167,7 @@
   height: 100%;
   width: 50%;
   float: right;
+  background-image: url("../images/life_style.png");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1335,12 +1341,18 @@ line-height:  2.2vw;
 }
 
 #canvas-rombos {
-  background-image: url("../images/life_style.png");
+  /*background-image: url("../images/life_style.png");*/
+  background-image: url("../images/amenidades3.gif");
   /* background-image: url("../images/estilodevida.gif"); */
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
-  opacity: 0.52;
+  opacity: 0.9;
+  filter: contrast(170%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #canvas-0-subcontainer-0 {
