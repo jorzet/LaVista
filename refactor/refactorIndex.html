@@ -730,6 +730,7 @@
                 <div class="split-right-container-3">
 
                     <canvas id="canvas-rombos" height="270">
+                    <canvas id="canvas-rombos" height="270">
 
              
                     </canvas>
@@ -4726,6 +4727,19 @@ function moveLine () {
         var random_live_style_menu_container = document.getElementById('live-style-menu-container');
 
         random_live_style_menu_container.addEventListener('click', function(event) {
+
+            document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3.gif')";
+
+            staticAnimation();
+
+            async function staticAnimation() {
+
+                
+                await sleep(3000);
+                document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
+
+            }
+
 
             ///////////////////////////////////////////////////////////////////////////////////// Container 3 - 1
             anime.timeline({
