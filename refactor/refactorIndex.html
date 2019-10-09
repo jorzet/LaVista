@@ -1105,12 +1105,15 @@
                 document.getElementById("more-than-home-container").style.width = "20vw";
 
                 setTimeout(function() {
-                    document.getElementById("more-than-home-h12").style.visibility = 'visible';
-                    document.getElementById("live-style-menu-h12").style.visibility = 'hidden';
-                    document.getElementById("map-menu-h12").style.visibility = 'hidden';
-                    document.getElementById("more-than-home-h12").style.opacity = '1';
-                    document.getElementById("live-style-menu-h12").style.opacity = '0';
-                    document.getElementById("map-menu-h12").style.opacity = '0';
+                    var isHovered = $('#more-than-home-container').is(":hover");
+                    if (isHovered) {
+                        document.getElementById("more-than-home-h12").style.visibility = 'visible';
+                        document.getElementById("live-style-menu-h12").style.visibility = 'hidden';
+                        document.getElementById("map-menu-h12").style.visibility = 'hidden';
+                        document.getElementById("more-than-home-h12").style.opacity = '1';
+                        document.getElementById("live-style-menu-h12").style.opacity = '0';
+                        document.getElementById("map-menu-h12").style.opacity = '0';
+                    }
                 }, 500);
             }
 
@@ -1132,12 +1135,15 @@
                 document.getElementById("live-style-menu-container").style.width = "20vw";
 
                 setTimeout(function() {
-                    document.getElementById("more-than-home-h12").style.visibility = 'hidden';
-                    document.getElementById("live-style-menu-h12").style.visibility = 'visible';
-                    document.getElementById("map-menu-h12").style.visibility = 'hidden';
-                    document.getElementById("more-than-home-h12").style.opacity = '0';
-                    document.getElementById("live-style-menu-h12").style.opacity = '1';
-                    document.getElementById("map-menu-h12").style.opacity = '0';
+                    var isHovered = $('#live-style-menu-container').is(":hover");
+                    if (isHovered) {
+                        document.getElementById("more-than-home-h12").style.visibility = 'hidden';
+                        document.getElementById("live-style-menu-h12").style.visibility = 'visible';
+                        document.getElementById("map-menu-h12").style.visibility = 'hidden';
+                        document.getElementById("more-than-home-h12").style.opacity = '0';
+                        document.getElementById("live-style-menu-h12").style.opacity = '1';
+                        document.getElementById("map-menu-h12").style.opacity = '0';
+                    }
                 }, 500);
             }
         });
@@ -1158,12 +1164,15 @@
                 document.getElementById("map-menu-container").style.width = "20vw";
 
                 setTimeout(function() {
-                    document.getElementById("more-than-home-h12").style.visibility = 'hidden';
-                    document.getElementById("live-style-menu-h12").style.visibility = 'hidden';
-                    document.getElementById("map-menu-h12").style.visibility = 'visible';
-                    document.getElementById("more-than-home-h12").style.opacity = '0';
-                    document.getElementById("live-style-menu-h12").style.opacity = '0';
-                    document.getElementById("map-menu-h12").style.opacity = '1';
+                    var isHovered = $('#map-menu-container').is(":hover");
+                    if (isHovered) {
+                        document.getElementById("more-than-home-h12").style.visibility = 'hidden';
+                        document.getElementById("live-style-menu-h12").style.visibility = 'hidden';
+                        document.getElementById("map-menu-h12").style.visibility = 'visible';
+                        document.getElementById("more-than-home-h12").style.opacity = '0';
+                        document.getElementById("live-style-menu-h12").style.opacity = '0';
+                        document.getElementById("map-menu-h12").style.opacity = '1';
+                    }
                 }, 500);
             }
         });
