@@ -17,6 +17,7 @@
     <link rel="shortcut icon" href="images/la_vista_logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!--============================================================================-->
 
@@ -1206,10 +1207,10 @@
                         Host: "in-v3.mailjet.com",
                         Username: "e258b2c6b66d0b1a8f4e370a0f3f5286",
                         Password: "76089ee4eb98986f5bbf193dfd74bb81",
-                        To: document.getElementById('email').value,
+                        To: "oswaldo.flores@vinte.com",
                         From: "coffeebeans.software@gmail.com",
                         Subject: document.getElementById('name').value + " Contacto",
-                        Body: document.getElementById('name').value + ": " + document.getElementById('msg').value
+                        Body: "email: " + document.getElementById('email').value + " nombre: " + document.getElementById('name').value + " mensaje: " + document.getElementById('msg').value
                     }).then(message => alert("Nos pondremos en contacto contigo"));
                 });
             }
@@ -2104,7 +2105,7 @@ function moveLine () {
         function showLogoAnimation() {
         	var canvas = document.getElementById("lienzo-1");
         	canvas.style.visibility = 'hidden';
-        	document.getElementById("container-zero").style.backgroundImage = "url('images/logo-invert-color.gif')";
+        	document.getElementById("container-zero").style.backgroundImage = "url('images/LogoLaVista3.gif')";
         	document.getElementById("canvas-0-subcontainer-0").style.visibility = 'hidden';
             document.getElementById("canvas-0-subcontainer-1").style.visibility = 'hidden';
             
