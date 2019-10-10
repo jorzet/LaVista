@@ -1,10 +1,51 @@
-
 @font-face {
-    font-family: HelveticaNeueLTStd;
-    src: url("fonts/HelveticaNeueLTStd-Roman.otf") format("opentype");
+  font-family: HelveticaNeueLTStd;
+  src: url("fonts/HelveticaNeueLTStd-Roman.otf") format("opentype");
 }
 
-.container-1 {
+#section1 {
+  padding-top: 0px;
+  height: 0px;
+  color: rgb(42, 42, 42);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#section2 {
+  padding-top: 0px;
+  height: 0px;
+  color: #fff;
+  background-color: #683ab700;
+}
+
+#section3 {
+  padding-top: 0px;
+  height: 0px;
+  color: #fff;
+  background-color: #ff990000;
+}
+
+#section4 {
+  padding-top: 0px;
+  height: 0px;
+  color: #fff;
+  background-color: #00bbd400;
+}
+
+#section5 {
+  padding-top: 0px;
+  height: 0px;
+  color: #fff;
+  background-color: #ff990000;
+}
+
+#section6 {
+  padding-top: 00px;
+  height: 0px;
+  color: #fff;
+  background-color: #00bbd400;
+}
+
+.container-0 {
   position: absolute;
   left: 0;
   top: 0;
@@ -19,158 +60,179 @@
   transition: opacity 1s;
 }
 
-.subcontainer-1 {
+.subcontainer-0 {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.container-2 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color:#464646;
+.sections {
   visibility: hidden;
   opacity: 0;
   transition: opacity 1s;
+}
+
+.container-1 {
+  width: 100%;
+  height: 0px;
+  background-image: url(../images/background2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.subcontainer-1 {
+  position: absolute;
+  left: 0;
+}
+
+.container-2 {
+  width: 100%;
+  height: 0px;
+  background-color: #464646;
 }
 
 .subcontainer-2 {
   position: absolute;
   left: 0;
-  top: 0;
 }
 
+
 /* Control the left side */
+
 .split-left-container-2 {
   z-index: 1;
   height: 100%;
   width: 50%;
   left: 0;
-  top: 0;
   background-color: #ffffff;
   overflow-x: hidden;
 }
 
+
 /* Control the right side */
-.split-right-container-2 {
-  
+
+/*.split-right-container-2 {
   height: 100%;
   width: 50%;
   float: right;
-  top: 0;
-  background-image: url(../images/lavista_circle_cut.png);
+  background-image: url(../images/lavista_circle_cut.png) !important;
   background-position: top left;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   overflow-x: hidden;
   background-color: #ffffff;
+}*/
+
+.split-right-container-2 {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  float: right;
+  background-image: url("../images/lavista_circle_cut.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #ffffff; */
 }
 
 .container-3 {
-  position: absolute;
-  left: 0;
-  top: 0;
+  /*position: absolute;
+  left: 0;*/
   width: 100%;
-  height: 100%;
-  background-color:#464646;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s;
+  height: 0px;
+  /* background-color: #464646; */
+  /* background-image: url("../images/life_style.png"); */
+  /* background-image: url(../images/estilodevida.gif); */
+  /* background-image: url(../images/amenidades3.gif); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+
 
 .subcontainer-3 {
   position: absolute;
   left: 0;
-  top: 0;
 }
 
+
 /* Control the left side */
+
 .split-left-container-3 {
   z-index: 1;
   height: 100%;
   width: 50%;
   left: 0;
-  top: 0;
   background-color: #ffffff;
   overflow-x: hidden;
 }
 
+
 /* Control the right side */
+
 .split-right-container-3 {
   z-index: 1;
   height: 100%;
   width: 50%;
   float: right;
-  top: 0;
-  background-image: url(../images/life_style.png);
+  background-image: url("../images/life_style.png");
   background-position: top left;
   background-repeat: no-repeat;
-  background-size:cover;
-  overflow-x: hidden;
-  background-color: #ffffff;
+  background-size: cover;
+  /* background-color: #ffffff; */
 }
 
 .container-4 {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: 100%;
-  background-color:#464646;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s;
+  height: 0px;
+  background-color: #464646;
 }
 
 .subcontainer-4 {
   position: absolute;
   left: 0;
-  top: 0;
 }
 
+
 /* Control the left side */
+
 .split-left-container-4 {
   z-index: 1;
   height: 100%;
   width: 50%;
   left: 0;
-  top: 0;
   background-color: #ffffff;
   overflow-x: hidden;
 }
 
+
 /* Control the right side */
+
 .split-right-container-4 {
   height: 100%;
   width: 50%;
   float: right;
   background-color: #ffffff;
-  top: 0;
 }
 
 .container-5 {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: 100%;
-  background-color:#464646;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s;
+  height: 0px;
+  background-color: #464646;
 }
 
 .subcontainer-5 {
   position: absolute;
   left: 0;
-  top: 0;
 }
 
 
 /* Control the left side */
+
 .split-left-container-5 {
   z-index: 1;
   height: 100%;
@@ -180,12 +242,14 @@
   background-image: url(../images/livenza.png);
   background-position: top left;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   overflow-x: hidden;
   background-color: #ffffff;
 }
 
+
 /* Control the right side */
+
 .split-right-container-5 {
   height: 100%;
   width: 50%;
@@ -194,7 +258,7 @@
   background-image: url(../images/right_background_livenza.png);
   background-position: top left;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   overflow-x: hidden;
   background-color: #ffffff;
 }
@@ -202,13 +266,9 @@
 .container-6 {
   position: absolute;
   left: 0;
-  top: 0;
   width: 100%;
-  height: 100%;
-  background-color:#464646;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s;
+  height: 0px;
+  background-color: #464646;
 }
 
 .subcontainer-6 {
@@ -219,6 +279,7 @@
 
 
 /* Control the left side */
+
 .split-left-container-6 {
   z-index: 1;
   height: 100%;
@@ -229,30 +290,26 @@
   overflow-x: hidden;
 }
 
+
 /* Control the right side */
+
 .split-right-container-6 {
- 
   height: 100%;
   width: 50%;
   float: right;
-  top: 0;
   background-image: url(../images/rivalta.png);
   background-position: top left;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   overflow-x: hidden;
   background-color: #ffffff;
 }
 
-
 @media only screen and (max-width: 767px) {
-  .container-1 {
-    background-image: url(../images/background.png);
-  }
-
+  
   .split-right {
-    background-image: url(../images/lavista_circle.png);
-    background-color: red;
+      background-image: url(../images/lavista_circle.png);
+      background-color: red;
   }
 }
 
@@ -268,7 +325,7 @@
 }
 
 .menu-container {
-  float:left;
+  float: left;
   width: 6vw;
 }
 
@@ -276,6 +333,7 @@
   height: 5vw;
   width: 0px;
   transition: width 1s;
+  /* visibility: hidden; */
 }
 
 .menu {
@@ -283,7 +341,7 @@
   width: 3vw;
   position: relative;
   top: 25%;
-  cursor:pointer;
+  cursor: pointer;
   margin-left: 2vw;
 }
 
@@ -312,7 +370,7 @@
   height: 3vw;
   position: relative;
   top: 25%;
-  cursor:pointer;
+  cursor: pointer;
   margin-left: 2vw;
   visibility: hidden;
   opacity: 0;
@@ -327,7 +385,6 @@
   margin-top: 33%;
   left: 6.5vw;
   width: 20vw;
-  visibility: visible;
   opacity: 0;
   transition: opacity 1s;
 }
@@ -346,7 +403,7 @@
   height: 1.5vw;
   position: relative;
   top: 25%;
-  cursor:pointer;
+  cursor: pointer;
   margin-left: 2vw;
   visibility: hidden;
   opacity: 0;
@@ -360,14 +417,11 @@
   margin-top: 25%;
   left: 7vw;
   width: 20vw;
-  visibility: visible;
   opacity: 0;
   transition: opacity 1s;
 }
 
-
-
-#map-menu-container{
+#map-menu-container {
   height: 5vw;
   width: 0px;
   margin-top: 2.5vw;
@@ -384,7 +438,6 @@
   margin-top: 30%;
   left: 9vw;
   width: 20vw;
-  visibility: visible;
   opacity: 0;
   transition: opacity 1s;
 }
@@ -393,7 +446,7 @@
   height: 3vw;
   position: relative;
   top: 25%;
-  cursor:pointer;
+  cursor: pointer;
   margin-left: 2vw;
   visibility: hidden;
   opacity: 0;
@@ -401,11 +454,11 @@
 }
 
 .canvas-1 {
-  position:fixed;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   visibility: hidden;
   z-index: 1;
 }
@@ -432,7 +485,7 @@
 }
 
 .logo2 {
-  cursor:pointer;
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
@@ -461,7 +514,7 @@
 }
 
 .logo {
-  cursor:pointer;
+  cursor: pointer;
   visibility: visible;
 }
 
@@ -474,8 +527,8 @@
   height: 3vw;
   border-style: solid;
   background-color: Transparent;
-  cursor:pointer;
-  overflow: hidden;  
+  cursor: pointer;
+  overflow: hidden;
   border-width: 0.1vw;
   border-left-width: 0.2vw;
   border-right-width: 0.2vw;
@@ -490,26 +543,26 @@
 }
 
 #button-metting:hover {
-   background-color: #606060;
-   color: #ffffff;
+  background-color: #606060;
+  color: #ffffff;
 }
 
 #button-metting:active {
-   background-color: #113D66;
-   border-color: #113D66;
-   color: #ffffff;
+  background-color: #113D66;
+  border-color: #113D66;
+  color: #ffffff;
 }
 
-
 .button-metting-livenza-container {
-  position: absolute;
-  left:  0;
-  top: 30%;
+  position: relative;
+  left: 0;
+  top: 0%;
   margin-left: 7%;
   visibility: visible;
 }
 
 .livenza-rivalta-logo {
+  position: relative;
   width: 8vw;
 }
 
@@ -518,8 +571,8 @@
   height: 3vw;
   border-style: solid;
   background-color: Transparent;
-  cursor:pointer;
-  overflow: hidden;  
+  cursor: pointer;
+  overflow: hidden;
   border-width: 0.1vw;
   border-left-width: 0.2vw;
   border-right-width: 0.2vw;
@@ -532,24 +585,21 @@
 }
 
 #button-livenza-metting:hover {
-   background-color: #38C1CA;
-   color: black;
+  background-color: #38C1CA;
+  color: black;
 }
 
 #button-livenza-metting:active {
-   background-color: white;
-   border-color: black;
-   color: black;
+  background-color: white;
+  border-color: black;
+  color: black;
 }
-
-
 
 .button-metting-rivalta-container {
   position: absolute;
   left: 0;
   top: 30%;
   margin-left: 7%;
-  visibility: visible;
 }
 
 #button-rivalta-metting {
@@ -557,8 +607,8 @@
   height: 3vw;
   border-style: solid;
   background-color: Transparent;
-  cursor:pointer;
-  overflow: hidden;  
+  cursor: pointer;
+  overflow: hidden;
   border-width: 0.1vw;
   border-left-width: 0.2vw;
   border-right-width: 0.2vw;
@@ -571,18 +621,18 @@
 }
 
 #button-rivalta-metting:hover {
-   background-color: black;
-   color: #71974A;
+  background-color: black;
+  color: #71974A;
 }
 
 #button-rivalta-metting:active {
-   background-color: white;
-   border-color: #71974A;
-   color: #71974A;
+  background-color: white;
+  border-color: #71974A;
+  color: #71974A;
 }
 
 .la_vista_logo_rivalta {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 2%;
   margin-left: 7.5vw;
@@ -597,7 +647,7 @@
   height: 1.5vw;
   position: relative;
   float: right;
-  top: 5%;
+  margin-top: 5%;
   margin-right: 2vw;
   visibility: visible;
 }
@@ -611,8 +661,6 @@
   visibility: visible;
 }
 
-
-
 .text-container-1 {
   position: relative;
   float: center;
@@ -621,23 +669,23 @@
   transition: opacity 1s;
 }
 
-
 #text-1-container-1 {
   color: #727272;
   text-align: left;
   margin-left: 20%;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
+
 /*#text-2-container-1 {
-  color: #3A5D80;
-  text-align: right;
-  margin-right: 15%;
-  font-size: 2.5vw;
-  letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+color: #3A5D80;
+text-align: right;
+margin-right: 15%;
+font-size: 2.5vw;
+letter-spacing: 2.3vw;
+line-height:  2.8vw;
 }*/
 
 #text-3-container-1 {
@@ -646,7 +694,7 @@
   margin-left: 20%;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 #text-4-container-1 {
@@ -655,7 +703,7 @@
   margin-left: 20%;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 #text-5-container-1 {
@@ -664,7 +712,7 @@
   margin-left: 20%;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 #text-6-container-1 {
@@ -673,7 +721,7 @@
   margin-left: 20%;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 #text-7-container-1 {
@@ -682,10 +730,8 @@
   margin-left: 20%;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
-
-
 
 .text-container-2 {
   position: relative;
@@ -700,7 +746,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-2-container-2 {
@@ -708,35 +754,34 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
+
 /*.text-3-container-2 {
-  color: #3A5D80;
-  text-align: left;
-  margin-left: 10%;
-  font-size: 1.5vw;
-  letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+color: #3A5D80;
+text-align: left;
+margin-left: 10%;
+font-size: 1.5vw;
+letter-spacing: 2.3vw;
+line-height:  2.2vw;
 }
 */
+
 .text-4-container-2 {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
-
-
-
 
 .text-1-container-3 {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-2-container-3 {
@@ -744,16 +789,17 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
+
 /*.text-3-container-3 {
-  color: #3A5D80;
-  text-align: left;
-  margin-left: 10%;
-  font-size: 1.5vw;
-  letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+color: #3A5D80;
+text-align: left;
+margin-left: 10%;
+font-size: 1.5vw;
+letter-spacing: 2.3vw;
+line-height:  2.2vw;
 }
 */
 
@@ -762,7 +808,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-5-container-3 {
@@ -770,7 +816,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-6-container-3 {
@@ -778,28 +824,25 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
-
-
-
-
 
 .text-1-container-4 {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
+
 /*.text-2-container-4 {
-  color: #3A5D80;
-  text-align: left;
-  margin-left: 10%;
-  font-size: 1.5vw;
-  letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+color: #3A5D80;
+text-align: left;
+margin-left: 10%;
+font-size: 1.5vw;
+letter-spacing: 2.3vw;
+line-height:  2.2vw;
 }
 */
 
@@ -808,7 +851,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-4-container-4 {
@@ -816,36 +859,32 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
-
-
-
 
 .text-container-5 {
   position: relative;
   float: center;
-  top: 60%;
+  top: 10%;
   z-index: 1;
 }
-
 
 .text-1-container-5 {
   color: #1A4A65;
   text-align: left;
-  margin-left: 14%;
+  margin-left: 10%;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-2-container-5 {
   color: #1A4A65;
   text-align: left;
-  margin-left: 14%;
+  margin-left: 10%;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-3-container-5 {
@@ -854,7 +893,7 @@
   margin-left: 10%;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-4-container-5 {
@@ -863,7 +902,7 @@
   margin-left: 10%;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-container-6 {
@@ -873,48 +912,47 @@
   z-index: 1;
 }
 
-
 .text-1-container-6 {
   color: white;
   text-align: left;
-  margin-left: 18%;
+  margin-left: 90px;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-2-container-6 {
   color: white;
   text-align: left;
-  margin-left: 15%;
+  margin-left: 90px;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-3-container-6 {
   color: white;
   text-align: left;
-  margin-left: 15%;
+  margin-left: 90px;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-4-container-6 {
   color: black;
   text-align: left;
-  margin-left: 15%;
+  margin-left: 90px;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
-
 .livenza-rivalta-container {
-  position: absolute;
+  position: relative;
   right: 0;
-  top: 15vw;
+  /*top: 15vw;*/
+  top: 15%;
   margin-right: 6vw;
 }
 
@@ -922,15 +960,15 @@
   width: 15vw;
   height: 15vw;
   margin-right: 1vw;
-  background-image: url(../images/rombo-2.png);
+  /* background-image: url(../images/rombo-2.png); */
   background-position: top left;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
 .livenza-img {
   width: 6vw;
-  cursor:pointer;
+  cursor: pointer;
   margin-left: 4.5vw;
   margin-top: 35%;
 }
@@ -940,33 +978,30 @@
   width: 15vw;
   height: 15vw;
   margin-right: 1vw;
-  background-image: url(../images/rombo-2.png);
+  /* background-image: url(../images/rombo-2.png); */
   background-position: top left;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
 .rivalta-img {
   width: 6vw;
-  cursor:pointer;
+  cursor: pointer;
   margin-left: 4.5vw;
   margin-top: 30%;
 }
 
-
-
-
 .back-container {
-  position: absolute;
+  position: relative;
   width: 13vw;
   height: 13vw;
   right: 0;
-  top: 40%;
+  top: 10%;
   margin-right: 6vw;
   background-image: url(../images/back-bg.png);
   background-position: top left;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
 #back {
@@ -978,33 +1013,31 @@
 
 .back-img {
   width: 5vw;
-  cursor:pointer;
+  cursor: pointer;
+  margin-top: 150%;
 }
 
-
-
 #map-google {
-  height: 100%;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
-  background-color: gray;
- }
-
-
-
- .rombos-container {
-  
-  float: center;
   height: 100%;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  background-color: gray;
+}
+
+.rombos-container {
+  float: center;
+  height: 60%;
   padding: 30%;
-  margin: 30%;
+  margin: 30% 0% 0% 30%;
   background-image: url(../images/life_style_bg_2.png);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
- }
+}
 
 
- /*////////////////////////////////////////////////////////////
+/*////////////////////////////////////////////////////////////
 [ Propio ]*/
 
 .text-container-4 {
@@ -1035,7 +1068,7 @@
   margin-left: 20%;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 .text-1-container-1-add {
@@ -1043,7 +1076,7 @@
   text-align: left;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 .text-2-container-1-add {
@@ -1051,7 +1084,7 @@
   text-align: left;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 .text-3-container-1-add {
@@ -1059,7 +1092,7 @@
   text-align: left;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 .text-4-container-1-add {
@@ -1067,7 +1100,7 @@
   text-align: left;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 .text-5-container-1-add {
@@ -1075,7 +1108,7 @@
   text-align: left;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 .text-6-container-1-add {
@@ -1083,7 +1116,7 @@
   text-align: left;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 .text-7-container-1-add {
@@ -1091,7 +1124,7 @@
   text-align: left;
   font-size: 2.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.8vw;
+  line-height: 2.8vw;
 }
 
 .text-3-container-2 {
@@ -1099,39 +1132,39 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
-.text-1-container-2-add{
+.text-1-container-2-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
-.text-2-container-2-add{
+.text-2-container-2-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
-.text-3-container-2-add{
+.text-3-container-2-add {
   color: #3A5D80;
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
-.text-4-container-2-add{
+.text-4-container-2-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-1-container-3-add {
@@ -1139,7 +1172,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-2-container-3-add {
@@ -1147,7 +1180,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-3-container-3 {
@@ -1155,7 +1188,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-3-container-3-add {
@@ -1163,7 +1196,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-4-container-3-add {
@@ -1171,7 +1204,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-5-container-3-add {
@@ -1179,7 +1212,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-6-container-3-add {
@@ -1187,7 +1220,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-1-container-4-add {
@@ -1195,7 +1228,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-2-container-4 {
@@ -1203,7 +1236,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-2-container-4-add {
@@ -1211,7 +1244,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-3-container-4-add {
@@ -1219,7 +1252,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-4-container-4-add {
@@ -1227,7 +1260,7 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 #vista-word h1 {
@@ -1260,7 +1293,7 @@
   text-align: left;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-2-container-5-add {
@@ -1268,7 +1301,7 @@
   text-align: left;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-3-container-5-add {
@@ -1276,7 +1309,7 @@
   text-align: left;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-4-container-5-add {
@@ -1284,7 +1317,7 @@
   text-align: left;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-1-container-6-add {
@@ -1292,7 +1325,7 @@
   text-align: left;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-2-container-6-add {
@@ -1300,7 +1333,7 @@
   text-align: left;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-3-container-6-add {
@@ -1308,7 +1341,7 @@
   text-align: left;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
 }
 
 .text-4-container-6-add {
@@ -1316,5 +1349,95 @@
   text-align: right;
   font-size: 1.5vw;
   letter-spacing: 2.3vw;
-  line-height:  2.2vw;
+  line-height: 2.2vw;
+}
+
+#canvas-rombos {
+  /*background-image: url("../images/life_style.png");*/
+  /* background-image: url("../images/amenidades3.gif"); */
+  /* background-image: url("../images/estilodevida.gif"); */
+  position: absolute;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  filter: contrast(170%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  margin-left: -50%;
+}
+
+#canvas-0-subcontainer-0 {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas-0-subcontainer-1 {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas-0-subcontainer-2 {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas-0-subcontainer-3 {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas-1-subcontainer-1 {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas-2-subcontainer-1 {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas-rombos-2 {
+  position: absolute;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  filter: contrast(170%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  margin-left: -50%;
+}
+
+.button_livenza {
+  border: none;
+  color: white;
+  padding: 5vw 7vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 60% 20%;
+  cursor: pointer;
+}
+
+.button_rivalta {
+  border: none;
+  color: white;
+  padding: 5vw 7vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10% 20%;
+  cursor: pointer;
 }
