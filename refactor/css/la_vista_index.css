@@ -960,7 +960,7 @@ line-height:  2.2vw;
   width: 15vw;
   height: 15vw;
   margin-right: 1vw;
-  background-image: url(../images/rombo-2.png);
+  /* background-image: url(../images/rombo-2.png); */
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -978,7 +978,7 @@ line-height:  2.2vw;
   width: 15vw;
   height: 15vw;
   margin-right: 1vw;
-  background-image: url(../images/rombo-2.png);
+  /* background-image: url(../images/rombo-2.png); */
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1415,6 +1415,29 @@ line-height:  2.2vw;
   background-position: center center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  background-size: cover;
   margin-left: -50%;
+}
+
+.button_livenza {
+  border: none;
+  color: white;
+  padding: 5vw 7vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 60% 20%;
+  cursor: pointer;
+}
+
+.button_rivalta {
+  border: none;
+  color: white;
+  padding: 5vw 7vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10% 20%;
+  cursor: pointer;
 }

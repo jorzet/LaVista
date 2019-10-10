@@ -271,24 +271,26 @@
                 <canvas class="subcontainer-2" id="canvas-1-subcontainer-2">
         </canvas>
 
-                <canvas class="subcontainer-2" id="canvas-2-subcontainer-2">
-        </canvas>
+                
 
                 <div class="split-right-container-2">
 
                         <canvas id="canvas-rombos-2" height="270">
+                        </canvas>
 
+                        <canvas class="subcontainer-2" id="canvas-2-subcontainer-2" height="270">
                         </canvas>
 
                     <div class="livenza-rivalta-container" style="float: right;">
                         <div id="livenza-container">
-                            <a href="#section3">
+                            <a href="#section3" class="button_livenza" id="button_livenza">
                                 <!-- <img class="livenza-img" id="livenza-icon" src="images/livenza-icon.png" alt="livenza"> -->
                             </a>
                         </div>
 
                         <div id="rivalta-container">
-                            <a href="#section4">
+                            <a href="#section4" class="button_rivalta" id="button_rivalta">
+                                
                                 <!-- <img class="rivalta-img" id="rivalta-icon" src="images/rivalta-icon.png" alt="rivalta"> -->
                             </a>
                         </div>
@@ -430,7 +432,10 @@
         </canvas>
 
                 <canvas class="subcontainer-5" id="canvas-2-subcontainer-5">
-        </canvas>
+                </canvas>
+
+                <canvas class="subcontainer-5" id="canvas-3-subcontainer-5" width="1063" height="801">
+                </canvas>
 
                 <div class="split-right-container-5">
                     <div class="livenza-logo" id="livenza_logo_id">
@@ -579,6 +584,9 @@
         </canvas>
 
                 <canvas class="subcontainer-6" id="canvas-2-subcontainer-6">
+        </canvas>
+
+        <canvas class="subcontainer-6" id="canvas-3-subcontainer-6" width="1063" height="801">
         </canvas>
 
                 <div class="split-right-container-6">
@@ -736,8 +744,9 @@
                 <div class="split-right-container-3">
 
                     <canvas id="canvas-rombos" height="270">
+                    </canvas>
 
-             
+                    <canvas class="subcontainer-3" id="canvas-3-subcontainer-3" height="270">
                     </canvas>
 
                 </div>
@@ -2118,8 +2127,8 @@ function moveLine () {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
 
-            console.log(canvas.width);
-            console.log(canvas.height);
+            //console.log(canvas.width);
+            //console.log(canvas.height);
 
             ////////////////////////////////////////////////////////////// 1
 
@@ -2675,8 +2684,8 @@ function moveLine () {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
 
-            console.log(canvas.width);
-            console.log(canvas.height);
+            //console.log(canvas.width);
+            //console.log(canvas.height);
 
             ////////////////////////////////////////////////////////////// 1 - 1
 
@@ -3705,10 +3714,298 @@ function moveLine () {
             async function staticAnimation() {
 
                 
-                await sleep(3000);
-                document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
+                await sleep(2000);
+                document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.png')";
 
             }
+
+
+            /////////////////////////////////////////////////////////////////////////
+            var canvas = document.getElementById("canvas-2-subcontainer-2");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            //console.log(canvas.width);
+            //console.log(canvas.height);
+
+            ////////////////////////////////////////////////////////////// 1 - 1
+
+            var ctx_11 = canvas.getContext("2d");
+            ctx_11.strokeStyle = "#ffffff";
+            ctx_11.lineWidth = 2;
+            var posY_11 = -250;
+            var posX_11 = 700;
+            var posY_11_static = 0;
+            var posX_11_static = 50;
+            var lineLength_11 = 250;
+            var speed_11 = 2;
+
+            ////////////////////////////////////////////////////////////// 2 - 1
+
+            var ctx_21 = canvas.getContext("2d");
+            ctx_21.strokeStyle = "#ffffff";
+            ctx_21.lineWidth = 2;
+            var posY_21 = -150;
+            var posX_21 = 750;
+            var posY_21_static = 0;
+            var posX_21_static = 50;
+            var lineLength_21 = 150;
+            var speed_21 = 2;
+
+            ////////////////////////////////////////////////////////////// 3 - 1
+
+            var ctx_31 = canvas.getContext("2d");
+            ctx_31.strokeStyle = "#ffffff";
+            ctx_31.lineWidth = 2;
+            var posY_31 = -450;
+            var posX_31 = 300;
+            var posY_31_static = 0;
+            var posX_31_static = 50;
+            var lineLength_31 = 450;
+            var speed_31 = 2;
+
+            ////////////////////////////////////////////////////////////// 4 - 1
+
+            var ctx_41 = canvas.getContext("2d");
+            ctx_41.strokeStyle = "#ffffff";
+            ctx_41.lineWidth = 2;
+            var posY_41 = -250;
+            var posX_41 = 350;
+            var posY_41_static = 0;
+            var posX_41_static = 50;
+            var lineLength_41 = 250;
+            var speed_41 = 2;
+
+            ////////////////////////////////////////////////////////////// 1
+
+            var ctx_1 = canvas.getContext("2d");
+            ctx_1.strokeStyle = "#ffffff";
+            ctx_1.lineWidth = 2;
+            var posY_1 = 800;
+            var posX_1 = -100;
+            var lineLength_1 = 130;
+            var speed_1 = 2;
+
+            ////////////////////////////////////////////////////////////// 2
+
+            var ctx_2 = canvas.getContext("2d");
+            ctx_2.strokeStyle = "#ffffff";
+            ctx_2.lineWidth = 2;
+            var posY_2 = 800;
+            var posX_2 = -70;
+            var lineLength_2 = 130;
+            var speed_2 = 2;
+
+            ////////////////////////////////////////////////////////////// 6
+
+            var ctx_6 = canvas.getContext("2d");
+            ctx_6.strokeStyle = "#ffffff";
+            ctx_6.lineWidth = 2;
+            var posY_6 = 1100;
+            var posX_6 = 1150;
+            var posY_6_static = 0;
+            var posX_6_static = 50;
+            var lineLength_6 = 300;
+            var speed_6 = 2;
+
+            ////////////////////////////////////////////////////////////// 7
+
+            var ctx_7 = canvas.getContext("2d");
+            ctx_7.strokeStyle = "#ffffff";
+            ctx_7.lineWidth = 2;
+            var posY_7 = 1300;
+            var posX_7 = 1400;
+            var posY_7_static = 0;
+            var posX_7_static = 50;
+            var lineLength_7 = 500;
+            var speed_7 = 2;
+
+            ////////////////////////////////////////////////////////////// 8
+
+            var ctx_8 = canvas.getContext("2d");
+            ctx_8.strokeStyle = "#ffffff";
+            ctx_8.lineWidth = 2;
+            var posY_8 = 1100;
+            var posX_8 = 1350;
+            var posY_8_static = 0;
+            var posX_8_static = 50;
+            var lineLength_8 = 300;
+            var speed_8 = 2;
+
+            ////////////////////////////////////////////////////////////// 9
+
+            var ctx_9 = canvas.getContext("2d");
+            ctx_9.strokeStyle = "#ffffff";
+            ctx_9.lineWidth = 2;
+            var posY_9 = 1300;
+            var posX_9 = 1800;
+            var posY_9_static = 0;
+            var posX_9_static = 50;
+            var lineLength_9 = 500;
+            var speed_9 = 2;
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            function drawLine() {
+
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.beginPath();
+                ctx_11.moveTo(posX_11, posY_11);
+                ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                ctx_11.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.beginPath();
+                ctx_21.moveTo(posX_21, posY_21);
+                ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                ctx_21.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_31.beginPath();
+                ctx_31.moveTo(posX_31, posY_31);
+                ctx_31.lineTo(posX_31+lineLength_31, posY_31+lineLength_31);
+                ctx_31.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.beginPath();
+                ctx_41.moveTo(posX_41, posY_41);
+                ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                ctx_41.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.beginPath();
+                ctx_1.moveTo(posX_1, posY_1);
+                ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                ctx_1.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.beginPath();
+                ctx_2.moveTo(posX_2, posY_2);
+                ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                ctx_2.stroke();
+                ////////////////////////////////////////////////////////////////////////////
+                ctx_6.beginPath();
+                ctx_6.moveTo(posX_6, posY_6);
+                ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                ctx_6.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.beginPath();
+                ctx_7.moveTo(posX_7, posY_7);
+                ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                ctx_7.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.beginPath();
+                ctx_8.moveTo(posX_8, posY_8);
+                ctx_8.lineTo(posX_8-lineLength_8, posY_8-lineLength_8);
+                ctx_8.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.beginPath();
+                ctx_9.moveTo(posX_9, posY_9);
+                ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                ctx_9.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+
+            }
+    
+            function moveLine () {
+
+                /////////////////////////////////////////////////////////////////////////////
+                posY_11 += speed_11;
+                posX_11 += speed_11;
+                
+                if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                    speed_11 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_21 += speed_21;
+                posX_21 += speed_21;
+                
+                if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                    speed_21 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_31 += speed_31;
+                posX_31 += speed_31;
+                
+                if ( posY_31+lineLength_31 > canvas.height - 500 ) {
+                    speed_31 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_41 += speed_41;
+                posX_41 += speed_41;
+                
+                if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                    speed_41 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_1 -= speed_1;
+                posX_1 += speed_1;
+                
+                if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                    speed_1 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_2 -= speed_2;
+                posX_2 += speed_2;
+                
+                if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                    speed_2 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_6 -= speed_6;
+                posX_6 -= speed_6;
+                
+                if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                    speed_6 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_7 -= speed_7;
+                posX_7 -= speed_7;
+                
+                if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                    speed_7 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_8 -= speed_8;
+                posX_8 -= speed_8;
+                
+                if ( posY_8-lineLength_8 < canvas.height - 220 ) {
+                    speed_8 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_9 -= speed_9;
+                posX_9 -= speed_9;
+                
+                if ( posY_9-lineLength_9 < canvas.height - 330 ) {
+                    speed_9 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+            
+            }
+    
+            function loop() {
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_31.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                moveLine();
+                drawLine();
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
+
 
             ///////////////////////////////////////////////////////////////////////////////////// Container 2 - 1
             anime.timeline({
@@ -4079,6 +4376,305 @@ function moveLine () {
         ///////////////////////////////////////////////////////////////////////////// Regresar Livenza
 
         random_back_livenza.addEventListener('click', function(event) {
+
+            document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.gif')";
+
+            staticAnimation();
+
+            async function staticAnimation() {
+
+                
+                await sleep(2000);
+                document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.png')";
+
+            }
+
+                        /////////////////////////////////////////////////////////////////////////
+                        var canvas = document.getElementById("canvas-2-subcontainer-2");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            //console.log(canvas.width);
+            //console.log(canvas.height);
+
+            ////////////////////////////////////////////////////////////// 1 - 1
+
+            var ctx_11 = canvas.getContext("2d");
+            ctx_11.strokeStyle = "#ffffff";
+            ctx_11.lineWidth = 2;
+            var posY_11 = -250;
+            var posX_11 = 700;
+            var posY_11_static = 0;
+            var posX_11_static = 50;
+            var lineLength_11 = 250;
+            var speed_11 = 2;
+
+            ////////////////////////////////////////////////////////////// 2 - 1
+
+            var ctx_21 = canvas.getContext("2d");
+            ctx_21.strokeStyle = "#ffffff";
+            ctx_21.lineWidth = 2;
+            var posY_21 = -150;
+            var posX_21 = 750;
+            var posY_21_static = 0;
+            var posX_21_static = 50;
+            var lineLength_21 = 150;
+            var speed_21 = 2;
+
+            ////////////////////////////////////////////////////////////// 3 - 1
+
+            var ctx_31 = canvas.getContext("2d");
+            ctx_31.strokeStyle = "#ffffff";
+            ctx_31.lineWidth = 2;
+            var posY_31 = -450;
+            var posX_31 = 300;
+            var posY_31_static = 0;
+            var posX_31_static = 50;
+            var lineLength_31 = 450;
+            var speed_31 = 2;
+
+            ////////////////////////////////////////////////////////////// 4 - 1
+
+            var ctx_41 = canvas.getContext("2d");
+            ctx_41.strokeStyle = "#ffffff";
+            ctx_41.lineWidth = 2;
+            var posY_41 = -250;
+            var posX_41 = 350;
+            var posY_41_static = 0;
+            var posX_41_static = 50;
+            var lineLength_41 = 250;
+            var speed_41 = 2;
+
+            ////////////////////////////////////////////////////////////// 1
+
+            var ctx_1 = canvas.getContext("2d");
+            ctx_1.strokeStyle = "#ffffff";
+            ctx_1.lineWidth = 2;
+            var posY_1 = 800;
+            var posX_1 = -100;
+            var lineLength_1 = 130;
+            var speed_1 = 2;
+
+            ////////////////////////////////////////////////////////////// 2
+
+            var ctx_2 = canvas.getContext("2d");
+            ctx_2.strokeStyle = "#ffffff";
+            ctx_2.lineWidth = 2;
+            var posY_2 = 800;
+            var posX_2 = -70;
+            var lineLength_2 = 130;
+            var speed_2 = 2;
+
+            ////////////////////////////////////////////////////////////// 6
+
+            var ctx_6 = canvas.getContext("2d");
+            ctx_6.strokeStyle = "#ffffff";
+            ctx_6.lineWidth = 2;
+            var posY_6 = 1100;
+            var posX_6 = 1150;
+            var posY_6_static = 0;
+            var posX_6_static = 50;
+            var lineLength_6 = 300;
+            var speed_6 = 2;
+
+            ////////////////////////////////////////////////////////////// 7
+
+            var ctx_7 = canvas.getContext("2d");
+            ctx_7.strokeStyle = "#ffffff";
+            ctx_7.lineWidth = 2;
+            var posY_7 = 1300;
+            var posX_7 = 1400;
+            var posY_7_static = 0;
+            var posX_7_static = 50;
+            var lineLength_7 = 500;
+            var speed_7 = 2;
+
+            ////////////////////////////////////////////////////////////// 8
+
+            var ctx_8 = canvas.getContext("2d");
+            ctx_8.strokeStyle = "#ffffff";
+            ctx_8.lineWidth = 2;
+            var posY_8 = 1100;
+            var posX_8 = 1350;
+            var posY_8_static = 0;
+            var posX_8_static = 50;
+            var lineLength_8 = 300;
+            var speed_8 = 2;
+
+            ////////////////////////////////////////////////////////////// 9
+
+            var ctx_9 = canvas.getContext("2d");
+            ctx_9.strokeStyle = "#ffffff";
+            ctx_9.lineWidth = 2;
+            var posY_9 = 1300;
+            var posX_9 = 1800;
+            var posY_9_static = 0;
+            var posX_9_static = 50;
+            var lineLength_9 = 500;
+            var speed_9 = 2;
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            function drawLine() {
+
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.beginPath();
+                ctx_11.moveTo(posX_11, posY_11);
+                ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                ctx_11.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.beginPath();
+                ctx_21.moveTo(posX_21, posY_21);
+                ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                ctx_21.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_31.beginPath();
+                ctx_31.moveTo(posX_31, posY_31);
+                ctx_31.lineTo(posX_31+lineLength_31, posY_31+lineLength_31);
+                ctx_31.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.beginPath();
+                ctx_41.moveTo(posX_41, posY_41);
+                ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                ctx_41.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.beginPath();
+                ctx_1.moveTo(posX_1, posY_1);
+                ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                ctx_1.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.beginPath();
+                ctx_2.moveTo(posX_2, posY_2);
+                ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                ctx_2.stroke();
+                ////////////////////////////////////////////////////////////////////////////
+                ctx_6.beginPath();
+                ctx_6.moveTo(posX_6, posY_6);
+                ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                ctx_6.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.beginPath();
+                ctx_7.moveTo(posX_7, posY_7);
+                ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                ctx_7.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.beginPath();
+                ctx_8.moveTo(posX_8, posY_8);
+                ctx_8.lineTo(posX_8-lineLength_8, posY_8-lineLength_8);
+                ctx_8.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.beginPath();
+                ctx_9.moveTo(posX_9, posY_9);
+                ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                ctx_9.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+
+            }
+    
+            function moveLine () {
+
+                /////////////////////////////////////////////////////////////////////////////
+                posY_11 += speed_11;
+                posX_11 += speed_11;
+                
+                if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                    speed_11 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_21 += speed_21;
+                posX_21 += speed_21;
+                
+                if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                    speed_21 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_31 += speed_31;
+                posX_31 += speed_31;
+                
+                if ( posY_31+lineLength_31 > canvas.height - 500 ) {
+                    speed_31 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_41 += speed_41;
+                posX_41 += speed_41;
+                
+                if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                    speed_41 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_1 -= speed_1;
+                posX_1 += speed_1;
+                
+                if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                    speed_1 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_2 -= speed_2;
+                posX_2 += speed_2;
+                
+                if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                    speed_2 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_6 -= speed_6;
+                posX_6 -= speed_6;
+                
+                if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                    speed_6 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_7 -= speed_7;
+                posX_7 -= speed_7;
+                
+                if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                    speed_7 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_8 -= speed_8;
+                posX_8 -= speed_8;
+                
+                if ( posY_8-lineLength_8 < canvas.height - 220 ) {
+                    speed_8 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_9 -= speed_9;
+                posX_9 -= speed_9;
+                
+                if ( posY_9-lineLength_9 < canvas.height - 330 ) {
+                    speed_9 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+            
+            }
+    
+            function loop() {
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_31.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                moveLine();
+                drawLine();
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
+
             ///////////////////////////////////////////////////////////////////////////////////// Container 2 - 1
             anime.timeline({
                     loop: false
@@ -4448,6 +5044,305 @@ function moveLine () {
         ///////////////////////////////////////////////////////////////////////////// Regresar Rivalta
 
         random_back_rivalta.addEventListener('click', function(event) {
+
+            document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.gif')";
+
+            staticAnimation();
+
+            async function staticAnimation() {
+
+                
+                await sleep(2000);
+                document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.png')";
+
+            }
+
+                        /////////////////////////////////////////////////////////////////////////
+                        var canvas = document.getElementById("canvas-2-subcontainer-2");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            //console.log(canvas.width);
+            //console.log(canvas.height);
+
+            ////////////////////////////////////////////////////////////// 1 - 1
+
+            var ctx_11 = canvas.getContext("2d");
+            ctx_11.strokeStyle = "#ffffff";
+            ctx_11.lineWidth = 2;
+            var posY_11 = -250;
+            var posX_11 = 700;
+            var posY_11_static = 0;
+            var posX_11_static = 50;
+            var lineLength_11 = 250;
+            var speed_11 = 2;
+
+            ////////////////////////////////////////////////////////////// 2 - 1
+
+            var ctx_21 = canvas.getContext("2d");
+            ctx_21.strokeStyle = "#ffffff";
+            ctx_21.lineWidth = 2;
+            var posY_21 = -150;
+            var posX_21 = 750;
+            var posY_21_static = 0;
+            var posX_21_static = 50;
+            var lineLength_21 = 150;
+            var speed_21 = 2;
+
+            ////////////////////////////////////////////////////////////// 3 - 1
+
+            var ctx_31 = canvas.getContext("2d");
+            ctx_31.strokeStyle = "#ffffff";
+            ctx_31.lineWidth = 2;
+            var posY_31 = -450;
+            var posX_31 = 300;
+            var posY_31_static = 0;
+            var posX_31_static = 50;
+            var lineLength_31 = 450;
+            var speed_31 = 2;
+
+            ////////////////////////////////////////////////////////////// 4 - 1
+
+            var ctx_41 = canvas.getContext("2d");
+            ctx_41.strokeStyle = "#ffffff";
+            ctx_41.lineWidth = 2;
+            var posY_41 = -250;
+            var posX_41 = 350;
+            var posY_41_static = 0;
+            var posX_41_static = 50;
+            var lineLength_41 = 250;
+            var speed_41 = 2;
+
+            ////////////////////////////////////////////////////////////// 1
+
+            var ctx_1 = canvas.getContext("2d");
+            ctx_1.strokeStyle = "#ffffff";
+            ctx_1.lineWidth = 2;
+            var posY_1 = 800;
+            var posX_1 = -100;
+            var lineLength_1 = 130;
+            var speed_1 = 2;
+
+            ////////////////////////////////////////////////////////////// 2
+
+            var ctx_2 = canvas.getContext("2d");
+            ctx_2.strokeStyle = "#ffffff";
+            ctx_2.lineWidth = 2;
+            var posY_2 = 800;
+            var posX_2 = -70;
+            var lineLength_2 = 130;
+            var speed_2 = 2;
+
+            ////////////////////////////////////////////////////////////// 6
+
+            var ctx_6 = canvas.getContext("2d");
+            ctx_6.strokeStyle = "#ffffff";
+            ctx_6.lineWidth = 2;
+            var posY_6 = 1100;
+            var posX_6 = 1150;
+            var posY_6_static = 0;
+            var posX_6_static = 50;
+            var lineLength_6 = 300;
+            var speed_6 = 2;
+
+            ////////////////////////////////////////////////////////////// 7
+
+            var ctx_7 = canvas.getContext("2d");
+            ctx_7.strokeStyle = "#ffffff";
+            ctx_7.lineWidth = 2;
+            var posY_7 = 1300;
+            var posX_7 = 1400;
+            var posY_7_static = 0;
+            var posX_7_static = 50;
+            var lineLength_7 = 500;
+            var speed_7 = 2;
+
+            ////////////////////////////////////////////////////////////// 8
+
+            var ctx_8 = canvas.getContext("2d");
+            ctx_8.strokeStyle = "#ffffff";
+            ctx_8.lineWidth = 2;
+            var posY_8 = 1100;
+            var posX_8 = 1350;
+            var posY_8_static = 0;
+            var posX_8_static = 50;
+            var lineLength_8 = 300;
+            var speed_8 = 2;
+
+            ////////////////////////////////////////////////////////////// 9
+
+            var ctx_9 = canvas.getContext("2d");
+            ctx_9.strokeStyle = "#ffffff";
+            ctx_9.lineWidth = 2;
+            var posY_9 = 1300;
+            var posX_9 = 1800;
+            var posY_9_static = 0;
+            var posX_9_static = 50;
+            var lineLength_9 = 500;
+            var speed_9 = 2;
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            function drawLine() {
+
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.beginPath();
+                ctx_11.moveTo(posX_11, posY_11);
+                ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                ctx_11.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.beginPath();
+                ctx_21.moveTo(posX_21, posY_21);
+                ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                ctx_21.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_31.beginPath();
+                ctx_31.moveTo(posX_31, posY_31);
+                ctx_31.lineTo(posX_31+lineLength_31, posY_31+lineLength_31);
+                ctx_31.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.beginPath();
+                ctx_41.moveTo(posX_41, posY_41);
+                ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                ctx_41.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.beginPath();
+                ctx_1.moveTo(posX_1, posY_1);
+                ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                ctx_1.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.beginPath();
+                ctx_2.moveTo(posX_2, posY_2);
+                ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                ctx_2.stroke();
+                ////////////////////////////////////////////////////////////////////////////
+                ctx_6.beginPath();
+                ctx_6.moveTo(posX_6, posY_6);
+                ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                ctx_6.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.beginPath();
+                ctx_7.moveTo(posX_7, posY_7);
+                ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                ctx_7.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.beginPath();
+                ctx_8.moveTo(posX_8, posY_8);
+                ctx_8.lineTo(posX_8-lineLength_8, posY_8-lineLength_8);
+                ctx_8.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.beginPath();
+                ctx_9.moveTo(posX_9, posY_9);
+                ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                ctx_9.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+
+            }
+    
+            function moveLine () {
+
+                /////////////////////////////////////////////////////////////////////////////
+                posY_11 += speed_11;
+                posX_11 += speed_11;
+                
+                if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                    speed_11 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_21 += speed_21;
+                posX_21 += speed_21;
+                
+                if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                    speed_21 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_31 += speed_31;
+                posX_31 += speed_31;
+                
+                if ( posY_31+lineLength_31 > canvas.height - 500 ) {
+                    speed_31 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_41 += speed_41;
+                posX_41 += speed_41;
+                
+                if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                    speed_41 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_1 -= speed_1;
+                posX_1 += speed_1;
+                
+                if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                    speed_1 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_2 -= speed_2;
+                posX_2 += speed_2;
+                
+                if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                    speed_2 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_6 -= speed_6;
+                posX_6 -= speed_6;
+                
+                if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                    speed_6 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_7 -= speed_7;
+                posX_7 -= speed_7;
+                
+                if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                    speed_7 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_8 -= speed_8;
+                posX_8 -= speed_8;
+                
+                if ( posY_8-lineLength_8 < canvas.height - 220 ) {
+                    speed_8 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_9 -= speed_9;
+                posX_9 -= speed_9;
+                
+                if ( posY_9-lineLength_9 < canvas.height - 330 ) {
+                    speed_9 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+            
+            }
+    
+            function loop() {
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_31.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                moveLine();
+                drawLine();
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
+
             ///////////////////////////////////////////////////////////////////////////////////// Container 2 - 1
             anime.timeline({
                     loop: false
@@ -4831,6 +5726,266 @@ function moveLine () {
                 document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
 
             }
+
+            /////////////////////////////////////////////////////////////////////////
+            var canvas = document.getElementById("canvas-3-subcontainer-3");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            //console.log(canvas.width);
+            //console.log(canvas.height);
+
+            ////////////////////////////////////////////////////////////// 1 - 1
+
+            var ctx_11 = canvas.getContext("2d");
+            ctx_11.strokeStyle = "#ffffff";
+            ctx_11.lineWidth = 2;
+            var posY_11 = -250;
+            var posX_11 = 800;
+            var posY_11_static = 0;
+            var posX_11_static = 50;
+            var lineLength_11 = 250;
+            var speed_11 = 2;
+
+            ////////////////////////////////////////////////////////////// 2 - 1
+
+            var ctx_21 = canvas.getContext("2d");
+            ctx_21.strokeStyle = "#ffffff";
+            ctx_21.lineWidth = 2;
+            var posY_21 = -150;
+            var posX_21 = 850;
+            var posY_21_static = 0;
+            var posX_21_static = 50;
+            var lineLength_21 = 150;
+            var speed_21 = 2;
+
+            ////////////////////////////////////////////////////////////// 4 - 1
+
+            var ctx_41 = canvas.getContext("2d");
+            ctx_41.strokeStyle = "#ffffff";
+            ctx_41.lineWidth = 2;
+            var posY_41 = -250;
+            var posX_41 = 350;
+            var posY_41_static = 0;
+            var posX_41_static = 50;
+            var lineLength_41 = 250;
+            var speed_41 = 2;
+
+            ////////////////////////////////////////////////////////////// 1
+
+            var ctx_1 = canvas.getContext("2d");
+            ctx_1.strokeStyle = "#ffffff";
+            ctx_1.lineWidth = 2;
+            var posY_1 = 800;
+            var posX_1 = -100;
+            var lineLength_1 = 130;
+            var speed_1 = 2;
+
+            ////////////////////////////////////////////////////////////// 2
+
+            var ctx_2 = canvas.getContext("2d");
+            ctx_2.strokeStyle = "#ffffff";
+            ctx_2.lineWidth = 2;
+            var posY_2 = 800;
+            var posX_2 = -70;
+            var lineLength_2 = 130;
+            var speed_2 = 2;
+
+            ////////////////////////////////////////////////////////////// 6
+
+            var ctx_6 = canvas.getContext("2d");
+            ctx_6.strokeStyle = "#ffffff";
+            ctx_6.lineWidth = 2;
+            var posY_6 = 1100;
+            var posX_6 = 1150;
+            var posY_6_static = 0;
+            var posX_6_static = 50;
+            var lineLength_6 = 300;
+            var speed_6 = 2;
+
+            ////////////////////////////////////////////////////////////// 7
+
+            var ctx_7 = canvas.getContext("2d");
+            ctx_7.strokeStyle = "#ffffff";
+            ctx_7.lineWidth = 2;
+            var posY_7 = 1300;
+            var posX_7 = 1400;
+            var posY_7_static = 0;
+            var posX_7_static = 50;
+            var lineLength_7 = 500;
+            var speed_7 = 2;
+
+            ////////////////////////////////////////////////////////////// 8
+
+            var ctx_8 = canvas.getContext("2d");
+            ctx_8.strokeStyle = "#ffffff";
+            ctx_8.lineWidth = 2;
+            var posY_8 = 1100;
+            var posX_8 = 1350;
+            var posY_8_static = 0;
+            var posX_8_static = 50;
+            var lineLength_8 = 300;
+            var speed_8 = 2;
+
+            ////////////////////////////////////////////////////////////// 9
+
+            var ctx_9 = canvas.getContext("2d");
+            ctx_9.strokeStyle = "#ffffff";
+            ctx_9.lineWidth = 2;
+            var posY_9 = 1300;
+            var posX_9 = 1900;
+            var posY_9_static = 0;
+            var posX_9_static = 50;
+            var lineLength_9 = 500;
+            var speed_9 = 2;
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            function drawLine() {
+
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.beginPath();
+                ctx_11.moveTo(posX_11, posY_11);
+                ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                ctx_11.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.beginPath();
+                ctx_21.moveTo(posX_21, posY_21);
+                ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                ctx_21.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.beginPath();
+                ctx_41.moveTo(posX_41, posY_41);
+                ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                ctx_41.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.beginPath();
+                ctx_1.moveTo(posX_1, posY_1);
+                ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                ctx_1.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.beginPath();
+                ctx_2.moveTo(posX_2, posY_2);
+                ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                ctx_2.stroke();
+                ////////////////////////////////////////////////////////////////////////////
+                ctx_6.beginPath();
+                ctx_6.moveTo(posX_6, posY_6);
+                ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                ctx_6.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.beginPath();
+                ctx_7.moveTo(posX_7, posY_7);
+                ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                ctx_7.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.beginPath();
+                ctx_8.moveTo(posX_8, posY_8);
+                ctx_8.lineTo(posX_8-lineLength_8, posY_8-lineLength_8);
+                ctx_8.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.beginPath();
+                ctx_9.moveTo(posX_9, posY_9);
+                ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                ctx_9.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+
+            }
+    
+            function moveLine () {
+
+                /////////////////////////////////////////////////////////////////////////////
+                posY_11 += speed_11;
+                posX_11 += speed_11;
+                
+                if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                    speed_11 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_21 += speed_21;
+                posX_21 += speed_21;
+                
+                if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                    speed_21 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_41 += speed_41;
+                posX_41 += speed_41;
+                
+                if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                    speed_41 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_1 -= speed_1;
+                posX_1 += speed_1;
+                
+                if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                    speed_1 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_2 -= speed_2;
+                posX_2 += speed_2;
+                
+                if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                    speed_2 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_6 -= speed_6;
+                posX_6 -= speed_6;
+                
+                if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                    speed_6 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_7 -= speed_7;
+                posX_7 -= speed_7;
+                
+                if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                    speed_7 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_8 -= speed_8;
+                posX_8 -= speed_8;
+                
+                if ( posY_8-lineLength_8 < canvas.height - 220 ) {
+                    speed_8 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_9 -= speed_9;
+                posX_9 -= speed_9;
+                
+                if ( posY_9-lineLength_9 < canvas.height - 130 ) {
+                    speed_9 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+            
+            }
+    
+            function loop() {
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                moveLine();
+                drawLine();
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
 
 
             ///////////////////////////////////////////////////////////////////////////////////// Container 3 - 1
@@ -5700,6 +6855,165 @@ function moveLine () {
         var random_livenza_container = document.getElementById('livenza-container');
 
         random_livenza_container.addEventListener('click', function(event) {
+
+
+            /////////////////////////////////////////////////////////////////////////
+            var canvas = document.getElementById("canvas-3-subcontainer-5");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            console.log(canvas.width);
+            console.log(canvas.height);
+
+            ////////////////////////////////////////////////////////////// 4 - 1
+
+            var ctx_41 = canvas.getContext("2d");
+            ctx_41.strokeStyle = "#ffffff";
+            ctx_41.lineWidth = 1;
+            var posY_41 = -250;
+            var posX_41 = 150;
+            var posY_41_static = 0;
+            var posX_41_static = 50;
+            var lineLength_41 = 250;
+            var speed_41 = 2;
+
+            ////////////////////////////////////////////////////////////// 1
+
+            var ctx_1 = canvas.getContext("2d");
+            ctx_1.strokeStyle = "#ffffff";
+            ctx_1.lineWidth = 1;
+            var posY_1 = 800;
+            var posX_1 = -100;
+            var lineLength_1 = 130;
+            var speed_1 = 2;
+
+            ////////////////////////////////////////////////////////////// 2
+
+            var ctx_2 = canvas.getContext("2d");
+            ctx_2.strokeStyle = "#ffffff";
+            ctx_2.lineWidth = 1;
+            var posY_2 = 800;
+            var posX_2 = -70;
+            var lineLength_2 = 130;
+            var speed_2 = 2;
+
+            ////////////////////////////////////////////////////////////// 6
+
+            var ctx_6 = canvas.getContext("2d");
+            ctx_6.strokeStyle = "#ffffff";
+            ctx_6.lineWidth = 1;
+            var posY_6 = 1100;
+            var posX_6 = 850;
+            var posY_6_static = 0;
+            var posX_6_static = 50;
+            var lineLength_6 = 300;
+            var speed_6 = 2;
+
+            ////////////////////////////////////////////////////////////// 7
+
+            var ctx_7 = canvas.getContext("2d");
+            ctx_7.strokeStyle = "#ffffff";
+            ctx_7.lineWidth = 1;
+            var posY_7 = 1300;
+            var posX_7 = 1200;
+            var posY_7_static = 0;
+            var posX_7_static = 50;
+            var lineLength_7 = 500;
+            var speed_7 = 2;
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            function drawLine() {
+
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.beginPath();
+                ctx_41.moveTo(posX_41, posY_41);
+                ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                ctx_41.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.beginPath();
+                ctx_1.moveTo(posX_1, posY_1);
+                ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                ctx_1.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.beginPath();
+                ctx_2.moveTo(posX_2, posY_2);
+                ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                ctx_2.stroke();
+                ////////////////////////////////////////////////////////////////////////////
+                ctx_6.beginPath();
+                ctx_6.moveTo(posX_6, posY_6);
+                ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                ctx_6.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.beginPath();
+                ctx_7.moveTo(posX_7, posY_7);
+                ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                ctx_7.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+
+            }
+    
+            function moveLine () {
+
+                /////////////////////////////////////////////////////////////////////////////
+                posY_41 += speed_41;
+                posX_41 += speed_41;
+                
+                if ( posY_41+lineLength_41 > canvas.height - 600 ) {
+                    speed_41 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_1 -= speed_1;
+                posX_1 += speed_1;
+                
+                if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                    speed_1 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_2 -= speed_2;
+                posX_2 += speed_2;
+                
+                if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                    speed_2 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_6 -= speed_6;
+                posX_6 -= speed_6;
+                
+                if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                    speed_6 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_7 -= speed_7;
+                posX_7 -= speed_7;
+                
+                if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                    speed_7 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+            
+            }
+    
+            function loop() {
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                moveLine();
+                drawLine();
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
+
+
             ///////////////////////////////////////////////////////////////////////////////////// Container 5 - 1
             anime.timeline({
                     loop: false
@@ -6052,6 +7366,222 @@ function moveLine () {
         var random_rivalta_container = document.getElementById('rivalta-container');
 
         random_rivalta_container.addEventListener('click', function(event) {
+
+
+            /////////////////////////////////////////////////////////////////////////
+            var canvas = document.getElementById("canvas-3-subcontainer-6");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            //console.log(canvas.width);
+            //console.log(canvas.height);
+
+            ////////////////////////////////////////////////////////////// 1 - 1
+
+            var ctx_11 = canvas.getContext("2d");
+            ctx_11.strokeStyle = "#ffffff";
+            ctx_11.lineWidth = 2;
+            var posY_11 = -250;
+            var posX_11 = 800;
+            var posY_11_static = 0;
+            var posX_11_static = 50;
+            var lineLength_11 = 250;
+            var speed_11 = 2;
+
+            ////////////////////////////////////////////////////////////// 2 - 1
+
+            var ctx_21 = canvas.getContext("2d");
+            ctx_21.strokeStyle = "#ffffff";
+            ctx_21.lineWidth = 2;
+            var posY_21 = -150;
+            var posX_21 = 850;
+            var posY_21_static = 0;
+            var posX_21_static = 50;
+            var lineLength_21 = 150;
+            var speed_21 = 2;
+
+            ////////////////////////////////////////////////////////////// 4 - 1
+
+            var ctx_41 = canvas.getContext("2d");
+            ctx_41.strokeStyle = "#ffffff";
+            ctx_41.lineWidth = 2;
+            var posY_41 = -250;
+            var posX_41 = 550;
+            var posY_41_static = 0;
+            var posX_41_static = 50;
+            var lineLength_41 = 450;
+            var speed_41 = 2;
+
+            ////////////////////////////////////////////////////////////// 6
+
+            var ctx_6 = canvas.getContext("2d");
+            ctx_6.strokeStyle = "#ffffff";
+            ctx_6.lineWidth = 2;
+            var posY_6 = 1100;
+            var posX_6 = 1350;
+            var posY_6_static = 0;
+            var posX_6_static = 50;
+            var lineLength_6 = 300;
+            var speed_6 = 2;
+
+            ////////////////////////////////////////////////////////////// 7
+
+            var ctx_7 = canvas.getContext("2d");
+            ctx_7.strokeStyle = "#ffffff";
+            ctx_7.lineWidth = 2;
+            var posY_7 = 1300;
+            var posX_7 = 1600;
+            var posY_7_static = 0;
+            var posX_7_static = 50;
+            var lineLength_7 = 500;
+            var speed_7 = 2;
+
+            ////////////////////////////////////////////////////////////// 9
+
+            var ctx_9 = canvas.getContext("2d");
+            ctx_9.strokeStyle = "#ffffff";
+            ctx_9.lineWidth = 2;
+            var posY_9 = 1300;
+            var posX_9 = 1900;
+            var posY_9_static = 0;
+            var posX_9_static = 50;
+            var lineLength_9 = 500;
+            var speed_9 = 2;
+
+            ////////////////////////////////////////////////////////////// 8
+
+            var ctx_8 = canvas.getContext("2d");
+            ctx_8.strokeStyle = "#ffffff";
+            ctx_8.lineWidth = 1;
+            var posY_8 = 1300;
+            var posX_8 = 400;
+            var posY_8_static = 0;
+            var posX_8_static = 50;
+            var lineLength_8 = 500;
+            var speed_8 = 1;
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            function drawLine() {
+
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.beginPath();
+                ctx_11.moveTo(posX_11, posY_11);
+                ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                ctx_11.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.beginPath();
+                ctx_21.moveTo(posX_21, posY_21);
+                ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                ctx_21.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.beginPath();
+                ctx_41.moveTo(posX_41, posY_41);
+                ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                ctx_41.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.beginPath();
+                ctx_6.moveTo(posX_6, posY_6);
+                ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                ctx_6.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.beginPath();
+                ctx_7.moveTo(posX_7, posY_7);
+                ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                ctx_7.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.beginPath();
+                ctx_8.moveTo(posX_8, posY_8);
+                ctx_8.lineTo(posX_8+lineLength_8, posY_8-lineLength_8);
+                ctx_8.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.beginPath();
+                ctx_9.moveTo(posX_9, posY_9);
+                ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                ctx_9.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+
+            }
+    
+            function moveLine () {
+
+                /////////////////////////////////////////////////////////////////////////////
+                posY_11 += speed_11;
+                posX_11 += speed_11;
+                
+                if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                    speed_11 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_21 += speed_21;
+                posX_21 += speed_21;
+                
+                if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                    speed_21 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_41 += speed_41;
+                posX_41 += speed_41;
+                
+                if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                    speed_41 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_6 -= speed_6;
+                posX_6 -= speed_6;
+                
+                if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                    speed_6 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_7 -= speed_7;
+                posX_7 -= speed_7;
+                
+                if ( posY_7-lineLength_7 < canvas.height - 250 ) {
+                    speed_7 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_8 -= speed_8;
+                posX_8 += speed_8;
+                
+                if ( posY_8-lineLength_8 < canvas.height - 280 ) {
+                    speed_8 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_9 -= speed_9;
+                posX_9 -= speed_9;
+                
+                if ( posY_9-lineLength_9 < canvas.height - 130 ) {
+                    speed_9 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+            
+            }
+    
+            function loop() {
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                moveLine();
+                drawLine();
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
+
+
+
             ///////////////////////////////////////////////////////////////////////////////////// Container 6 - 1
             anime.timeline({
                     loop: false
@@ -6476,8 +8006,8 @@ function moveLine () {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
 
-            console.log(canvas.width);
-            console.log(canvas.height);
+            //console.log(canvas.width);
+            //console.log(canvas.height);
 
             ////////////////////////////////////////////////////////////// 1 - 1
 
@@ -7098,12 +8628,305 @@ function moveLine () {
                 }
 
 
-
-
-
-
-
                 if (parseInt(distance) > parseInt(569) || parseInt(distance) < parseInt(1138)) {
+
+                    document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.gif')";
+
+                    staticAnimation();
+
+                    async function staticAnimation() {
+
+                        
+                        await sleep(2000);
+                        document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.png')";
+
+                    }
+
+                                /////////////////////////////////////////////////////////////////////////
+            var canvas = document.getElementById("canvas-2-subcontainer-2");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            //console.log(canvas.width);
+            //console.log(canvas.height);
+
+            ////////////////////////////////////////////////////////////// 1 - 1
+
+            var ctx_11 = canvas.getContext("2d");
+            ctx_11.strokeStyle = "#ffffff";
+            ctx_11.lineWidth = 2;
+            var posY_11 = -250;
+            var posX_11 = 700;
+            var posY_11_static = 0;
+            var posX_11_static = 50;
+            var lineLength_11 = 250;
+            var speed_11 = 2;
+
+            ////////////////////////////////////////////////////////////// 2 - 1
+
+            var ctx_21 = canvas.getContext("2d");
+            ctx_21.strokeStyle = "#ffffff";
+            ctx_21.lineWidth = 2;
+            var posY_21 = -150;
+            var posX_21 = 750;
+            var posY_21_static = 0;
+            var posX_21_static = 50;
+            var lineLength_21 = 150;
+            var speed_21 = 2;
+
+            ////////////////////////////////////////////////////////////// 3 - 1
+
+            var ctx_31 = canvas.getContext("2d");
+            ctx_31.strokeStyle = "#ffffff";
+            ctx_31.lineWidth = 2;
+            var posY_31 = -450;
+            var posX_31 = 300;
+            var posY_31_static = 0;
+            var posX_31_static = 50;
+            var lineLength_31 = 450;
+            var speed_31 = 2;
+
+            ////////////////////////////////////////////////////////////// 4 - 1
+
+            var ctx_41 = canvas.getContext("2d");
+            ctx_41.strokeStyle = "#ffffff";
+            ctx_41.lineWidth = 2;
+            var posY_41 = -250;
+            var posX_41 = 350;
+            var posY_41_static = 0;
+            var posX_41_static = 50;
+            var lineLength_41 = 250;
+            var speed_41 = 2;
+
+            ////////////////////////////////////////////////////////////// 1
+
+            var ctx_1 = canvas.getContext("2d");
+            ctx_1.strokeStyle = "#ffffff";
+            ctx_1.lineWidth = 2;
+            var posY_1 = 800;
+            var posX_1 = -100;
+            var lineLength_1 = 130;
+            var speed_1 = 2;
+
+            ////////////////////////////////////////////////////////////// 2
+
+            var ctx_2 = canvas.getContext("2d");
+            ctx_2.strokeStyle = "#ffffff";
+            ctx_2.lineWidth = 2;
+            var posY_2 = 800;
+            var posX_2 = -70;
+            var lineLength_2 = 130;
+            var speed_2 = 2;
+
+            ////////////////////////////////////////////////////////////// 6
+
+            var ctx_6 = canvas.getContext("2d");
+            ctx_6.strokeStyle = "#ffffff";
+            ctx_6.lineWidth = 2;
+            var posY_6 = 1100;
+            var posX_6 = 1150;
+            var posY_6_static = 0;
+            var posX_6_static = 50;
+            var lineLength_6 = 300;
+            var speed_6 = 2;
+
+            ////////////////////////////////////////////////////////////// 7
+
+            var ctx_7 = canvas.getContext("2d");
+            ctx_7.strokeStyle = "#ffffff";
+            ctx_7.lineWidth = 2;
+            var posY_7 = 1300;
+            var posX_7 = 1400;
+            var posY_7_static = 0;
+            var posX_7_static = 50;
+            var lineLength_7 = 500;
+            var speed_7 = 2;
+
+            ////////////////////////////////////////////////////////////// 8
+
+            var ctx_8 = canvas.getContext("2d");
+            ctx_8.strokeStyle = "#ffffff";
+            ctx_8.lineWidth = 2;
+            var posY_8 = 1100;
+            var posX_8 = 1350;
+            var posY_8_static = 0;
+            var posX_8_static = 50;
+            var lineLength_8 = 300;
+            var speed_8 = 2;
+
+            ////////////////////////////////////////////////////////////// 9
+
+            var ctx_9 = canvas.getContext("2d");
+            ctx_9.strokeStyle = "#ffffff";
+            ctx_9.lineWidth = 2;
+            var posY_9 = 1300;
+            var posX_9 = 1800;
+            var posY_9_static = 0;
+            var posX_9_static = 50;
+            var lineLength_9 = 500;
+            var speed_9 = 2;
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            function drawLine() {
+
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.beginPath();
+                ctx_11.moveTo(posX_11, posY_11);
+                ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                ctx_11.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.beginPath();
+                ctx_21.moveTo(posX_21, posY_21);
+                ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                ctx_21.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_31.beginPath();
+                ctx_31.moveTo(posX_31, posY_31);
+                ctx_31.lineTo(posX_31+lineLength_31, posY_31+lineLength_31);
+                ctx_31.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.beginPath();
+                ctx_41.moveTo(posX_41, posY_41);
+                ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                ctx_41.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.beginPath();
+                ctx_1.moveTo(posX_1, posY_1);
+                ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                ctx_1.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.beginPath();
+                ctx_2.moveTo(posX_2, posY_2);
+                ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                ctx_2.stroke();
+                ////////////////////////////////////////////////////////////////////////////
+                ctx_6.beginPath();
+                ctx_6.moveTo(posX_6, posY_6);
+                ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                ctx_6.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.beginPath();
+                ctx_7.moveTo(posX_7, posY_7);
+                ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                ctx_7.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.beginPath();
+                ctx_8.moveTo(posX_8, posY_8);
+                ctx_8.lineTo(posX_8-lineLength_8, posY_8-lineLength_8);
+                ctx_8.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.beginPath();
+                ctx_9.moveTo(posX_9, posY_9);
+                ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                ctx_9.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+
+            }
+    
+            function moveLine () {
+
+                /////////////////////////////////////////////////////////////////////////////
+                posY_11 += speed_11;
+                posX_11 += speed_11;
+                
+                if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                    speed_11 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_21 += speed_21;
+                posX_21 += speed_21;
+                
+                if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                    speed_21 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_31 += speed_31;
+                posX_31 += speed_31;
+                
+                if ( posY_31+lineLength_31 > canvas.height - 500 ) {
+                    speed_31 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_41 += speed_41;
+                posX_41 += speed_41;
+                
+                if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                    speed_41 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_1 -= speed_1;
+                posX_1 += speed_1;
+                
+                if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                    speed_1 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_2 -= speed_2;
+                posX_2 += speed_2;
+                
+                if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                    speed_2 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_6 -= speed_6;
+                posX_6 -= speed_6;
+                
+                if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                    speed_6 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_7 -= speed_7;
+                posX_7 -= speed_7;
+                
+                if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                    speed_7 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_8 -= speed_8;
+                posX_8 -= speed_8;
+                
+                if ( posY_8-lineLength_8 < canvas.height - 220 ) {
+                    speed_8 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_9 -= speed_9;
+                posX_9 -= speed_9;
+                
+                if ( posY_9-lineLength_9 < canvas.height - 330 ) {
+                    speed_9 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+            
+            }
+    
+            function loop() {
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_31.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                moveLine();
+                drawLine();
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
 
                     ///////////////////////////////////////////////////////////////////////////////////// Container 2 - 1
                     anime.timeline({
@@ -7473,6 +9296,165 @@ function moveLine () {
                 }
                 if (parseInt(distance) > parseInt(1138) || parseInt(distance) < parseInt(1707)) {
 
+
+                    /////////////////////////////////////////////////////////////////////////
+            var canvas = document.getElementById("canvas-3-subcontainer-5");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            console.log(canvas.width);
+            console.log(canvas.height);
+
+            ////////////////////////////////////////////////////////////// 4 - 1
+
+            var ctx_41 = canvas.getContext("2d");
+            ctx_41.strokeStyle = "#ffffff";
+            ctx_41.lineWidth = 1;
+            var posY_41 = -250;
+            var posX_41 = 150;
+            var posY_41_static = 0;
+            var posX_41_static = 50;
+            var lineLength_41 = 250;
+            var speed_41 = 2;
+
+            ////////////////////////////////////////////////////////////// 1
+
+            var ctx_1 = canvas.getContext("2d");
+            ctx_1.strokeStyle = "#ffffff";
+            ctx_1.lineWidth = 1;
+            var posY_1 = 800;
+            var posX_1 = -100;
+            var lineLength_1 = 130;
+            var speed_1 = 2;
+
+            ////////////////////////////////////////////////////////////// 2
+
+            var ctx_2 = canvas.getContext("2d");
+            ctx_2.strokeStyle = "#ffffff";
+            ctx_2.lineWidth = 1;
+            var posY_2 = 800;
+            var posX_2 = -70;
+            var lineLength_2 = 130;
+            var speed_2 = 2;
+
+            ////////////////////////////////////////////////////////////// 6
+
+            var ctx_6 = canvas.getContext("2d");
+            ctx_6.strokeStyle = "#ffffff";
+            ctx_6.lineWidth = 1;
+            var posY_6 = 1100;
+            var posX_6 = 850;
+            var posY_6_static = 0;
+            var posX_6_static = 50;
+            var lineLength_6 = 300;
+            var speed_6 = 2;
+
+            ////////////////////////////////////////////////////////////// 7
+
+            var ctx_7 = canvas.getContext("2d");
+            ctx_7.strokeStyle = "#ffffff";
+            ctx_7.lineWidth = 1;
+            var posY_7 = 1300;
+            var posX_7 = 1200;
+            var posY_7_static = 0;
+            var posX_7_static = 50;
+            var lineLength_7 = 500;
+            var speed_7 = 2;
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            function drawLine() {
+
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.beginPath();
+                ctx_41.moveTo(posX_41, posY_41);
+                ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                ctx_41.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.beginPath();
+                ctx_1.moveTo(posX_1, posY_1);
+                ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                ctx_1.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.beginPath();
+                ctx_2.moveTo(posX_2, posY_2);
+                ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                ctx_2.stroke();
+                ////////////////////////////////////////////////////////////////////////////
+                ctx_6.beginPath();
+                ctx_6.moveTo(posX_6, posY_6);
+                ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                ctx_6.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.beginPath();
+                ctx_7.moveTo(posX_7, posY_7);
+                ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                ctx_7.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+
+            }
+    
+            function moveLine () {
+
+                /////////////////////////////////////////////////////////////////////////////
+                posY_41 += speed_41;
+                posX_41 += speed_41;
+                
+                if ( posY_41+lineLength_41 > canvas.height - 600 ) {
+                    speed_41 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_1 -= speed_1;
+                posX_1 += speed_1;
+                
+                if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                    speed_1 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_2 -= speed_2;
+                posX_2 += speed_2;
+                
+                if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                    speed_2 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_6 -= speed_6;
+                posX_6 -= speed_6;
+                
+                if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                    speed_6 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_7 -= speed_7;
+                posX_7 -= speed_7;
+                
+                if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                    speed_7 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+            
+            }
+    
+            function loop() {
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                moveLine();
+                drawLine();
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
+
+
+
                     ///////////////////////////////////////////////////////////////////////////////////// Container 5 - 1
                     anime.timeline({
                             loop: false
@@ -7821,6 +9803,218 @@ function moveLine () {
 
                 }
                 if (parseInt(distance) > parseInt(1770) || parseInt(distance) < parseInt(2276)) {
+
+                    /////////////////////////////////////////////////////////////////////////
+                    var canvas = document.getElementById("canvas-3-subcontainer-6");
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+
+                    //console.log(canvas.width);
+                    //console.log(canvas.height);
+
+                    ////////////////////////////////////////////////////////////// 1 - 1
+
+                    var ctx_11 = canvas.getContext("2d");
+                    ctx_11.strokeStyle = "#ffffff";
+                    ctx_11.lineWidth = 2;
+                    var posY_11 = -250;
+                    var posX_11 = 800;
+                    var posY_11_static = 0;
+                    var posX_11_static = 50;
+                    var lineLength_11 = 250;
+                    var speed_11 = 2;
+
+                    ////////////////////////////////////////////////////////////// 2 - 1
+
+                    var ctx_21 = canvas.getContext("2d");
+                    ctx_21.strokeStyle = "#ffffff";
+                    ctx_21.lineWidth = 2;
+                    var posY_21 = -150;
+                    var posX_21 = 850;
+                    var posY_21_static = 0;
+                    var posX_21_static = 50;
+                    var lineLength_21 = 150;
+                    var speed_21 = 2;
+
+                    ////////////////////////////////////////////////////////////// 4 - 1
+
+                    var ctx_41 = canvas.getContext("2d");
+                    ctx_41.strokeStyle = "#ffffff";
+                    ctx_41.lineWidth = 2;
+                    var posY_41 = -250;
+                    var posX_41 = 550;
+                    var posY_41_static = 0;
+                    var posX_41_static = 50;
+                    var lineLength_41 = 450;
+                    var speed_41 = 2;
+
+                    ////////////////////////////////////////////////////////////// 6
+
+                    var ctx_6 = canvas.getContext("2d");
+                    ctx_6.strokeStyle = "#ffffff";
+                    ctx_6.lineWidth = 2;
+                    var posY_6 = 1100;
+                    var posX_6 = 1350;
+                    var posY_6_static = 0;
+                    var posX_6_static = 50;
+                    var lineLength_6 = 300;
+                    var speed_6 = 2;
+
+                    ////////////////////////////////////////////////////////////// 7
+
+                    var ctx_7 = canvas.getContext("2d");
+                    ctx_7.strokeStyle = "#ffffff";
+                    ctx_7.lineWidth = 2;
+                    var posY_7 = 1300;
+                    var posX_7 = 1600;
+                    var posY_7_static = 0;
+                    var posX_7_static = 50;
+                    var lineLength_7 = 500;
+                    var speed_7 = 2;
+
+                    ////////////////////////////////////////////////////////////// 9
+
+                    var ctx_9 = canvas.getContext("2d");
+                    ctx_9.strokeStyle = "#ffffff";
+                    ctx_9.lineWidth = 2;
+                    var posY_9 = 1300;
+                    var posX_9 = 1900;
+                    var posY_9_static = 0;
+                    var posX_9_static = 50;
+                    var lineLength_9 = 500;
+                    var speed_9 = 2;
+
+                    ////////////////////////////////////////////////////////////// 8
+
+                    var ctx_8 = canvas.getContext("2d");
+                    ctx_8.strokeStyle = "#ffffff";
+                    ctx_8.lineWidth = 1;
+                    var posY_8 = 1300;
+                    var posX_8 = 400;
+                    var posY_8_static = 0;
+                    var posX_8_static = 50;
+                    var lineLength_8 = 500;
+                    var speed_8 = 1;
+
+                    //////////////////////////////////////////////////////////////////////////////
+
+                    function drawLine() {
+
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_11.beginPath();
+                        ctx_11.moveTo(posX_11, posY_11);
+                        ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                        ctx_11.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_21.beginPath();
+                        ctx_21.moveTo(posX_21, posY_21);
+                        ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                        ctx_21.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_41.beginPath();
+                        ctx_41.moveTo(posX_41, posY_41);
+                        ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                        ctx_41.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_6.beginPath();
+                        ctx_6.moveTo(posX_6, posY_6);
+                        ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                        ctx_6.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_7.beginPath();
+                        ctx_7.moveTo(posX_7, posY_7);
+                        ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                        ctx_7.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_8.beginPath();
+                        ctx_8.moveTo(posX_8, posY_8);
+                        ctx_8.lineTo(posX_8+lineLength_8, posY_8-lineLength_8);
+                        ctx_8.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_9.beginPath();
+                        ctx_9.moveTo(posX_9, posY_9);
+                        ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                        ctx_9.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+
+                    }
+            
+                    function moveLine () {
+
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_11 += speed_11;
+                        posX_11 += speed_11;
+                        
+                        if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                            speed_11 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_21 += speed_21;
+                        posX_21 += speed_21;
+                        
+                        if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                            speed_21 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_41 += speed_41;
+                        posX_41 += speed_41;
+                        
+                        if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                            speed_41 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_6 -= speed_6;
+                        posX_6 -= speed_6;
+                        
+                        if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                            speed_6 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_7 -= speed_7;
+                        posX_7 -= speed_7;
+                        
+                        if ( posY_7-lineLength_7 < canvas.height - 250 ) {
+                            speed_7 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_8 -= speed_8;
+                        posX_8 += speed_8;
+                        
+                        if ( posY_8-lineLength_8 < canvas.height - 280 ) {
+                            speed_8 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_9 -= speed_9;
+                        posX_9 -= speed_9;
+                        
+                        if ( posY_9-lineLength_9 < canvas.height - 130 ) {
+                            speed_9 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                    
+                    }
+            
+                    function loop() {
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        moveLine();
+                        drawLine();
+                        requestAnimationFrame(loop);
+                    }
+                    requestAnimationFrame(loop);
 
                     ///////////////////////////////////////////////////////////////////////////////////// Container 6 - 1
                     anime.timeline({
@@ -8182,6 +10376,266 @@ function moveLine () {
                         document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
 
                     }
+
+                    /////////////////////////////////////////////////////////////////////////
+                    var canvas = document.getElementById("canvas-3-subcontainer-3");
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+
+                    //console.log(canvas.width);
+                    //console.log(canvas.height);
+
+                    ////////////////////////////////////////////////////////////// 1 - 1
+
+                    var ctx_11 = canvas.getContext("2d");
+                    ctx_11.strokeStyle = "#ffffff";
+                    ctx_11.lineWidth = 2;
+                    var posY_11 = -250;
+                    var posX_11 = 800;
+                    var posY_11_static = 0;
+                    var posX_11_static = 50;
+                    var lineLength_11 = 250;
+                    var speed_11 = 2;
+
+                    ////////////////////////////////////////////////////////////// 2 - 1
+
+                    var ctx_21 = canvas.getContext("2d");
+                    ctx_21.strokeStyle = "#ffffff";
+                    ctx_21.lineWidth = 2;
+                    var posY_21 = -150;
+                    var posX_21 = 850;
+                    var posY_21_static = 0;
+                    var posX_21_static = 50;
+                    var lineLength_21 = 150;
+                    var speed_21 = 2;
+
+                    ////////////////////////////////////////////////////////////// 4 - 1
+
+                    var ctx_41 = canvas.getContext("2d");
+                    ctx_41.strokeStyle = "#ffffff";
+                    ctx_41.lineWidth = 2;
+                    var posY_41 = -250;
+                    var posX_41 = 350;
+                    var posY_41_static = 0;
+                    var posX_41_static = 50;
+                    var lineLength_41 = 250;
+                    var speed_41 = 2;
+
+                    ////////////////////////////////////////////////////////////// 1
+
+                    var ctx_1 = canvas.getContext("2d");
+                    ctx_1.strokeStyle = "#ffffff";
+                    ctx_1.lineWidth = 2;
+                    var posY_1 = 800;
+                    var posX_1 = -100;
+                    var lineLength_1 = 130;
+                    var speed_1 = 2;
+
+                    ////////////////////////////////////////////////////////////// 2
+
+                    var ctx_2 = canvas.getContext("2d");
+                    ctx_2.strokeStyle = "#ffffff";
+                    ctx_2.lineWidth = 2;
+                    var posY_2 = 800;
+                    var posX_2 = -70;
+                    var lineLength_2 = 130;
+                    var speed_2 = 2;
+
+                    ////////////////////////////////////////////////////////////// 6
+
+                    var ctx_6 = canvas.getContext("2d");
+                    ctx_6.strokeStyle = "#ffffff";
+                    ctx_6.lineWidth = 2;
+                    var posY_6 = 1100;
+                    var posX_6 = 1150;
+                    var posY_6_static = 0;
+                    var posX_6_static = 50;
+                    var lineLength_6 = 300;
+                    var speed_6 = 2;
+
+                    ////////////////////////////////////////////////////////////// 7
+
+                    var ctx_7 = canvas.getContext("2d");
+                    ctx_7.strokeStyle = "#ffffff";
+                    ctx_7.lineWidth = 2;
+                    var posY_7 = 1300;
+                    var posX_7 = 1400;
+                    var posY_7_static = 0;
+                    var posX_7_static = 50;
+                    var lineLength_7 = 500;
+                    var speed_7 = 2;
+
+                    ////////////////////////////////////////////////////////////// 8
+
+                    var ctx_8 = canvas.getContext("2d");
+                    ctx_8.strokeStyle = "#ffffff";
+                    ctx_8.lineWidth = 2;
+                    var posY_8 = 1100;
+                    var posX_8 = 1350;
+                    var posY_8_static = 0;
+                    var posX_8_static = 50;
+                    var lineLength_8 = 300;
+                    var speed_8 = 2;
+
+                    ////////////////////////////////////////////////////////////// 9
+
+                    var ctx_9 = canvas.getContext("2d");
+                    ctx_9.strokeStyle = "#ffffff";
+                    ctx_9.lineWidth = 2;
+                    var posY_9 = 1300;
+                    var posX_9 = 1900;
+                    var posY_9_static = 0;
+                    var posX_9_static = 50;
+                    var lineLength_9 = 500;
+                    var speed_9 = 2;
+
+                    //////////////////////////////////////////////////////////////////////////////
+
+                    function drawLine() {
+
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_11.beginPath();
+                        ctx_11.moveTo(posX_11, posY_11);
+                        ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                        ctx_11.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_21.beginPath();
+                        ctx_21.moveTo(posX_21, posY_21);
+                        ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                        ctx_21.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_41.beginPath();
+                        ctx_41.moveTo(posX_41, posY_41);
+                        ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                        ctx_41.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_1.beginPath();
+                        ctx_1.moveTo(posX_1, posY_1);
+                        ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                        ctx_1.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_2.beginPath();
+                        ctx_2.moveTo(posX_2, posY_2);
+                        ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                        ctx_2.stroke();
+                        ////////////////////////////////////////////////////////////////////////////
+                        ctx_6.beginPath();
+                        ctx_6.moveTo(posX_6, posY_6);
+                        ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                        ctx_6.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_7.beginPath();
+                        ctx_7.moveTo(posX_7, posY_7);
+                        ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                        ctx_7.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_8.beginPath();
+                        ctx_8.moveTo(posX_8, posY_8);
+                        ctx_8.lineTo(posX_8-lineLength_8, posY_8-lineLength_8);
+                        ctx_8.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_9.beginPath();
+                        ctx_9.moveTo(posX_9, posY_9);
+                        ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                        ctx_9.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+
+                    }
+            
+                    function moveLine () {
+
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_11 += speed_11;
+                        posX_11 += speed_11;
+                        
+                        if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                            speed_11 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_21 += speed_21;
+                        posX_21 += speed_21;
+                        
+                        if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                            speed_21 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_41 += speed_41;
+                        posX_41 += speed_41;
+                        
+                        if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                            speed_41 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_1 -= speed_1;
+                        posX_1 += speed_1;
+                        
+                        if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                            speed_1 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_2 -= speed_2;
+                        posX_2 += speed_2;
+                        
+                        if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                            speed_2 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_6 -= speed_6;
+                        posX_6 -= speed_6;
+                        
+                        if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                            speed_6 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_7 -= speed_7;
+                        posX_7 -= speed_7;
+                        
+                        if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                            speed_7 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_8 -= speed_8;
+                        posX_8 -= speed_8;
+                        
+                        if ( posY_8-lineLength_8 < canvas.height - 220 ) {
+                            speed_8 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_9 -= speed_9;
+                        posX_9 -= speed_9;
+                        
+                        if ( posY_9-lineLength_9 < canvas.height - 130 ) {
+                            speed_9 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                    
+                    }
+            
+                    function loop() {
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        moveLine();
+                        drawLine();
+                        requestAnimationFrame(loop);
+                    }
+                    requestAnimationFrame(loop);
 
 
 
@@ -8840,7 +11294,303 @@ function moveLine () {
 
                 if (parseInt(distance) > parseInt(200) && parseInt(distance) < parseInt(869)) {
 
-                    //console.log("Entro 200")
+                    document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.gif')";
+
+                    staticAnimation();
+
+                    async function staticAnimation() {
+
+                        
+                        await sleep(2000);
+                        document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.png')";
+
+                    }
+
+                        /////////////////////////////////////////////////////////////////////////
+                        var canvas = document.getElementById("canvas-2-subcontainer-2");
+                        canvas.width = window.innerWidth;
+                        canvas.height = window.innerHeight;
+
+                        //console.log(canvas.width);
+                        //console.log(canvas.height);
+
+                        ////////////////////////////////////////////////////////////// 1 - 1
+
+                        var ctx_11 = canvas.getContext("2d");
+                        ctx_11.strokeStyle = "#ffffff";
+                        ctx_11.lineWidth = 2;
+                        var posY_11 = -250;
+                        var posX_11 = 700;
+                        var posY_11_static = 0;
+                        var posX_11_static = 50;
+                        var lineLength_11 = 250;
+                        var speed_11 = 2;
+
+                        ////////////////////////////////////////////////////////////// 2 - 1
+
+                        var ctx_21 = canvas.getContext("2d");
+                        ctx_21.strokeStyle = "#ffffff";
+                        ctx_21.lineWidth = 2;
+                        var posY_21 = -150;
+                        var posX_21 = 750;
+                        var posY_21_static = 0;
+                        var posX_21_static = 50;
+                        var lineLength_21 = 150;
+                        var speed_21 = 2;
+
+                        ////////////////////////////////////////////////////////////// 3 - 1
+
+                        var ctx_31 = canvas.getContext("2d");
+                        ctx_31.strokeStyle = "#ffffff";
+                        ctx_31.lineWidth = 2;
+                        var posY_31 = -450;
+                        var posX_31 = 300;
+                        var posY_31_static = 0;
+                        var posX_31_static = 50;
+                        var lineLength_31 = 450;
+                        var speed_31 = 2;
+
+                        ////////////////////////////////////////////////////////////// 4 - 1
+
+                        var ctx_41 = canvas.getContext("2d");
+                        ctx_41.strokeStyle = "#ffffff";
+                        ctx_41.lineWidth = 2;
+                        var posY_41 = -250;
+                        var posX_41 = 350;
+                        var posY_41_static = 0;
+                        var posX_41_static = 50;
+                        var lineLength_41 = 250;
+                        var speed_41 = 2;
+
+                        ////////////////////////////////////////////////////////////// 1
+
+                        var ctx_1 = canvas.getContext("2d");
+                        ctx_1.strokeStyle = "#ffffff";
+                        ctx_1.lineWidth = 2;
+                        var posY_1 = 800;
+                        var posX_1 = -100;
+                        var lineLength_1 = 130;
+                        var speed_1 = 2;
+
+                        ////////////////////////////////////////////////////////////// 2
+
+                        var ctx_2 = canvas.getContext("2d");
+                        ctx_2.strokeStyle = "#ffffff";
+                        ctx_2.lineWidth = 2;
+                        var posY_2 = 800;
+                        var posX_2 = -70;
+                        var lineLength_2 = 130;
+                        var speed_2 = 2;
+
+                        ////////////////////////////////////////////////////////////// 6
+
+                        var ctx_6 = canvas.getContext("2d");
+                        ctx_6.strokeStyle = "#ffffff";
+                        ctx_6.lineWidth = 2;
+                        var posY_6 = 1100;
+                        var posX_6 = 1150;
+                        var posY_6_static = 0;
+                        var posX_6_static = 50;
+                        var lineLength_6 = 300;
+                        var speed_6 = 2;
+
+                        ////////////////////////////////////////////////////////////// 7
+
+                        var ctx_7 = canvas.getContext("2d");
+                        ctx_7.strokeStyle = "#ffffff";
+                        ctx_7.lineWidth = 2;
+                        var posY_7 = 1300;
+                        var posX_7 = 1400;
+                        var posY_7_static = 0;
+                        var posX_7_static = 50;
+                        var lineLength_7 = 500;
+                        var speed_7 = 2;
+
+                        ////////////////////////////////////////////////////////////// 8
+
+                        var ctx_8 = canvas.getContext("2d");
+                        ctx_8.strokeStyle = "#ffffff";
+                        ctx_8.lineWidth = 2;
+                        var posY_8 = 1100;
+                        var posX_8 = 1350;
+                        var posY_8_static = 0;
+                        var posX_8_static = 50;
+                        var lineLength_8 = 300;
+                        var speed_8 = 2;
+
+                        ////////////////////////////////////////////////////////////// 9
+
+                        var ctx_9 = canvas.getContext("2d");
+                        ctx_9.strokeStyle = "#ffffff";
+                        ctx_9.lineWidth = 2;
+                        var posY_9 = 1300;
+                        var posX_9 = 1800;
+                        var posY_9_static = 0;
+                        var posX_9_static = 50;
+                        var lineLength_9 = 500;
+                        var speed_9 = 2;
+
+                        //////////////////////////////////////////////////////////////////////////////
+
+                        function drawLine() {
+
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_11.beginPath();
+                            ctx_11.moveTo(posX_11, posY_11);
+                            ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                            ctx_11.stroke();
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_21.beginPath();
+                            ctx_21.moveTo(posX_21, posY_21);
+                            ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                            ctx_21.stroke();
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_31.beginPath();
+                            ctx_31.moveTo(posX_31, posY_31);
+                            ctx_31.lineTo(posX_31+lineLength_31, posY_31+lineLength_31);
+                            ctx_31.stroke();
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_41.beginPath();
+                            ctx_41.moveTo(posX_41, posY_41);
+                            ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                            ctx_41.stroke();
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_1.beginPath();
+                            ctx_1.moveTo(posX_1, posY_1);
+                            ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                            ctx_1.stroke();
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_2.beginPath();
+                            ctx_2.moveTo(posX_2, posY_2);
+                            ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                            ctx_2.stroke();
+                            ////////////////////////////////////////////////////////////////////////////
+                            ctx_6.beginPath();
+                            ctx_6.moveTo(posX_6, posY_6);
+                            ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                            ctx_6.stroke();
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_7.beginPath();
+                            ctx_7.moveTo(posX_7, posY_7);
+                            ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                            ctx_7.stroke();
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_8.beginPath();
+                            ctx_8.moveTo(posX_8, posY_8);
+                            ctx_8.lineTo(posX_8-lineLength_8, posY_8-lineLength_8);
+                            ctx_8.stroke();
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_9.beginPath();
+                            ctx_9.moveTo(posX_9, posY_9);
+                            ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                            ctx_9.stroke();
+                            /////////////////////////////////////////////////////////////////////////////
+
+                        }
+                
+                        function moveLine () {
+
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_11 += speed_11;
+                            posX_11 += speed_11;
+                            
+                            if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                                speed_11 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_21 += speed_21;
+                            posX_21 += speed_21;
+                            
+                            if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                                speed_21 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_31 += speed_31;
+                            posX_31 += speed_31;
+                            
+                            if ( posY_31+lineLength_31 > canvas.height - 500 ) {
+                                speed_31 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_41 += speed_41;
+                            posX_41 += speed_41;
+                            
+                            if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                                speed_41 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_1 -= speed_1;
+                            posX_1 += speed_1;
+                            
+                            if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                                speed_1 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_2 -= speed_2;
+                            posX_2 += speed_2;
+                            
+                            if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                                speed_2 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_6 -= speed_6;
+                            posX_6 -= speed_6;
+                            
+                            if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                                speed_6 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_7 -= speed_7;
+                            posX_7 -= speed_7;
+                            
+                            if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                                speed_7 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_8 -= speed_8;
+                            posX_8 -= speed_8;
+                            
+                            if ( posY_8-lineLength_8 < canvas.height - 220 ) {
+                                speed_8 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                            posY_9 -= speed_9;
+                            posX_9 -= speed_9;
+                            
+                            if ( posY_9-lineLength_9 < canvas.height - 330 ) {
+                                speed_9 = 0;
+                            }
+                            /////////////////////////////////////////////////////////////////////////////
+                        
+                        }
+                
+                        function loop() {
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_31.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                            /////////////////////////////////////////////////////////////////////////////
+                            moveLine();
+                            drawLine();
+                            requestAnimationFrame(loop);
+                        }
+                        requestAnimationFrame(loop);
 
                     ///////////////////////////////////////////////////////////////////////////////////// Container 2 - 1
                     anime.timeline({
@@ -9210,7 +11960,161 @@ function moveLine () {
                 }
                 if (parseInt(distance) > parseInt(869) && parseInt(distance) < parseInt(1538)) {
 
-                    //console.log("Entro 869")
+                    /////////////////////////////////////////////////////////////////////////
+            var canvas = document.getElementById("canvas-3-subcontainer-5");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            console.log(canvas.width);
+            console.log(canvas.height);
+
+            ////////////////////////////////////////////////////////////// 4 - 1
+
+            var ctx_41 = canvas.getContext("2d");
+            ctx_41.strokeStyle = "#ffffff";
+            ctx_41.lineWidth = 1;
+            var posY_41 = -250;
+            var posX_41 = 150;
+            var posY_41_static = 0;
+            var posX_41_static = 50;
+            var lineLength_41 = 250;
+            var speed_41 = 2;
+
+            ////////////////////////////////////////////////////////////// 1
+
+            var ctx_1 = canvas.getContext("2d");
+            ctx_1.strokeStyle = "#ffffff";
+            ctx_1.lineWidth = 1;
+            var posY_1 = 800;
+            var posX_1 = -100;
+            var lineLength_1 = 130;
+            var speed_1 = 2;
+
+            ////////////////////////////////////////////////////////////// 2
+
+            var ctx_2 = canvas.getContext("2d");
+            ctx_2.strokeStyle = "#ffffff";
+            ctx_2.lineWidth = 1;
+            var posY_2 = 800;
+            var posX_2 = -70;
+            var lineLength_2 = 130;
+            var speed_2 = 2;
+
+            ////////////////////////////////////////////////////////////// 6
+
+            var ctx_6 = canvas.getContext("2d");
+            ctx_6.strokeStyle = "#ffffff";
+            ctx_6.lineWidth = 1;
+            var posY_6 = 1100;
+            var posX_6 = 850;
+            var posY_6_static = 0;
+            var posX_6_static = 50;
+            var lineLength_6 = 300;
+            var speed_6 = 2;
+
+            ////////////////////////////////////////////////////////////// 7
+
+            var ctx_7 = canvas.getContext("2d");
+            ctx_7.strokeStyle = "#ffffff";
+            ctx_7.lineWidth = 1;
+            var posY_7 = 1300;
+            var posX_7 = 1200;
+            var posY_7_static = 0;
+            var posX_7_static = 50;
+            var lineLength_7 = 500;
+            var speed_7 = 2;
+
+            //////////////////////////////////////////////////////////////////////////////
+
+            function drawLine() {
+
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.beginPath();
+                ctx_41.moveTo(posX_41, posY_41);
+                ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                ctx_41.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.beginPath();
+                ctx_1.moveTo(posX_1, posY_1);
+                ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                ctx_1.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.beginPath();
+                ctx_2.moveTo(posX_2, posY_2);
+                ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                ctx_2.stroke();
+                ////////////////////////////////////////////////////////////////////////////
+                ctx_6.beginPath();
+                ctx_6.moveTo(posX_6, posY_6);
+                ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                ctx_6.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.beginPath();
+                ctx_7.moveTo(posX_7, posY_7);
+                ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                ctx_7.stroke();
+                /////////////////////////////////////////////////////////////////////////////
+
+            }
+    
+            function moveLine () {
+
+                /////////////////////////////////////////////////////////////////////////////
+                posY_41 += speed_41;
+                posX_41 += speed_41;
+                
+                if ( posY_41+lineLength_41 > canvas.height - 600 ) {
+                    speed_41 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_1 -= speed_1;
+                posX_1 += speed_1;
+                
+                if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                    speed_1 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_2 -= speed_2;
+                posX_2 += speed_2;
+                
+                if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                    speed_2 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_6 -= speed_6;
+                posX_6 -= speed_6;
+                
+                if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                    speed_6 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+                posY_7 -= speed_7;
+                posX_7 -= speed_7;
+                
+                if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                    speed_7 = 0;
+                }
+                /////////////////////////////////////////////////////////////////////////////
+            
+            }
+    
+            function loop() {
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                /////////////////////////////////////////////////////////////////////////////
+                moveLine();
+                drawLine();
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
 
                     ///////////////////////////////////////////////////////////////////////////////////// Container 5 - 1
                     anime.timeline({
@@ -9559,6 +12463,218 @@ function moveLine () {
 
                 }
                 if (parseInt(distance) > parseInt(1538) && parseInt(distance) < parseInt(2207)) {
+
+                    /////////////////////////////////////////////////////////////////////////
+                    var canvas = document.getElementById("canvas-3-subcontainer-6");
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+
+                    //console.log(canvas.width);
+                    //console.log(canvas.height);
+
+                    ////////////////////////////////////////////////////////////// 1 - 1
+
+                    var ctx_11 = canvas.getContext("2d");
+                    ctx_11.strokeStyle = "#ffffff";
+                    ctx_11.lineWidth = 2;
+                    var posY_11 = -250;
+                    var posX_11 = 800;
+                    var posY_11_static = 0;
+                    var posX_11_static = 50;
+                    var lineLength_11 = 250;
+                    var speed_11 = 2;
+
+                    ////////////////////////////////////////////////////////////// 2 - 1
+
+                    var ctx_21 = canvas.getContext("2d");
+                    ctx_21.strokeStyle = "#ffffff";
+                    ctx_21.lineWidth = 2;
+                    var posY_21 = -150;
+                    var posX_21 = 850;
+                    var posY_21_static = 0;
+                    var posX_21_static = 50;
+                    var lineLength_21 = 150;
+                    var speed_21 = 2;
+
+                    ////////////////////////////////////////////////////////////// 4 - 1
+
+                    var ctx_41 = canvas.getContext("2d");
+                    ctx_41.strokeStyle = "#ffffff";
+                    ctx_41.lineWidth = 2;
+                    var posY_41 = -250;
+                    var posX_41 = 550;
+                    var posY_41_static = 0;
+                    var posX_41_static = 50;
+                    var lineLength_41 = 450;
+                    var speed_41 = 2;
+
+                    ////////////////////////////////////////////////////////////// 6
+
+                    var ctx_6 = canvas.getContext("2d");
+                    ctx_6.strokeStyle = "#ffffff";
+                    ctx_6.lineWidth = 2;
+                    var posY_6 = 1100;
+                    var posX_6 = 1350;
+                    var posY_6_static = 0;
+                    var posX_6_static = 50;
+                    var lineLength_6 = 300;
+                    var speed_6 = 2;
+
+                    ////////////////////////////////////////////////////////////// 7
+
+                    var ctx_7 = canvas.getContext("2d");
+                    ctx_7.strokeStyle = "#ffffff";
+                    ctx_7.lineWidth = 2;
+                    var posY_7 = 1300;
+                    var posX_7 = 1600;
+                    var posY_7_static = 0;
+                    var posX_7_static = 50;
+                    var lineLength_7 = 500;
+                    var speed_7 = 2;
+
+                    ////////////////////////////////////////////////////////////// 9
+
+                    var ctx_9 = canvas.getContext("2d");
+                    ctx_9.strokeStyle = "#ffffff";
+                    ctx_9.lineWidth = 2;
+                    var posY_9 = 1300;
+                    var posX_9 = 1900;
+                    var posY_9_static = 0;
+                    var posX_9_static = 50;
+                    var lineLength_9 = 500;
+                    var speed_9 = 2;
+
+                    ////////////////////////////////////////////////////////////// 8
+
+                    var ctx_8 = canvas.getContext("2d");
+                    ctx_8.strokeStyle = "#ffffff";
+                    ctx_8.lineWidth = 1;
+                    var posY_8 = 1300;
+                    var posX_8 = 400;
+                    var posY_8_static = 0;
+                    var posX_8_static = 50;
+                    var lineLength_8 = 500;
+                    var speed_8 = 1;
+
+                    //////////////////////////////////////////////////////////////////////////////
+
+                    function drawLine() {
+
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_11.beginPath();
+                        ctx_11.moveTo(posX_11, posY_11);
+                        ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                        ctx_11.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_21.beginPath();
+                        ctx_21.moveTo(posX_21, posY_21);
+                        ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                        ctx_21.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_41.beginPath();
+                        ctx_41.moveTo(posX_41, posY_41);
+                        ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                        ctx_41.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_6.beginPath();
+                        ctx_6.moveTo(posX_6, posY_6);
+                        ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                        ctx_6.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_7.beginPath();
+                        ctx_7.moveTo(posX_7, posY_7);
+                        ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                        ctx_7.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_8.beginPath();
+                        ctx_8.moveTo(posX_8, posY_8);
+                        ctx_8.lineTo(posX_8+lineLength_8, posY_8-lineLength_8);
+                        ctx_8.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_9.beginPath();
+                        ctx_9.moveTo(posX_9, posY_9);
+                        ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                        ctx_9.stroke();
+                        /////////////////////////////////////////////////////////////////////////////
+
+                    }
+            
+                    function moveLine () {
+
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_11 += speed_11;
+                        posX_11 += speed_11;
+                        
+                        if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                            speed_11 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_21 += speed_21;
+                        posX_21 += speed_21;
+                        
+                        if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                            speed_21 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_41 += speed_41;
+                        posX_41 += speed_41;
+                        
+                        if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                            speed_41 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_6 -= speed_6;
+                        posX_6 -= speed_6;
+                        
+                        if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                            speed_6 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_7 -= speed_7;
+                        posX_7 -= speed_7;
+                        
+                        if ( posY_7-lineLength_7 < canvas.height - 250 ) {
+                            speed_7 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_8 -= speed_8;
+                        posX_8 += speed_8;
+                        
+                        if ( posY_8-lineLength_8 < canvas.height - 280 ) {
+                            speed_8 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                        posY_9 -= speed_9;
+                        posX_9 -= speed_9;
+                        
+                        if ( posY_9-lineLength_9 < canvas.height - 130 ) {
+                            speed_9 = 0;
+                        }
+                        /////////////////////////////////////////////////////////////////////////////
+                    
+                    }
+            
+                    function loop() {
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                        /////////////////////////////////////////////////////////////////////////////
+                        moveLine();
+                        drawLine();
+                        requestAnimationFrame(loop);
+                    }
+                    requestAnimationFrame(loop);
 
                     ///////////////////////////////////////////////////////////////////////////////////// Container 6 - 1
                     anime.timeline({
@@ -9918,7 +13034,267 @@ function moveLine () {
                         await sleep(3000);
                         document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
 
-}
+                }
+
+                /////////////////////////////////////////////////////////////////////////
+                var canvas = document.getElementById("canvas-3-subcontainer-3");
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                //console.log(canvas.width);
+                //console.log(canvas.height);
+
+                ////////////////////////////////////////////////////////////// 1 - 1
+
+                var ctx_11 = canvas.getContext("2d");
+                ctx_11.strokeStyle = "#ffffff";
+                ctx_11.lineWidth = 2;
+                var posY_11 = -250;
+                var posX_11 = 800;
+                var posY_11_static = 0;
+                var posX_11_static = 50;
+                var lineLength_11 = 250;
+                var speed_11 = 2;
+
+                ////////////////////////////////////////////////////////////// 2 - 1
+
+                var ctx_21 = canvas.getContext("2d");
+                ctx_21.strokeStyle = "#ffffff";
+                ctx_21.lineWidth = 2;
+                var posY_21 = -150;
+                var posX_21 = 850;
+                var posY_21_static = 0;
+                var posX_21_static = 50;
+                var lineLength_21 = 150;
+                var speed_21 = 2;
+
+                ////////////////////////////////////////////////////////////// 4 - 1
+
+                var ctx_41 = canvas.getContext("2d");
+                ctx_41.strokeStyle = "#ffffff";
+                ctx_41.lineWidth = 2;
+                var posY_41 = -250;
+                var posX_41 = 350;
+                var posY_41_static = 0;
+                var posX_41_static = 50;
+                var lineLength_41 = 250;
+                var speed_41 = 2;
+
+                ////////////////////////////////////////////////////////////// 1
+
+                var ctx_1 = canvas.getContext("2d");
+                ctx_1.strokeStyle = "#ffffff";
+                ctx_1.lineWidth = 2;
+                var posY_1 = 800;
+                var posX_1 = -100;
+                var lineLength_1 = 130;
+                var speed_1 = 2;
+
+                ////////////////////////////////////////////////////////////// 2
+
+                var ctx_2 = canvas.getContext("2d");
+                ctx_2.strokeStyle = "#ffffff";
+                ctx_2.lineWidth = 2;
+                var posY_2 = 800;
+                var posX_2 = -70;
+                var lineLength_2 = 130;
+                var speed_2 = 2;
+
+                ////////////////////////////////////////////////////////////// 6
+
+                var ctx_6 = canvas.getContext("2d");
+                ctx_6.strokeStyle = "#ffffff";
+                ctx_6.lineWidth = 2;
+                var posY_6 = 1100;
+                var posX_6 = 1150;
+                var posY_6_static = 0;
+                var posX_6_static = 50;
+                var lineLength_6 = 300;
+                var speed_6 = 2;
+
+                ////////////////////////////////////////////////////////////// 7
+
+                var ctx_7 = canvas.getContext("2d");
+                ctx_7.strokeStyle = "#ffffff";
+                ctx_7.lineWidth = 2;
+                var posY_7 = 1300;
+                var posX_7 = 1400;
+                var posY_7_static = 0;
+                var posX_7_static = 50;
+                var lineLength_7 = 500;
+                var speed_7 = 2;
+
+                ////////////////////////////////////////////////////////////// 8
+
+                var ctx_8 = canvas.getContext("2d");
+                ctx_8.strokeStyle = "#ffffff";
+                ctx_8.lineWidth = 2;
+                var posY_8 = 1100;
+                var posX_8 = 1350;
+                var posY_8_static = 0;
+                var posX_8_static = 50;
+                var lineLength_8 = 300;
+                var speed_8 = 2;
+
+                ////////////////////////////////////////////////////////////// 9
+
+                var ctx_9 = canvas.getContext("2d");
+                ctx_9.strokeStyle = "#ffffff";
+                ctx_9.lineWidth = 2;
+                var posY_9 = 1300;
+                var posX_9 = 1900;
+                var posY_9_static = 0;
+                var posX_9_static = 50;
+                var lineLength_9 = 500;
+                var speed_9 = 2;
+
+                //////////////////////////////////////////////////////////////////////////////
+
+                function drawLine() {
+
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_11.beginPath();
+                    ctx_11.moveTo(posX_11, posY_11);
+                    ctx_11.lineTo(posX_11+lineLength_11, posY_11+lineLength_11);
+                    ctx_11.stroke();
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_21.beginPath();
+                    ctx_21.moveTo(posX_21, posY_21);
+                    ctx_21.lineTo(posX_21+lineLength_21, posY_21+lineLength_21);
+                    ctx_21.stroke();
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_41.beginPath();
+                    ctx_41.moveTo(posX_41, posY_41);
+                    ctx_41.lineTo(posX_41+lineLength_41, posY_41+lineLength_41);
+                    ctx_41.stroke();
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_1.beginPath();
+                    ctx_1.moveTo(posX_1, posY_1);
+                    ctx_1.lineTo(posX_1+lineLength_1, posY_1-lineLength_1);
+                    ctx_1.stroke();
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_2.beginPath();
+                    ctx_2.moveTo(posX_2, posY_2);
+                    ctx_2.lineTo(posX_2+lineLength_2, posY_2-lineLength_2);
+                    ctx_2.stroke();
+                    ////////////////////////////////////////////////////////////////////////////
+                    ctx_6.beginPath();
+                    ctx_6.moveTo(posX_6, posY_6);
+                    ctx_6.lineTo(posX_6-lineLength_6, posY_6-lineLength_6);
+                    ctx_6.stroke();
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_7.beginPath();
+                    ctx_7.moveTo(posX_7, posY_7);
+                    ctx_7.lineTo(posX_7-lineLength_7, posY_7-lineLength_7);
+                    ctx_7.stroke();
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_8.beginPath();
+                    ctx_8.moveTo(posX_8, posY_8);
+                    ctx_8.lineTo(posX_8-lineLength_8, posY_8-lineLength_8);
+                    ctx_8.stroke();
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_9.beginPath();
+                    ctx_9.moveTo(posX_9, posY_9);
+                    ctx_9.lineTo(posX_9-lineLength_9, posY_9-lineLength_9);
+                    ctx_9.stroke();
+                    /////////////////////////////////////////////////////////////////////////////
+
+                }
+        
+                function moveLine () {
+
+                    /////////////////////////////////////////////////////////////////////////////
+                    posY_11 += speed_11;
+                    posX_11 += speed_11;
+                    
+                    if ( posY_11+lineLength_11 > canvas.height - 600 ) {
+                        speed_11 = 0;
+                    }
+                    /////////////////////////////////////////////////////////////////////////////
+                    posY_21 += speed_21;
+                    posX_21 += speed_21;
+                    
+                    if ( posY_21+lineLength_21 > canvas.height - 700 ) {
+                        speed_21 = 0;
+                    }
+                    /////////////////////////////////////////////////////////////////////////////
+                    posY_41 += speed_41;
+                    posX_41 += speed_41;
+                    
+                    if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                        speed_41 = 0;
+                    }
+                    /////////////////////////////////////////////////////////////////////////////
+                    posY_1 -= speed_1;
+                    posX_1 += speed_1;
+                    
+                    if ( posY_1-lineLength_1 < canvas.height - 310 ) {
+                        speed_1 = 0;
+                    }
+                    /////////////////////////////////////////////////////////////////////////////
+                    posY_2 -= speed_2;
+                    posX_2 += speed_2;
+                    
+                    if ( posY_2-lineLength_2 < canvas.height - 302 ) {
+                        speed_2 = 0;
+                    }
+                    /////////////////////////////////////////////////////////////////////////////
+                    posY_6 -= speed_6;
+                    posX_6 -= speed_6;
+                    
+                    if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+                        speed_6 = 0;
+                    }
+                    /////////////////////////////////////////////////////////////////////////////
+                    posY_7 -= speed_7;
+                    posX_7 -= speed_7;
+                    
+                    if ( posY_7-lineLength_7 < canvas.height - 350 ) {
+                        speed_7 = 0;
+                    }
+                    /////////////////////////////////////////////////////////////////////////////
+                    posY_8 -= speed_8;
+                    posX_8 -= speed_8;
+                    
+                    if ( posY_8-lineLength_8 < canvas.height - 220 ) {
+                        speed_8 = 0;
+                    }
+                    /////////////////////////////////////////////////////////////////////////////
+                    posY_9 -= speed_9;
+                    posX_9 -= speed_9;
+                    
+                    if ( posY_9-lineLength_9 < canvas.height - 130 ) {
+                        speed_9 = 0;
+                    }
+                    /////////////////////////////////////////////////////////////////////////////
+                
+                }
+        
+                function loop() {
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_11.clearRect(0,0,canvas.width, canvas.height);
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_21.clearRect(0,0,canvas.width, canvas.height);
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_41.clearRect(0,0,canvas.width, canvas.height);
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_1.clearRect(0,0,canvas.width, canvas.height);
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_2.clearRect(0,0,canvas.width, canvas.height);
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_6.clearRect(0,0,canvas.width, canvas.height);
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_7.clearRect(0,0,canvas.width, canvas.height);
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_8.clearRect(0,0,canvas.width, canvas.height);
+                    /////////////////////////////////////////////////////////////////////////////
+                    ctx_9.clearRect(0,0,canvas.width, canvas.height);
+                    /////////////////////////////////////////////////////////////////////////////
+                    moveLine();
+                    drawLine();
+                    requestAnimationFrame(loop);
+                }
+                requestAnimationFrame(loop);
 
                     ///////////////////////////////////////////////////////////////////////////////////// Container 3 - 1
                     anime.timeline({
