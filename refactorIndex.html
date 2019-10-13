@@ -37,21 +37,21 @@
             <div id="more-than-home-container">
                 <a href="#section2">
                     <img class="more-than-home" id="more-than-home-menu" src="images/more-than-home-gray.png" height="30px" alt="menu">
-                    <h12 id="more-than-home-h12"> MÁS QUE UN HOGAR </h12>
+                    <strong><h12 id="more-than-home-h12"> MÁS QUE UN HOGAR </h12></strong>
                 </a>
             </div>
 
             <div id="live-style-menu-container">
                 <a href="#section5">
                     <img class="life-style" id="live-style-menu" src="images/life-style.png" alt="menu">
-                    <h12 id="live-style-menu-h12"> ESTILO DE VIDA </h12>
+                    <strong><h12 id="live-style-menu-h12"> ESTILO DE VIDA </h12></strong>
                 </a>
             </div>
 
             <div id="map-menu-container">
                 <a href="#section6">
                     <img class="map" id="map-menu" src="images/map-gray.png" alt="menu">
-                    <h12 id="map-menu-h12"> ¿DÓNDE? </h12>
+                    <strong><h12 id="map-menu-h12"> ¿DÓNDE? </h12></strong>
                 </a>
             </div>
         </div>
@@ -300,6 +300,11 @@
                 </div>
 
                 <div class="split-left-container-2">
+
+                    <div class="la_vista_logo_rivalta" id="la_vista_logo_rivalta_id">
+                        <img class="la-vista-logo-id" src="images/la_vista_logo_blue.png" height="40px" alt="logo">
+                    </div>
+
                     <div class="text-container-2">
 
                         <div style="display: flex; margin-bottom: 0%; float: right;">
@@ -421,10 +426,6 @@
 
                     </div>
 
-                    <div class="la_vista_logo_rivalta" id="la_vista_logo_rivalta_id">
-                        <img class="la-vista-logo-id" src="images/la_vista_logo_blue.png" height="40px" alt="logo">
-                    </div>
-
                 </div>
 
             </div>
@@ -446,7 +447,7 @@
                     <div class="livenza-logo" id="livenza_logo_id">
                         <img class="livenza-rivalta-logo" src="images/livenza_logo_blue.png" alt="logo">
                     </div>
-                    <div class="back-container" style="left: 60%;">
+                    <div class="back-container" style="left: 74%;">
                         <div id="back_livenza">
                             <a href="#section2" class="back_button_livenza">
                                 <img class="back-img" id="livenza-back-icon" src="images/back-icon.png" alt="livenza">
@@ -549,7 +550,7 @@
                                 ,
                             </h1>
                             <h1 class="text-4-container-5-add" id="text-4-container-5-add-3">
-                                0
+                                7
                             </h1>
                             <h1 class="text-4-container-5-add" id="text-4-container-5-add-4">
                                 0
@@ -3718,13 +3719,13 @@ function moveLine () {
             staticAnimation();
 
             async function staticAnimation() {
-
                 
                 await sleep(2000);
                 document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.png')";
 
             }
 
+            document.getElementById("more-than-home-menu").src = "images/more-than-home-blue.png";
 
             /////////////////////////////////////////////////////////////////////////
             var canvas = document.getElementById("canvas-2-subcontainer-2");
@@ -3935,7 +3936,7 @@ function moveLine () {
                 posY_41 += speed_41;
                 posX_41 += speed_41;
                 
-                if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                if ( posY_41+lineLength_41 > canvas.height - 600 ) {
                     speed_41 = 0;
                 }
                 /////////////////////////////////////////////////////////////////////////////
@@ -4604,7 +4605,7 @@ function moveLine () {
                 posY_41 += speed_41;
                 posX_41 += speed_41;
                 
-                if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                if ( posY_41+lineLength_41 > canvas.height - 600 ) {
                     speed_41 = 0;
                 }
                 /////////////////////////////////////////////////////////////////////////////
@@ -5272,7 +5273,7 @@ function moveLine () {
                 posY_41 += speed_41;
                 posX_41 += speed_41;
                 
-                if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                if ( posY_41+lineLength_41 > canvas.height - 600 ) {
                     speed_41 = 0;
                 }
                 /////////////////////////////////////////////////////////////////////////////
@@ -5726,12 +5727,13 @@ function moveLine () {
             staticAnimation();
 
             async function staticAnimation() {
-
                 
                 await sleep(3000);
                 document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
 
             }
+
+            //document.getElementById("live-style-menu").src = "images/more-than-home-blue.png";
 
             /////////////////////////////////////////////////////////////////////////
             var canvas = document.getElementById("canvas-3-subcontainer-3");
@@ -6638,6 +6640,9 @@ function moveLine () {
         var random_map_menu_container = document.getElementById('map-menu-container');
 
         random_map_menu_container.addEventListener('click', function(event) {
+
+            document.getElementById("map-menu").src = "images/map-blue.png";
+
             ///////////////////////////////////////////////////////////////////////////////////// Container 4 - 1
             anime.timeline({
                     loop: false
@@ -6861,6 +6866,17 @@ function moveLine () {
         var random_livenza_container = document.getElementById('livenza-container');
 
         random_livenza_container.addEventListener('click', function(event) {
+
+            document.getElementById("all-menu-container-id").style.backgroundColor = '#0C293C';
+            document.getElementById("hamburguer-menu").src = "images/home-icon-blue.png";
+            document.getElementById("live-style-menu").src = "images/life-style-blue.png";
+            document.getElementById("map-menu").src = "images/map-blue2.png";
+            document.getElementById("instagram-image").src = "images/instagram-icon-blue.png";
+            document.getElementById("facebook-image").src = "images/facebook-icon-blue.png";
+            
+            
+
+            
 
 
             /////////////////////////////////////////////////////////////////////////
@@ -8181,7 +8197,7 @@ function moveLine () {
                             posY_41 += speed_41;
                             posX_41 += speed_41;
                             
-                            if ( posY_41+lineLength_41 > canvas.height - 500 ) {
+                            if ( posY_41+lineLength_41 > canvas.height - 600 ) {
                                 speed_41 = 0;
                             }
                             /////////////////////////////////////////////////////////////////////////////
