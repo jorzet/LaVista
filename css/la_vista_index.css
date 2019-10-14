@@ -360,8 +360,8 @@
 #more-than-home-container {
   height: 5vw;
   width: 0px;
-  margin-top: 2.5vw;
-  margin-bottom: 2.5vw;
+  /*margin-top: 2.5vw;
+  margin-bottom: 2.5vw;*/
   transition-property: width, background-image;
   transition-duration: 1s, 1s;
   visibility: hidden;
@@ -394,8 +394,8 @@
 #live-style-menu-container {
   height: 5vw;
   width: 0px;
-  margin-top: 2.5vw;
-  margin-bottom: 2.5vw;
+  /*margin-top: 2.5vw;
+  margin-bottom: 2.5vw;*/
   transition-property: width, background-image;
   transition-duration: 1s, 1s;
   visibility: hidden;
@@ -427,8 +427,8 @@
 #map-menu-container {
   height: 5vw;
   width: 0px;
-  margin-top: 2.5vw;
-  margin-bottom: 2.5vw;
+  /*margin-top: 2.5vw;
+  margin-bottom: 2.5vw;*/
   transition-property: width, background-image;
   transition-duration: 1s, 1s;
   visibility: hidden;
@@ -790,16 +790,23 @@ line-height:  2.2vw;
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-2-container-3 {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
+}
+
+.text-container-3 {
+  position: relative;
+  float: center;
+  top: 35%;
+  z-index: 1;
 }
 
 
@@ -817,32 +824,32 @@ line-height:  2.2vw;
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-5-container-3 {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-6-container-3 {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing:2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-1-container-4 {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 
@@ -860,16 +867,16 @@ line-height:  2.2vw;
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-4-container-4 {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-container-5 {
@@ -918,7 +925,7 @@ line-height:  2.2vw;
 .text-container-6 {
   position: relative;
   float: center;
-  top: 55%;
+  top: 45%;
   z-index: 1;
 }
 
@@ -926,36 +933,36 @@ line-height:  2.2vw;
   color: white;
   text-align: left;
   margin-left: 90px;
-  font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  font-size: 1.3vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-2-container-6 {
   color: white;
   text-align: left;
   margin-left: 90px;
-  font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  font-size: 1.3vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-3-container-6 {
   color: white;
   text-align: left;
   margin-left: 90px;
-  font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  font-size: 1.3vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-4-container-6 {
   color: black;
   text-align: left;
   margin-left: 90px;
-  font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  font-size: 1.3vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .livenza-rivalta-container {
@@ -1012,6 +1019,7 @@ line-height:  2.2vw;
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
+  left: 74%;
 }
 
 #back {
@@ -1182,96 +1190,96 @@ line-height:  2.2vw;
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-2-container-3-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-3-container-3 {
   color: #3A5D80;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-3-container-3-add {
   color: #3A5D80;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-4-container-3-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-5-container-3-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-6-container-3-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-1-container-4-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 3vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-2-container-4 {
   color: #3A5D80;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-2-container-4-add {
   color: #3A5D80;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-3-container-4-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-4-container-4-add {
   color: #727272;
   text-align: right;
   font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 #vista-word h1 {
@@ -1334,33 +1342,33 @@ line-height:  2.2vw;
 .text-1-container-6-add {
   color: white;
   text-align: left;
-  font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  font-size: 1.3vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-2-container-6-add {
   color: white;
   text-align: left;
-  font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  font-size: 1.3vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-3-container-6-add {
   color: white;
   text-align: left;
-  font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  font-size: 1.3vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 .text-4-container-6-add {
   color: black;
   text-align: right;
-  font-size: 1.5vw;
-  letter-spacing: 4vw;
-  line-height: 2.2vw;
+  font-size: 1.3vw;
+  letter-spacing: 2.5vw;
+  /*line-height: 2.2vw;*/
 }
 
 #canvas-rombos {
@@ -1376,7 +1384,7 @@ line-height:  2.2vw;
   background-position: center center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  background-size: cover;
+  /*background-size: cover;*/
   margin-left: -50%;
 }
 
@@ -1473,4 +1481,25 @@ a {
   color: #143d65;
   text-decoration: none;
   background-color: transparent;
+}
+
+.column-map {
+  float: left;
+  width: 40%;
+  margin: 5%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#canvas-croquis {
+  background-image: url("../images/location_pdf.png");
+  background-size: 100% 100%;
+  width: 90%;
+  cursor: pointer;
+  /*margin: 20% 15%;*/
+  margin-top: 15%;
 }
