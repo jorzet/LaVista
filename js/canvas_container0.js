@@ -2,6 +2,10 @@ $(document).ready(function(){
 
     var canvas = document.getElementById("canvas-0-subcontainer-1");
 
+    canvas.width = screen.availWidth;
+    canvas.height = screen.availHeight;
+
+
     ////////////////////////////////////////////////////////////// 1
 
     var ctx_1 = canvas.getContext("2d");
@@ -186,49 +190,49 @@ $(document).ready(function(){
         posY_3 -= speed_3;
         posX_3 += speed_3;
         
-        if ( posY_3-lineLength_3 < canvas.height - 222 ) {
+        if ( posY_3-lineLength_3 < canvas.height - 422 ) {
             speed_3 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_4 -= speed_4;
         posX_4 += speed_4;
         
-        if ( posY_4-lineLength_4 < canvas.height - 162 ) {
+        if ( posY_4-lineLength_4 < canvas.height - 362 ) {
             speed_4 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_5 -= speed_5;
         posX_5 += speed_5;
         
-        if ( posY_5-lineLength_5 < canvas.height - 180 ) {
+        if ( posY_5-lineLength_5 < canvas.height - 380 ) {
             speed_5 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_6 -= speed_6;
         posX_6 -= speed_6;
         
-        if ( posY_6-lineLength_6 < canvas.height - 130 ) {
+        if ( posY_6-lineLength_6 < canvas.height - 330 ) {
             speed_6 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_7 -= speed_7;
         posX_7 -= speed_7;
         
-        if ( posY_7-lineLength_7 < canvas.height - 330 ) {
+        if ( posY_7-lineLength_7 < canvas.height - 630 ) {
             speed_7 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_8 -= speed_8;
         posX_8 += speed_8;
         
-        if ( posY_8-lineLength_8 < canvas.height - 280 ) {
+        if ( posY_8-lineLength_8 < canvas.height - 580 ) {
             speed_8 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
         posY_9 -= speed_9;
         posX_9 -= speed_9;
         
-        if ( posY_9-lineLength_9 < canvas.height - 300 ) {
+        if ( posY_9-lineLength_9 < canvas.height - 600 ) {
             speed_9 = 0;
         }
         /////////////////////////////////////////////////////////////////////////////
