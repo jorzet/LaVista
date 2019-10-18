@@ -271,12 +271,14 @@
                 <canvas class="subcontainer-2" id="canvas-1-subcontainer-2" width="1063" height="801">
                 </canvas>
 
+                <canvas id="canvas-rombos-2" width="1440" height="801">
+                </canvas>
+
                 
 
                 <div class="split-right-container-2">
 
-                        <canvas id="canvas-rombos-2" height="270">
-                        </canvas>
+                        
 
                         <canvas class="subcontainer-2" id="canvas-2-subcontainer-2" height="270">
                         </canvas>
@@ -446,7 +448,7 @@
                     <div class="livenza-logo" id="livenza_logo_id">
                         <img class="livenza-rivalta-logo" src="images/livenza_logo_blue.png" alt="logo">
                     </div>
-                    <div class="back-container">
+                    <div class="back-container-livenza">
                         <div id="back_livenza">
                             <a href="#section2" class="back_button_livenza">
                                 <img class="back-img" id="livenza-back-icon" src="images/back-icon.png" alt="livenza">
@@ -595,7 +597,7 @@
         </canvas>
 
                 <div class="split-right-container-6">
-                    <div class="back-container">
+                    <div class="back-container-rivalta">
                         <div id="back_rivalta">
                             <a href="#section2">
                                 <img class="back-img" id="rivalta-back-icon" src="images/back-icon.png" alt="rivalta">
@@ -744,12 +746,12 @@
         		</canvas>
 
                 <canvas class="subcontainer-3" id="canvas-2-subcontainer-3">
-        		</canvas>
+                </canvas>
+                
+                <canvas id="canvas-rombos" width="1440" height="801">
+                </canvas>
 
                 <div class="split-right-container-3">
-
-                    <canvas id="canvas-rombos" height="270">
-                    </canvas>
 
                     <canvas class="subcontainer-3" id="canvas-3-subcontainer-3" height="270">
                     </canvas>
@@ -3945,6 +3947,7 @@ function moveLine () {
             }
 
             document.getElementById("more-than-home-menu").src = "images/more-than-home-blue.png";
+            document.getElementById("all-menu-container-id").style.backgroundColor = 'transparent';
 
             /////////////////////////////////////////////////////////////////////////
             var canvas = document.getElementById("canvas-2-subcontainer-2");

@@ -246,7 +246,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: #0C293C;
 }
 
 
@@ -661,11 +661,11 @@
 }
 
 .livenza-logo {
-  position: relative;
+  position: sticky;
   float: right;
-  right: 5%;
+  /* right: 5%; */
   top: 5%;
-  margin-right: 12%;
+  margin-right: 5%;
   visibility: visible;
 }
 
@@ -1010,7 +1010,22 @@ line-height:  2.2vw;
   margin-top: 30%;
 }
 
-.back-container {
+.back-container-livenza {
+  position: sticky;
+  /* margin-top: 0px; */
+  width: 13vw;
+  height: 13vw;
+  /* right: 0; */
+  top: 40%;
+  /* margin-right: 6vw; */
+  background-image: url(../images/back-bg.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 100%;
+}
+
+.back-container-rivalta {
   position: relative;
   width: 13vw;
   height: 13vw;
@@ -1374,20 +1389,15 @@ line-height:  2.2vw;
 }
 
 #canvas-rombos {
-  /*background-image: url("../images/life_style.png");*/
-  /* background-image: url("../images/amenidades3.gif"); */
-  /* background-image: url("../images/estilodevida.gif"); */
   position: absolute;
   background-size: 100% 100%;
   width: 100%;
-  height: 100%;
+  /*height: 110%;*/
   opacity: 0.9;
-  /* filter: contrast(170%); */
   background-position: center center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  /*background-size: cover;*/
-  margin-left: -50%;
+  /*background-attachment: fixed;*/
+  left: 0;
 }
 
 #canvas-0-subcontainer-0 {
@@ -1428,11 +1438,11 @@ line-height:  2.2vw;
   position: absolute;
   background-size: 100% 100%;
   width: 100%;
-  height: 110%;
+  /*height: 110%;*/
   opacity: 0.9;
   background-position: center center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  /*background-attachment: fixed;*/
   left: 0;
   margin-left: 5vw;
 }
