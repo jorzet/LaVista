@@ -2,7 +2,8 @@
 
 $(document).scroll(function() {
 
-    var distance = $(window).scrollTop();
+    var distance = $(document).scrollTop();
+    console.log("Distancia: "+distance);
 
     var home = document.getElementById("hamburguer-menu").src;
     var more = document.getElementById("more-than-home-menu").src;
@@ -19,7 +20,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon.png"
         instagram = "images/instagram-icon.png"
     }
-    if (distance > 350 && distance < 1250 ) {
+    if (distance > 350 && distance < 1038 ) {
         home = "images/home-icon.png"
         more = "images/more-than-home-blue.png"
         life = "images/life-style.png"
@@ -27,7 +28,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon.png"
         instagram = "images/instagram-icon.png"
     }
-    if (distance > 1250 && distance < 2000) {
+    if (distance > 1038 && distance < 1726) {
         home = "images/home-icon-blue.png"
         more = "images/more-than-home-blue2.png"
         life = "images/life-style-blue.png"
@@ -35,7 +36,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon-blue.png"
         instagram = "images/instagram-icon-blue.png"
     }
-    if (distance > 2000 && distance < 2750) {
+    if (distance > 1726 && distance < 2414) {
         home = "images/home-icon-black.png"
         more = "images/more-than-home-black.png"
         life = "images/life-style-black.png"
@@ -43,7 +44,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon-black.png"
         instagram = "images/instagram-icon-black.png"
     }
-    if (distance > 2750 && distance < 3500) {
+    if (distance > 2414 && distance < 3102) {
         home = "images/home-icon.png"
         more = "images/more-than-home-gray.png"
         life = "images/life-style-blue.png"
@@ -51,7 +52,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon.png"
         instagram = "images/instagram-icon.png"
     }
-    if (distance > 3500) {
+    if (distance > 3102) {
         home = "images/home-icon.png"
         more = "images/more-than-home-gray.png"
         life = "images/life-style.png"
