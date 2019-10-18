@@ -238,15 +238,16 @@
 .split-left-container-5 {
   z-index: 1;
   height: 100%;
-  width: 50%;
+  /*width: 50%;*/
   left: 0;
   top: 0;
   background-image: url(../images/livenza.png);
-  background-position: top left;
+  background-position: 30%;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
   background-color: #0C293C;
+  margin-left: 6vw;
 }
 
 
