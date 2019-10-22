@@ -1,9 +1,13 @@
-
+/*var width = window.innerWidth;
+var height = window.innerHeight;
+console.log("Height: "+height);*/
 
 $(document).scroll(function() {
 
     var distance = $(document).scrollTop();
     console.log("Distancia: "+distance);
+    var height = window.innerHeight;
+    console.log("Height: "+height);
 
     var home = document.getElementById("hamburguer-menu").src;
     var more = document.getElementById("more-than-home-menu").src;
@@ -12,7 +16,7 @@ $(document).scroll(function() {
     var facebook = document.getElementById("facebook-image").src;
     var instagram = document.getElementById("instagram-image").src;
 
-    if (distance < 350){
+    if (distance < height * 0.9){
         home = "images/hamburguer-menu-gray.png"
         more = "images/more-than-home-gray.png"
         life = "images/life-style.png"
@@ -20,7 +24,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon.png"
         instagram = "images/instagram-icon.png"
     }
-    if (distance > 350 && distance < 1038 ) {
+    if (distance > height * 0.9 && distance < height * 1.9 ) {
         home = "images/home-icon.png"
         more = "images/more-than-home-blue.png"
         life = "images/life-style.png"
@@ -28,7 +32,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon.png"
         instagram = "images/instagram-icon.png"
     }
-    if (distance > 1038 && distance < 1726) {
+    if (distance > height * 1.9 && distance < height * 2.9 ) {
         home = "images/home-icon-blue.png"
         more = "images/more-than-home-blue2.png"
         life = "images/life-style-blue.png"
@@ -36,7 +40,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon-blue.png"
         instagram = "images/instagram-icon-blue.png"
     }
-    if (distance > 1726 && distance < 2414) {
+    if (distance > height * 2.9 && distance < height * 3.9 ) {
         home = "images/home-icon-black.png"
         more = "images/more-than-home-black.png"
         life = "images/life-style-black.png"
@@ -44,7 +48,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon-black.png"
         instagram = "images/instagram-icon-black.png"
     }
-    if (distance > 2414 && distance < 3102) {
+    if (distance > height * 3.9 && distance < height * 4.9 ) {
         home = "images/home-icon.png"
         more = "images/more-than-home-gray.png"
         life = "images/life-style-blue.png"
@@ -52,7 +56,7 @@ $(document).scroll(function() {
         facebook = "images/facebook-icon.png"
         instagram = "images/instagram-icon.png"
     }
-    if (distance > 3102) {
+    if (distance > height * 4.9 ) {
         home = "images/home-icon.png"
         more = "images/more-than-home-gray.png"
         life = "images/life-style.png"
