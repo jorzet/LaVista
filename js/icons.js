@@ -31,6 +31,14 @@ $(document).scroll(function() {
         map = "images/map-gray.png"
         facebook = "images/facebook-icon.png"
         instagram = "images/instagram-icon.png"
+
+        document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.gif')";
+        staticAnimation();
+        async function staticAnimation() {
+            await sleep(2000);
+            document.getElementById("canvas-rombos-2").style.backgroundImage = "url('images/rombos3.png')";
+        }
+
     }
     if (distance > height * 1.9 && distance < height * 2.9 ) {
         home = "images/home-icon-blue.png"
@@ -55,6 +63,15 @@ $(document).scroll(function() {
         map = "images/map-gray.png"
         facebook = "images/facebook-icon.png"
         instagram = "images/instagram-icon.png"
+
+        document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3.gif')";
+        staticAnimation();
+
+        async function staticAnimation() {
+            await sleep(3000);
+            document.getElementById("canvas-rombos").style.backgroundImage = "url('images/amenidades3-static.png')";
+        }
+
     }
     if (distance > height * 4.9 ) {
         home = "images/home-icon.png"
@@ -80,3 +97,5 @@ $(document).scroll(function() {
     document.getElementById("instagram-image").src = instagram
 
 });
+
+document.getElementById("all-menu-container-id").style.backgroundColor = 'transparent';
